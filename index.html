@@ -242,24 +242,23 @@
         }
 
         .trusted-brands {
-            padding: 40px 20px;
+            padding: 0px 30px;
             background-color: #fce4ec;
             text-align: center;
-            overflow: hidden;
-            /* Ensure that overflowing content is hidden */
         }
 
         .trusted-brands p {
             font-size: 1.2em;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
+
 
         .brands {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 30px;
+            gap: 20px;
             flex-wrap: nowrap;
             /* Prevent the logos from wrapping */
             animation: scroll 30s linear infinite;
@@ -285,45 +284,74 @@
             }
         }
 
-
-        .real-stories {
-            padding: 40px 20px;
-            text-align: center;
-            background-color: #ffffff;
-        }
-
         .real-stories h2 {
-            font-size: 4em;
+            font-size: 3em;
+            /* Increase the font size */
+            text-align: center;
+            /* Center the text */
+            margin-top: 30px;
+            /* Add some bottom margin */
             color: #333;
-            margin-bottom: 30px;
+            /* Ensure the text color is appropriate */
         }
 
-        .real-stories .stories {
+        .stories {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
 
-        .real-stories .story {
-            background-color: #fafafa;
+        .story {
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             max-width: 280px;
-            text-align: left;
+            text-align: center;
+            /* Center the content */
+            transition: border 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .real-stories .story img {
+        .story img {
             width: 70px;
             height: 70px;
             border-radius: 10px;
             margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .real-stories .story p {
+        .story p {
             font-size: 0.9em;
             color: #666;
+            font-weight: bold;
+            /* Make the text bold */
+        }
+
+        .story p strong {
+            font-weight: bolder;
+            /* Make the strong text even bolder */
+        }
+
+        .story-1 {
+            background-color: #e0f7fa;
+            /* Light cyan */
+        }
+
+        .story-2 {
+            background-color: #e8f5e9;
+            /* Light green */
+        }
+
+        .story-3 {
+            background-color: #fff3e0;
+            /* Light orange */
+        }
+
+        .story:hover {
+            border: 2px solid #4caf50;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -766,23 +794,24 @@
     <section class="real-stories">
         <h2>Real Results. Real Stories!</h2>
         <div class="stories">
-            <div class="story">
+            <div class="story story-1">
                 <img src="images/logo/Genex.png" alt="Story 1">
                 <p>From 200 to 6,000+ customers within a year.</p>
                 <p><strong>GENEX</strong> is a leading edtech platform that grew exponentially.</p>
             </div>
-            <div class="story">
+            <div class="story story-2">
                 <img src="images/logo/aakri-logo.png" alt="Story 2">
                 <p>Increased sales by 150% within 3 months.</p>
                 <p><strong>AAKRI</strong> used our platform to boost their market reach.</p>
             </div>
-            <div class="story">
+            <div class="story story-3">
                 <img src="images/logo/Family Plastic.png" alt="Story 3">
                 <p>Saved 10 hours a week on customer support.</p>
                 <p><strong>FAMILY PLASTICS</strong> optimized their operations efficiently.</p>
             </div>
         </div>
     </section>
+
 
     <div class="container">
         <div class="features-header">
