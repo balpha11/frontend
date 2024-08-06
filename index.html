@@ -10,7 +10,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 50;
+            padding: 50px;
             background-color: #ffffff;
             color: #333;
         }
@@ -23,8 +23,6 @@
             background-color: #ffffff;
             border-bottom: 1px solid #e0e0e0;
         }
-
-
 
         .nav {
             display: flex;
@@ -174,13 +172,11 @@
             color: #4caf50;
         }
 
-
         .text-content p {
             font-size: 1.2em;
             color: #666;
             margin-bottom: 20px;
         }
-
 
         .note {
             color: #666;
@@ -195,7 +191,6 @@
             color: #4caf50;
             font-size: 1.1em;
         }
-
 
         .trial-button {
             text-decoration: none;
@@ -229,15 +224,10 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-
-
-
         .trusted-brands {
             padding: 40px 20px;
             background-color: #fce4ec;
             text-align: center;
-            overflow: hidden;
-            /* Ensure that overflowing content is hidden */
         }
 
         .trusted-brands p {
@@ -246,137 +236,101 @@
             margin-bottom: 20px;
         }
 
-        .brands {
+        .trusted-brands .brands {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 30px;
-            flex-wrap: nowrap;
-            /* Prevent the logos from wrapping */
-            animation: scroll 30s linear infinite;
-            /* Apply the animation */
+            flex-wrap: wrap;
         }
 
-        .brands img {
+        .trusted-brands .brands img {
             height: 40px;
             transition: transform 0.3s;
         }
 
-        .brands img:hover {
+        .trusted-brands .brands img:hover {
             transform: scale(1.1);
         }
 
-        @keyframes scroll {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
+        .real-stories {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
         }
-
-
-
-
 
         .real-stories h2 {
-            font-size: 3em;
-            /* Increase the font size */
-            text-align: center;
-            /* Center the text */
-            margin-bottom: 30px;
-            /* Add some bottom margin */
+            font-size: 4em;
             color: #333;
-            /* Ensure the text color is appropriate */
+            margin-bottom: 30px;
         }
 
-        .stories {
+        .real-stories .stories {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
 
-        .story {
+        .real-stories .story {
+            background-color: #fafafa;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             max-width: 280px;
-            text-align: center;
-            /* Center the content */
-            transition: border 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
         }
 
-        .story img {
+        .real-stories .story img {
             width: 70px;
             height: 70px;
             border-radius: 10px;
             margin-bottom: 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
 
-        .story p {
+        .real-stories .story p {
             font-size: 0.9em;
             color: #666;
-            font-weight: bold;
-            /* Make the text bold */
         }
-
-        .story p strong {
-            font-weight: bolder;
-            /* Make the strong text even bolder */
-        }
-
-        .story-1 {
-            background-color: #e0f7fa;
-            /* Light cyan */
-        }
-
-        .story-2 {
-            background-color: #e8f5e9;
-            /* Light green */
-        }
-
-        .story-3 {
-            background-color: #fff3e0;
-            /* Light orange */
-        }
-
-        .story:hover {
-            border: 2px solid #4caf50;
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-
-
 
         .container {
-            width: 30%;
-            margin: auto;
-            padding: 20px;
+            padding: 40px 20px;
+            background-color: #e0f7fa;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .features-header {
             text-align: center;
             padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .features-header h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
 
         .feature {
-            background-color: #e0f7fa;
+            background-color: #ffffff;
             border-radius: 10px;
             margin-bottom: 20px;
-            padding: 0px;
+            padding: 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .feature img {
             width: 150px;
             height: auto;
             border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         .feature div {
@@ -385,6 +339,7 @@
 
         .feature h2 {
             color: #00796b;
+            font-size: 1.5em;
         }
 
         .feature p {
@@ -403,6 +358,7 @@
             text-align: center;
             text-decoration: none;
             font-size: 1rem;
+            transition: background-color 0.3s;
         }
 
         .btn:hover {
@@ -412,19 +368,28 @@
         .cta {
             text-align: center;
             margin-top: 30px;
+            color: white;
+            padding: 30px 20px;
+            border-radius: 10px;
         }
 
+
+
         .cta a {
-            background-color: #00e676;
-            color: #fff;
+            background-color: white;
+            color: #4caf50;
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
             font-size: 1.2rem;
+            margin: 0 10px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .cta a:hover {
-            background-color: #00c853;
+            background-color: #388e3c;
+            color: white;
         }
 
         .broadcast-feature .btn {
@@ -746,35 +711,26 @@
             <img src="images/logo/Reuseful.png" alt="Brand 12">
         </div>
     </section>
-
-
-
-
-
     <section class="real-stories">
         <h2>Real Results. Real Stories!</h2>
         <div class="stories">
-            <div class="story story-1">
+            <div class="story">
                 <img src="images/logo/Genex.png" alt="Story 1">
                 <p>From 200 to 6,000+ customers within a year.</p>
                 <p><strong>GENEX</strong> is a leading edtech platform that grew exponentially.</p>
             </div>
-            <div class="story story-2">
+            <div class="story">
                 <img src="images/logo/aakri-logo.png" alt="Story 2">
                 <p>Increased sales by 150% within 3 months.</p>
                 <p><strong>AAKRI</strong> used our platform to boost their market reach.</p>
             </div>
-            <div class="story story-3">
+            <div class="story">
                 <img src="images/logo/Family Plastic.png" alt="Story 3">
                 <p>Saved 10 hours a week on customer support.</p>
                 <p><strong>FAMILY PLASTICS</strong> optimized their operations efficiently.</p>
             </div>
         </div>
     </section>
-
-
-
-
 
     <div class="container">
         <div class="features-header">
@@ -821,8 +777,6 @@
         </div>
     </div>
 
-
-
     <section class="customers">
         <h2>Over 8,000 customers</h2>
         <div class="customer-reviews">
@@ -839,12 +793,12 @@
     <section class="integrations">
         <p>Integrations. Native integration helps you connect your favorite cloud apps in your tech stack.</p>
         <div class="integration-logos">
-            <img src="images/integration logo/" alt="Shopify">
-            <img src="images/integration logo/" alt="Google Sheets">
-            <img src="images/integration logo/" alt="HubSpot">
-            <img src="images/integration logo/" alt="Zapier">
-            <img src="images/integration logo/" alt="Pabbly">
-            <img src="images/integration logo/" alt="Make">
+            <img src="images/integration logo/shopify.png" alt="Shopify">
+            <img src="images/integration logo/google-sheets.png" alt="Google Sheets">
+            <img src="images/integration logo/hubspot.png" alt="HubSpot">
+            <img src="images/integration logo/zapier.png" alt="Zapier">
+            <img src="images/integration logo/pabbly.png" alt="Pabbly">
+            <img src="images/integration logo/make.png" alt="Make">
         </div>
     </section>
     <section class="advantage">
@@ -912,8 +866,6 @@
         </div>
         <p>© 2024 Urbanchat. All Rights Reserved.</p>
     </footer>
-
-
 </body>
 
 </html>
