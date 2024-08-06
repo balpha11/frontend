@@ -193,10 +193,15 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+
+
+
         .trusted-brands {
             padding: 40px 20px;
             background-color: #fce4ec;
             text-align: center;
+            overflow: hidden;
+            /* Ensure that overflowing content is hidden */
         }
 
         .trusted-brands p {
@@ -205,21 +210,36 @@
             margin-bottom: 20px;
         }
 
-        .trusted-brands .brands {
+        .brands {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 30px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            /* Prevent the logos from wrapping */
+            animation: scroll 30s linear infinite;
+            /* Apply the animation */
         }
 
-        .trusted-brands .brands img {
+        .brands img {
             height: 40px;
             transition: transform 0.3s;
         }
 
-        .trusted-brands .brands img:hover {
+        .brands img:hover {
             transform: scale(1.1);
         }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
 
 
 
@@ -639,16 +659,16 @@
             <img src="images/logo/aqua-pro.png" alt="Brand 4">
             <img src="images/logo/Family Plastic.png" alt="Brand 5">
             <img src="images/logo/Genex.png" alt="Brand 6">
-            <img src="images/logo/God's own villa.png" alt="Brand 6">
-            <img src="images/logo/ivs.png" alt="Brand 6">
-            <img src="images/logo/Kerala Days.png" alt="Brand 6">
-            <img src="images/logo/Macare.png" alt="Brand 6">
-            <img src="images/logo/Merzecool.png" alt="Brand 6">
-            <img src="images/logo/Reuseful.png" alt="Brand 6">
-
-
+            <img src="images/logo/God's own villa.png" alt="Brand 7">
+            <img src="images/logo/ivs.png" alt="Brand 8">
+            <img src="images/logo/Kerala Days.png" alt="Brand 9">
+            <img src="images/logo/Macare.png" alt="Brand 10">
+            <img src="images/logo/Merzecool.png" alt="Brand 11">
+            <img src="images/logo/Reuseful.png" alt="Brand 12">
         </div>
     </section>
+
+
 
 
 
@@ -813,6 +833,8 @@
         </div>
         <p>© 2024 Urbanchat. All Rights Reserved.</p>
     </footer>
+
+
 </body>
 
 </html>
