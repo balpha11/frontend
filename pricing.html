@@ -5,17 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <!-- icon -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- bootstarp cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Pricing - Urbanchat</title>
@@ -96,7 +90,6 @@
         .nav .dropdown:hover .dropdown-content {
             display: block;
         }
-
 
         .cta-buttons {
             display: flex;
@@ -318,10 +311,8 @@
         .footer .footer-social a:hover {
             color: #4caf50;
         }
-        
 
         @media (max-width: 768px) {
-
             .header,
             .nav,
             .cta-buttons,
@@ -341,24 +332,37 @@
                 align-items: center;
                 text-align: center;
             }
+        }
 
+        .whatsapp-chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-chat-widget .chat-container {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #25D366;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        .whatsapp-chat-widget .chat-container img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .whatsapp-chat-widget .chat-container .chat-with-us {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
-    <script>
-        function setPricingPeriod(period) {
-            document.getElementById('monthly-plans').style.display = 'none';
-            document.getElementById('quarterly-plans').style.display = 'none';
-            document.getElementById('yearly-plans').style.display = 'none';
-
-            if (period === 'Monthly') {
-                document.getElementById('monthly-plans').style.display = 'flex';
-            } else if (period === 'Quarterly') {
-                document.getElementById('quarterly-plans').style.display = 'flex';
-            } else if (period === 'Yearly') {
-                document.getElementById('yearly-plans').style.display = 'flex';
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -373,10 +377,10 @@
             <div class="dropdown">
                 <a href="features.html">Features</a>
                 <div class="dropdown-content">
-                    <a href="#">Click to Whattsapp ads</a>
+                    <a href="#">Click to WhatsApp ads</a>
                     <a href="#">Catalog</a>
                     <a href="#">Shared Team Inbox</a>
-                    <a href="#">Broadcast & Bulk Meassaging</a>
+                    <a href="#">Broadcast & Bulk Messaging</a>
                     <a href="#">Custom Notifications</a>
                 </div>
             </div>
@@ -399,26 +403,23 @@
                     <a href="#">Zapier</a>
                     <a href="#">Hubspot</a>
                     <a href="#">Pabbly Connect</a>
-                    <a href="#">Whattsapp chatbot</a>
+                    <a href="#">WhatsApp chatbot</a>
                     <a href="#">Zoho Flow</a>
-
                 </div>
             </div>
             <div class="dropdown">
                 <a href="resources.html">Resources</a>
                 <div class="dropdown-content">
                     <a href="#">Blog</a>
-                    <a href="#">chatbot Library</a>
-                    <a href="#">Urabnopaedia</a>
+                    <a href="#">Chatbot Library</a>
+                    <a href="#">Urbanopaedia</a>
                     <a href="#">Urban academy</a>
-
-
                 </div>
             </div>
         </nav>
         <div class="cta-buttons">
             <a href="bookdemo.html" class="book-demo">Book Demo</a>
-            <a href="freetrail.html" class="free-trial">Free Trial</a>
+            <a href="freetrial.html" class="free-trial">Free Trial</a>
         </div>
     </header>
     <main class="main">
@@ -428,13 +429,9 @@
     <section class="pricing">
         <h2>Our Pricing Plans</h2>
         <div class="toggle-buttons" id="toggle-buttons">
-            <button class="toggle-btn" data--duration="2s" onclick="setPricingPeriod('Monthly')"
-                style="margin: 4px 7px;">Monthly</button>
-            <button class="toggle-btn" data--duration="2.2s" onclick="setPricingPeriod('Quarterly')"
-                style="margin: 4px 7px;">Quarterly
-                <span id="save8" style="color: #e5a122;">▼8%</span></button>
-            <button class="toggle-btn" data--duration="2.4s" onclick="setPricingPeriod('Yearly')"
-                style="margin: 4px 7px;">Yearly <span id="save8" style="color: #e5a122;">▼15%</span></button>
+            <button class="toggle-btn" data--duration="2s" onclick="setPricingPeriod('Monthly')" style="margin: 4px 7px;">Monthly</button>
+            <button class="toggle-btn" data--duration="2.2s" onclick="setPricingPeriod('Quarterly')" style="margin: 4px 7px;">Quarterly <span id="save8" style="color: #e5a122;">▼8%</span></button>
+            <button class="toggle-btn" data--duration="2.4s" onclick="setPricingPeriod('Yearly')" style="margin: 4px 7px;">Yearly <span id="save8" style="color: #e5a122;">▼15%</span></button>
         </div>
         <div id="monthly-plans" class="pricing-plans" data--duration="1s">
             <div class="plan recommended">
@@ -447,11 +444,7 @@
                 <a href="#" class="btn">Get Now</a>
             </div>
             <div class="plan">
-                <h3 class="plan-title">Advanced
-                    <span class="badge"><i class="bi bi-patch-check-fill"></i></span>
-                    <br>
-                    <span style="font-size:medium">(Recommended)</span>
-                </h3>
+                <h3 class="plan-title">Advanced <span class="badge"><i class="bi bi-patch-check-fill"></i></span><br><span style="font-size:medium">(Recommended)</span></h3>
                 <p class="price">₹4,999/mo (+taxes)</p>
                 <ul class="features">
                     <li>Rs 0.72/Marketing <br> Conversation</li>
@@ -468,7 +461,6 @@
                 <a href="#" class="btn">Get Now</a>
             </div>
         </div>
-
         <div id="quarterly-plans" class="pricing-plans" data--duration="1s" style="display: none;">
             <div class="plan">
                 <h3 class="plan-title">Starter</h3>
@@ -489,10 +481,7 @@
                 <a href="#" class="btn">Get Now</a>
             </div>
             <div class="plan">
-                <h3 class="plan-title">Advanced <span class="badge"><i class="bi bi-patch-check-fill"></i></span>
-                    <br>
-                    <span style="font-size:medium">(Recommended)</span>
-                </h3>
+                <h3 class="plan-title">Advanced <span class="badge"><i class="bi bi-patch-check-fill"></i></span><br><span style="font-size:medium">(Recommended)</span></h3>
                 <p class="price">₹13,797/qtr (+taxes) Discount 8%</p>
                 <ul class="features">
                     <li>Rs 0.72/Marketing Conversation</li>
@@ -509,7 +498,6 @@
                 <a href="#" class="btn">Get Now</a>
             </div>
         </div>
-
         <div id="yearly-plans" class="pricing-plans" data--duration="1s" style="display: none;">
             <div class="plan">
                 <h3 class="plan-title">Starter</h3>
@@ -530,10 +518,7 @@
                 <a href="#" class="btn">Get Now</a>
             </div>
             <div class="plan">
-                <h3 class="plan-title">Advanced <span class="badge"><i class="bi bi-patch-check-fill"></i></span>
-                    <br>
-                    <span style="font-size:medium">(Recommended)</span>
-                </h3>
+                <h3 class="plan-title">Advanced <span class="badge"><i class="bi bi-patch-check-fill"></i></span><br><span style="font-size:medium">(Recommended)</span></h3>
                 <p class="price">₹50,989/yr (+taxes)</p>
                 <ul class="features">
                     <li>Rs 0.72/Marketing Conversation</li>
@@ -550,15 +535,13 @@
                 <a href="#" class="btn">Get Now</a>
             </div>
         </div>
-
-
         <div id="monthly-feature-comparison" class="feature-comparison">
             <div class="container">
                 <br>
                 <h3 style="font-size:large">WhatsApp</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered  " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -577,8 +560,8 @@
                             <tr>
                                 <td>WhatsApp Team Members</td>
                                 <td>5 Team Members</td>
-                                <td>Unlimited </td>
-                                <td>Unlimited </td>
+                                <td>Unlimited</td>
+                                <td>Unlimited</td>
                             </tr>
                             <tr>
                                 <td>WhatsApp Chatbot</td>
@@ -599,12 +582,11 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Campaign Scheduler </td>
+                                <td>Campaign Scheduler</td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Google Sheet Integration</td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -617,7 +599,6 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>keyword Trigger</td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -630,15 +611,12 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
-
                             <tr>
                                 <td style="font-weight: 700;color: #060606;">Website Chatbot</td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Carousel</td>
                                 <td></td>
@@ -657,7 +635,6 @@
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
@@ -665,7 +642,7 @@
                 <h3 style="font-size:large">Facebook</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -676,8 +653,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Facebook Lead Ads Automation <span style="opacity: 0;" class="span_opac">
-                                        scheduler</span></td>
+                                <td>Facebook Lead Ads Automation <span style="opacity: 0;" class="span_opac">sscheduler</span></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -694,15 +670,14 @@
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
                 <br>
-                <h3 style="font-size:large"> Instagram</h3>
+                <h3 style="font-size:large">Instagram</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -713,8 +688,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Instagram Comment Automation <span style="opacity: 0;" class="span_opac">
-                                        scheduler</span> </td>
+                                <td>Instagram Comment Automation <span style="opacity: 0;" class="span_opac">scheduler</span></td>
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -732,104 +706,76 @@
                 <h3 style="font-size:large">Miscellaneous</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
-
                                 <th>Growth</th>
                                 <th>Advanced</th>
                                 <th>Enterprise</th>
                             </tr>
                         </thead>
                         <tbody>
-
-
                             <tr>
                                 <td>Entry Point Link</td>
-
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>QR Code Generator</td>
-
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>Appointment Scheduling</td>
-
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Questionnaires</td>
-
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Payment Gateway Integration <span style="opacity: 0;" class="span_opac">
-                                        sch8eduyyler</span></td>
-
+                                <td>Payment Gateway Integration <span style="opacity: 0;" class="span_opac">sch8eduyyler</span></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>E-commerce</td>
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>Places Near Me</td>
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
-
-
-
-
                             <tr>
                                 <td>Affiliate Programs</td>
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
         <div id="quarterly-feature-comparison" class="feature-comparison" style="display:none;">
             <div class="container">
                 <br>
                 <h3 style="font-size:large">WhatsApp</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -876,7 +822,7 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Campaign Scheduler </td>
+                                <td>Campaign Scheduler</td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -903,7 +849,6 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Keyword Trigger</td>
                                 <td></td>
@@ -932,7 +877,6 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Integration of OpenAI/Gemini</td>
                                 <td></td>
@@ -940,10 +884,6 @@
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
-
-
-
                         </tbody>
                     </table>
                 </div>
@@ -951,11 +891,10 @@
                 <h3 style="font-size:large">Facebook</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
-
                                 <th>Growth</th>
                                 <th>Advanced</th>
                                 <th>Enterprise</th>
@@ -964,23 +903,18 @@
                         <tbody>
                             <tr>
                                 <td>Facebook Comment Automation</td>
-
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Facebook Lead Ads Automation <span style="opacity: 0;" class="span_opac">
-                                        sscheduler</span></td>
-
+                                <td>Facebook Lead Ads Automation <span style="opacity: 0;" class="span_opac">sscheduler</span></td>
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Facebook Messenger Automation</td>
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -989,14 +923,13 @@
                     </table>
                 </div>
                 <br>
-                <h3 style="font-size:large"> Instagram</h3>
+                <h3 style="font-size:large">Instagram</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
-
                                 <th>Growth</th>
                                 <th>Advanced</th>
                                 <th>Enterprise</th>
@@ -1005,20 +938,16 @@
                         <tbody>
                             <tr>
                                 <td>Instagram Story Automation</td>
-
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Instagram Comment Automation <span style="opacity: 0;" class="span_opac">
-                                        scheduler</span> </td>
-
+                                <td>Instagram Comment Automation <span style="opacity: 0;" class="span_opac">scheduler</span></td>
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
@@ -1026,85 +955,60 @@
                 <h3 style="font-size:large">Miscellaneous</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
-
                                 <th>Growth</th>
                                 <th>Advanced</th>
                                 <th>Enterprise</th>
                             </tr>
                         </thead>
                         <tbody>
-
                             <tr>
                                 <td>Places Near Me</td>
-
-
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>Entry Point Link</td>
-
-
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Payment Gateway Integration <span style="opacity: 0;" class="span_opac">
-                                        sch8eduyyler</span></td>
-
-
+                                <td>Payment Gateway Integration <span style="opacity: 0;" class="span_opac">sch8eduyyler</span></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>QR Code Generator</td>
-
-
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>Affiliate Programs</td>
-
-
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
-
-
                             <tr>
                                 <td>Questionnaires</td>
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>E-commerce</td>
-
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
-
-
-
                             <tr>
                                 <td>Appointment Scheduling</td>
-
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -1114,21 +1018,13 @@
                 </div>
             </div>
         </div>
-
-        <br>
-
-
         <div id="yearly-feature-comparison" class="feature-comparison" style="display:none;">
-
-
             <div class="container">
-
                 <br>
                 <h3 style="font-size:large">WhatsApp</h3>
-
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1175,7 +1071,7 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Campaign Scheduler </td>
+                                <td>Campaign Scheduler</td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -1202,7 +1098,6 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Keyword Trigger</td>
                                 <td></td>
@@ -1231,7 +1126,6 @@
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Integration of OpenAI/Gemini</td>
                                 <td></td>
@@ -1239,23 +1133,17 @@
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
-
-
-
                         </tbody>
                     </table>
                 </div>
                 <br>
                 <h3 style="font-size:large">Facebook</h3>
-
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
-
                                 <th>Growth</th>
                                 <th>Advanced</th>
                                 <th>Enterprise</th>
@@ -1264,23 +1152,18 @@
                         <tbody>
                             <tr>
                                 <td>Facebook Comment Automation</td>
-
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Facebook Lead Ads Automation <span style="opacity: 0;" class="span_opac">
-                                        sscheduler</span></td>
-
+                                <td>Facebook Lead Ads Automation <span style="opacity: 0;" class="span_opac">sscheduler</span></td>
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Facebook Messenger Automation</td>
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -1289,33 +1172,27 @@
                     </table>
                 </div>
                 <br>
-                <h3 style="font-size:large"> Instagram</h3>
-
+                <h3 style="font-size:large">Instagram</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
-
                                 <th>Growth</th>
                                 <th>Advanced</th>
                                 <th>Enterprise</th>
                             </tr>
                         </thead>
                         <tbody>
-
                             <tr>
                                 <td>Instagram Story Automation</td>
-
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Instagram Comment Automation <span style="opacity: 0;" class="span_opac">
-                                        scheduler</span> </td>
-
+                                <td>Instagram Comment Automation <span style="opacity: 0;" class="span_opac">scheduler</span></td>
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -1326,87 +1203,61 @@
                 <br>
                 <h3 style="font-size:large">Miscellaneous</h3>
                 <br>
-
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered   " data--duration="2s">
+                    <table class="table table-striped table-bordered" data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
-
                                 <th>Growth</th>
                                 <th>Advanced</th>
                                 <th>Enterprise</th>
                             </tr>
                         </thead>
                         <tbody>
-
                             <tr>
                                 <td>Places Near Me</td>
-
-
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>Entry Point Link</td>
-
-
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
-                                <td>Payment Gateway Integration <span style="opacity: 0;" class="span_opac">
-                                        sch8eduyyler</span></td>
-
-
+                                <td>Payment Gateway Integration <span style="opacity: 0;" class="span_opac">sch8eduyyler</span></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>QR Code Generator</td>
-
-
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
-
-
-
-
                             <tr>
                                 <td>Affiliate Programs</td>
-
-
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
-
                             <tr>
                                 <td>Questionnaires</td>
-
-
-                                <td></td>
-                                <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                            </tr>
-                            <tr>
-                                <td>Appointment Scheduling</td>
-
-
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
                             </tr>
                             <tr>
                                 <td>E-commerce</td>
-
-
+                                <td></td>
+                                <td></td>
+                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                            </tr>
+                            <tr>
+                                <td>Appointment Scheduling</td>
                                 <td></td>
                                 <td></td>
                                 <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
@@ -1416,14 +1267,7 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
     </section>
-
     <footer class="footer">
         <div class="footer-links">
             <div>
@@ -1442,7 +1286,6 @@
                 <a href="#">Support Teams</a>
                 <a href="#">Marketing Teams</a>
                 <a href="#">Marketing Agencies</a>
-
             </div>
             <div>
                 <h4>Integrations</h4>
@@ -1472,7 +1315,6 @@
                 <a href="#">Contact Us</a>
                 <a href="#">Book a Demo</a>
                 <a href="#">Product Overview</a>
-
             </div>
         </div>
         <div class="footer-awards">
@@ -1482,8 +1324,7 @@
             <img src="images/award4.png" alt="Award 4">
         </div>
         <div class="footer-bottom">
-            <p>© 2024 Urbanchat. All Rights Reserved. | <a href="#">Terms & Conditions</a> | <a
-                    href="#">Privacy Policy</a></p>
+            <p>© 2024 Urbanchat. All Rights Reserved. | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
             <div class="footer-social">
                 <a href="#"><i class="bi bi-facebook"></i></a>
                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -1493,9 +1334,14 @@
             </div>
         </div>
     </footer>
-
-
-
+    <div class="whatsapp-chat-widget">
+        <div class="chat-container">
+            <a href="https://wa.me/YOUR_PHONE_NUMBER" class="chat-with-us" target="_blank">
+                <img src="whatsapp-icon.png" alt="">
+                Chat With Us
+            </a>
+        </div>
+    </div>
     <script>
         function setPricingPeriod(period) {
             var allPlans = document.querySelectorAll('.pricing-plans');
