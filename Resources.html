@@ -188,40 +188,88 @@
             padding: 40px 20px;
             background-color: #212121;
             color: #ffffff;
-            text-align: center;
-        }
-        .footer p {
-            font-size: 1em;
-            color: #ffffff;
-        }
-        .footer .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        .footer .footer-links div {
             text-align: left;
         }
+
+        .footer h4 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .footer .footer-links {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-links div {
+            flex: 1;
+            min-width: 150px;
+        }
+
         .footer .footer-links a {
             color: #ffffff;
             text-decoration: none;
             display: block;
             margin-bottom: 10px;
         }
-        .footer .footer-logos img {
+
+        .footer .footer-awards {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-awards img {
             height: 40px;
-            margin: 0 10px;
+        }
+
+        .footer .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer .footer-bottom p {
+            margin: 0;
+        }
+
+        .footer .footer-bottom a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer .footer-social a {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer .footer-social a:hover {
+            color: #4caf50;
         }
         @media (max-width: 768px) {
-            .header, .nav, .cta-buttons, .blogs, .categories, .footer .footer-links {
+            .header, .nav, .cta-buttons, .blogs, .categories {
                 flex-direction: column;
                 align-items: center;
             }
-            .nav, .cta-buttons, .blogs img, .categories, .footer .footer-links {
+            .nav, .cta-buttons, .blogs img, .categories {
                 gap: 10px;
             }
+
+            .footer .footer-links,
+            .footer .footer-bottom {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
         }
     </style>
 </head>
@@ -340,40 +388,70 @@
         <div class="footer-links">
             <div>
                 <h4>Top Features</h4>
-                <a href="#">Click to WhatsApp Ads</a>
                 <a href="#">Chatbots</a>
-                <a href="#">Customer Data Management</a>
                 <a href="#">Multi-Agent Support</a>
+                <a href="#">Custom Notifications</a>
+                <a href="#">Click to WhatsApp Ads</a>
+                <a href="#">Customer Data Management</a>
+            </div>
+            <div>
+                <h4>Solutions</h4>
+                <a href="#">Education</a>
+                <a href="#">Healthcare</a>
+                <a href="#">Sales Teams</a>
+                <a href="#">Support Teams</a>
+                <a href="#">Marketing Teams</a>
+                <a href="#">Marketing Agencies</a>
+
             </div>
             <div>
                 <h4>Integrations</h4>
-                <a href="#">Pabbly Connect</a>
                 <a href="#">Zapier</a>
-                <a href="#">Integromat</a>
                 <a href="#">HubSpot</a>
+                <a href="#">Integromat</a>
+                <a href="#">Pabbly Connect</a>
             </div>
             <div>
                 <h4>Resources</h4>
                 <a href="#">Blog</a>
+                <a href="#">Help Center</a>
+                <a href="#">Customer Stories</a>
+                <a href="#">WhatsApp Templates</a>
                 <a href="#">WhatsApp for Business</a>
-                <a href="#">Pricing</a>
-                <a href="#">Case Studies</a>
+            </div>
+            <div>
+                <h4>Free WhatsApp Tools</h4>
+                <a href="#">WhatsApp QR Code Generator</a>
+                <a href="#">WhatsApp Chat Link Generator</a>
+                <a href="#">WhatsApp Chat Button Generator</a>
             </div>
             <div>
                 <h4>Urbanchat</h4>
-                <a href="#">About</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
+                <a href="#">Pricing</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Book a Demo</a>
+                <a href="#">Product Overview</a>
+
             </div>
         </div>
-        <div class="footer-logos">
+        <div class="footer-awards">
             <img src="images/award1.png" alt="Award 1">
             <img src="images/award2.png" alt="Award 2">
             <img src="images/award3.png" alt="Award 3">
             <img src="images/award4.png" alt="Award 4">
         </div>
-        <p>© 2024 Urbanchat. All Rights Reserved.</p>
+        <div class="footer-bottom">
+            <p>© 2024 Urbanchat. All Rights Reserved. | <a href="#">Terms & Conditions</a> | <a
+                    href="#">Privacy Policy</a></p>
+            <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
