@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solutions - Urbanchat</title>
 
-      <!-- icon -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
-      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
@@ -17,6 +18,7 @@
             background-color: #ffffff;
             color: #333;
         }
+
         .header {
             display: flex;
             justify-content: center;
@@ -26,7 +28,7 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        
+
 
         .header {
             display: flex;
@@ -127,31 +129,37 @@
         .cta-buttons .free-trial:hover {
             background-color: #388e3c;
         }
+
         .main {
             text-align: center;
             padding: 40px 20px;
             background: #ffffff;
         }
+
         .main h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
             color: #333;
         }
+
         .main p {
             font-size: 1.2em;
             color: #666;
             margin-bottom: 20px;
         }
+
         .solutions {
             padding: 40px 20px;
             text-align: center;
             background-color: #e0f7fa;
         }
+
         .solutions h2 {
             font-size: 2em;
             color: #333;
             margin-bottom: 30px;
         }
+
         .solutions-overview {
             display: flex;
             justify-content: center;
@@ -159,60 +167,93 @@
             flex-wrap: wrap;
             margin-bottom: 40px;
         }
+
         .solution-box {
             background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             max-width: 280px;
             text-align: center;
         }
+
         .solution-box img {
             width: 80px;
             height: 80px;
             margin-bottom: 20px;
         }
+
         .solution-box h3 {
             font-size: 1.5em;
             color: #333;
             margin-bottom: 10px;
         }
+
         .solution-box p {
             font-size: 1em;
             color: #666;
             margin-bottom: 20px;
         }
+
         .solution-details {
             padding: 40px 20px;
             background-color: #ffffff;
         }
+
+
+
+        .solution-details {
+            padding: 10px 350px;
+            background-color: #ffffff;
+        }
+
         .solution-detail {
             display: flex;
             align-items: center;
             gap: 20px;
             margin-bottom: 40px;
         }
+
         .solution-detail img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            border-radius: 20%;
         }
+
         .solution-detail div {
             max-width: 600px;
         }
+
         .solution-detail h3 {
             font-size: 2em;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
+
         .solution-detail p {
             font-size: 1.2em;
             color: #666;
             margin-bottom: 20px;
         }
+
+        .solution-detail ul {
+            list-style-type: disc;
+            padding-left: 50px;
+            margin-bottom: 100px;
+        }
+
+        .solution-detail ul li {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
         .solution-detail:nth-child(even) {
             flex-direction: row-reverse;
         }
+
+
+
         .footer {
             padding: 40px 20px;
             background-color: #212121;
@@ -314,49 +355,58 @@
         .footer .footer-social a:hover {
             color: #4caf50;
         }
+
         .testimonial-section {
             padding: 40px 20px;
             background-color: #fff9c4;
             text-align: center;
         }
+
         .testimonial-section h2 {
             font-size: 2em;
             color: #333;
             margin-bottom: 30px;
         }
+
         .testimonial-cards {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
+
         .testimonial-card {
             background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             max-width: 280px;
             text-align: left;
         }
+
         .testimonial-card p {
             font-size: 0.9em;
             color: #666;
         }
+
         .testimonial-card h4 {
             font-size: 1.2em;
             color: #333;
             margin-top: 10px;
         }
+
         .footer-cta {
             text-align: center;
             padding: 40px 20px;
             background-color: #4caf50;
             color: white;
         }
+
         .footer-cta p {
             font-size: 1.2em;
             margin-bottom: 20px;
         }
+
         .footer-cta a {
             text-decoration: none;
             background-color: white;
@@ -366,18 +416,31 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
+
         .footer-cta a:hover {
             background-color: #388e3c;
             color: white;
         }
+
         @media (max-width: 768px) {
-            .header, .nav, .cta-buttons, .solutions-overview, .solution-detail, .testimonial-cards {
+
+            .header,
+            .nav,
+            .cta-buttons,
+            .solutions-overview,
+            .solution-detail,
+            .testimonial-cards {
                 flex-direction: column;
                 align-items: center;
             }
-            .nav, .cta-buttons, .solutions-overview img, .testimonial-cards {
+
+            .nav,
+            .cta-buttons,
+            .solutions-overview img,
+            .testimonial-cards {
                 gap: 10px;
             }
+
             .solution-detail:nth-child(even) {
                 flex-direction: column;
             }
@@ -416,9 +479,9 @@
             text-decoration: none;
             font-weight: bold;
         }
-
     </style>
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
@@ -507,27 +570,41 @@
     </section>
     <section class="solution-details">
         <div class="solution-detail">
-            <img src="images/solution1.webp" alt="Solution 1">
             <div>
                 <h3>Smarter Lead Management</h3>
-                <p>Combine leads with CRM for improved lead management and ensure no lead is missed.</p>
+                <p>Centralize leads in CRM, broadcast, & manage responses.</p>
+                <ul>
+                    <li>Drive acquisition with customer specific messages and promotions.</li>
+                    <li>Auto-update contact responses and interactions into your integrated CRM system.</li>
+                </ul>
             </div>
+            <img src="images/solution1.webp" alt="Solution 1">
         </div>
         <div class="solution-detail">
-            <img src="images/solution2.webp" alt="Solution 2">
             <div>
                 <h3>Close More Sales</h3>
-                <p>Provide efficient and timely responses to potential students, leading to higher conversion rates.</p>
+                <p>Market effectively and respond quickly to sales inquiries.</p>
+                <ul>
+                    <li>Market classes using rich media sources, like video and social platforms.</li>
+                    <li>Rapidly respond to important enquiries that help close sales, such as class dates, promotions
+                        and payments.</li>
+                </ul>
             </div>
+            <img src="images/solution2.webp" alt="Solution 2">
         </div>
         <div class="solution-detail">
-            <img src="images/solution3.webp" alt="Solution 3">
             <div>
                 <h3>Better Learning Outcomes</h3>
-                <p>Enhance communication between teachers and students for better learning experiences and outcomes.</p>
+                <p>Support high education standards with effective communication.</p>
+                <ul>
+                    <li>Support parents and students all the way from admission through to exam results.</li>
+                    <li>Organize your teams to provide parents with sales, support and service, 24/7.</li>
+                </ul>
             </div>
+            <img src="images/solution3.webp" alt="Solution 3">
         </div>
     </section>
+
     <section class="testimonial-section">
         <h2>Over 8,000 customers</h2>
         <div class="testimonial-cards">
@@ -542,15 +619,17 @@
         </div>
     </section>
     <section class="footer-cta">
-        <p>Discover more. WhatsApp, Facebook, and Instagram share of social media messaging is unrivaled. Harness it with one of the fastest growing WhatsApp Business Solution Providers.</p>
+        <p>Discover more. WhatsApp, Facebook, and Instagram share of social media messaging is unrivaled. Harness it
+            with one of the fastest growing WhatsApp Business Solution Providers.</p>
         <a href="#">Free 7 Day Trial</a>
     </section>
 
     <div class="whatsapp-chat-widget">
         <div class="chat-container">
             <a href="https://wa.me/8943041309" class="chat-with-us" target="_blank">
-                <img src="images/Default_create_a_circular_whatsapp_bot_head_icon_featuring_a_s_0_07dd10d9-eebd-4d17-b98f-47146b936a7c_0.png" alt="">
-                
+                <img src="images/Default_create_a_circular_whatsapp_bot_head_icon_featuring_a_s_0_07dd10d9-eebd-4d17-b98f-47146b936a7c_0.png"
+                    alt="">
+
             </a>
         </div>
     </div>
@@ -613,8 +692,8 @@
             <img src="images/award4.png" alt="Award 4">
         </div>
         <div class="footer-bottom">
-            <p>© 2024 Urbanchat. All Rights Reserved. | <a href="#">Terms & Conditions</a> | <a
-                    href="#">Privacy Policy</a></p>
+            <p>© 2024 Urbanchat. All Rights Reserved. | <a href="#">Terms & Conditions</a> | <a href="#">Privacy
+                    Policy</a></p>
             <div class="footer-social">
                 <a href="#"><i class="bi bi-facebook"></i></a>
                 <a href="#"><i class="bi bi-twitter"></i></a>
@@ -625,4 +704,5 @@
         </div>
     </footer>
 </body>
+
 </html>
