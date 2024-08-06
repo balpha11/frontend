@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .features-header {
+            text-align: center;
+            padding: 20px;
+        }
+        .feature {
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .feature img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .feature div {
+            max-width: 60%;
+        }
+        .feature h2 {
+            color: #00796b;
+        }
+        .feature p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #00c853;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background-color: #009624;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cta a {
+            background-color: #00e676;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        .cta a:hover {
+            background-color: #00c853;
+        }
+        .broadcast-feature .btn {
+            background-color: #00bfa5;
+        }
+        .broadcast-feature .btn:hover {
+            background-color: #008e76;
+        }
+        .chatbots-feature .btn {
+            background-color: #6200ea;
+        }
+        .chatbots-feature .btn:hover {
+            background-color: #3700b3;
+        }
+        .inbox-feature .btn {
+            background-color: #ff6f00;
+        }
+        .inbox-feature .btn:hover {
+            background-color: #e65100;
+        }
+        .feature:nth-child(odd) {
+            flex-direction: row;
+        }
+        .feature:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="features-header">
+            <h1>Features</h1>
+        </div>
+
+        <div class="feature broadcast-feature">
+            <img src="broadcast.png" alt="Broadcast">
+            <div>
+                <h2>Broadcast</h2>
+                <p>Push out your campaigns and engage with high response WhatsApp messages.</p>
+                <p>Tag contacts, categorize and target them in groups using personalized communications.</p>
+                <p>Build and nurture the relationships that generate future sales by engaging with your audiences regularly on WhatsApp.</p>
+                <a href="#" class="btn">Broadcast Overview</a>
+            </div>
+        </div>
+
+        <div class="feature chatbots-feature">
+            <img src="chatbots.png" alt="Chatbots">
+            <div>
+                <h2>Chatbots</h2>
+                <p>Create no-code chatbots to provide instant responses to common requests.</p>
+                <p>Simplify mass communication and personalized responses with automated tools.</p>
+                <p>Boost sales by directly converting more customer communications on WhatsApp.</p>
+                <a href="#" class="btn">Chatbots Overview</a>
+            </div>
+        </div>
+
+        <div class="feature inbox-feature">
+            <img src="inbox.png" alt="Shared Team Inbox">
+            <div>
+                <h2>Shared Team Inbox</h2>
+                <p>Share the WAfi inbox across your team and provide stellar support on WhatsApp.</p>
+                <p>Use pre-built integrations to bring in customer context in a few clicks.</p>
+                <p>Push post sales communications such as order updates, and resolve support requests quickly through WhatsApp.</p>
+                <a href="#" class="btn">Team Inbox Overview</a>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="#">Free 7 Day Trial</a> or <a href="#">Book a Demo Today</a>
+        </div>
+    </div>
+</body>
+</html>

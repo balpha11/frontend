@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrations - Urbanchat</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s, border-bottom 0.3s;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav a:hover {
+            color: #4caf50;
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .nav img{
+            width: 90px;
+            height: 80px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .cta-buttons .book-demo,
+        .cta-buttons .free-trial {
+            margin-left: 10px;
+            padding: 8px 16px;
+            border: 1px solid #4caf50;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #4caf50;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-buttons .free-trial {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .cta-buttons .book-demo:hover {
+            background-color: #e8f0fc;
+        }
+
+        .cta-buttons .free-trial:hover {
+            background-color: #388e3c;
+        }
+        .main {
+            text-align: center;
+            padding: 40px 20px;
+            background: #ffffff;
+        }
+        .main h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .main p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .integrations {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #e0f7fa;
+        }
+        .integrations h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .integrations-overview {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .integration-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 280px;
+            text-align: center;
+        }
+        .integration-box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        .integration-box h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .integration-box p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .ratings {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff9c4;
+        }
+        .ratings p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .ratings .stars {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        .ratings .stars img {
+            width: 30px;
+        }
+        .video-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #e0f7fa;
+        }
+        .video-section p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            padding: 40px 20px;
+            background-color: #e0f7fa;
+        }
+        .faq-section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .faq {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .faq p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .footer-cta {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #4caf50;
+            color: white;
+        }
+        .footer-cta p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .footer-cta a {
+            text-decoration: none;
+            background-color: white;
+            color: #4caf50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .footer-cta a:hover {
+            background-color: #388e3c;
+            color: white;
+        }
+        .footer {
+            padding: 40px 20px;
+            background-color: #212121;
+            color: #ffffff;
+            text-align: center;
+        }
+        .footer p {
+            font-size: 1em;
+            color: #ffffff;
+        }
+        .footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .footer .footer-links div {
+            text-align: left;
+        }
+        .footer .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .footer .footer-logos img {
+            height: 40px;
+            margin: 0 10px;
+        }
+        @media (max-width: 768px) {
+            .header, .nav, .cta-buttons, .integrations-overview, .faq {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav, .cta-buttons, .integrations-overview img, .footer .footer-links {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <header class="header">
+        
+        <nav class="nav">
+            <a href="index.html">
+                <img src="images/logo.png" alt="urban chat logo">
+            </a>
+            <a href="pricing.html">Pricing</a>
+            <a href="features.html">Features</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="integrations.html">Integrations</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+        <div class="cta-buttons">
+            <a href="bookdemo.html" class="book-demo">Book Demo</a>
+            <a href="freetrail.html" class="free-trial">Free Trial</a>
+        </div>
+    </header>
+    <main class="main">
+        <h1>Great CRM is at the center of great marketing</h1>
+        <p>Hold two-way conversations on WhatsApp directly from Zoho CRM</p>
+        <a href="#" class="trial-button">Book Demo</a>
+    </main>
+    <section class="integrations">
+        <h2>How We Help</h2>
+        <div class="integrations-overview">
+            <div class="integration-box" style="background-color: #e3f2fd;">
+                <h3>Send Messages from Zoho</h3>
+                <p>Seamlessly integrate Zoho CRM with WhatsApp for efficient communication.</p>
+            </div>
+            <div class="integration-box" style="background-color: #e0f7fa;">
+                <h3>Sync Data</h3>
+                <p>Keep your customer data synchronized between Zoho CRM and WhatsApp.</p>
+            </div>
+            <div class="integration-box" style="background-color: #e3f2fd;">
+                <h3>Support Decisions</h3>
+                <p>Make informed decisions with integrated data analytics from both platforms.</p>
+            </div>
+            <div class="integration-box" style="background-color: #e0f7fa;">
+                <h3>Shared Team Inbox</h3>
+                <p>Manage customer interactions with a shared team inbox for better collaboration.</p>
+            </div>
+        </div>
+    </section>
+    <section class="ratings">
+        <p>Rated 4.8 stars based on 170+ reviews</p>
+        <div class="stars">
+            <img src="images/star.png" alt="Star 1">
+            <img src="images/star.png" alt="Star 2">
+            <img src="images/star.png" alt="Star 3">
+            <img src="images/star.png" alt="Star 4">
+            <img src="images/star.png" alt="Star 5">
+        </div>
+    </section>
+    <section class="video-section">
+        <p>See Urbanchat Zoho integration in action</p>
+        <video controls width="600">
+            <source src="video/integration-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3>Can I send WhatsApp messages directly from Zoho CRM using Urbanchat?</h3>
+            <p>Yes, with Urbanchat's integration, you can seamlessly send WhatsApp messages directly from Zoho CRM.</p>
+            <h3>How does Urbanchat's Zoho integration benefit my CRM strategy?</h3>
+            <p>Urbanchat's integration with Zoho CRM allows you to synchronize customer data, manage interactions efficiently, and make informed decisions with integrated analytics.</p>
+            <h3>Is the integration with Zoho CRM difficult to set up?</h3>
+            <p>No, Urbanchat's Zoho CRM integration is designed to be user-friendly and easy to set up with step-by-step instructions.</p>
+            <h3>How secure is the data transmission between Zoho CRM and WhatsApp using the integration?</h3>
+            <p>Data transmission between Zoho CRM and WhatsApp using Urbanchat's integration is secure and encrypted, ensuring your customer information is protected.</p>
+            <h3>Can I manage team collaboration with Zoho CRM-WhatsApp integration?</h3>
+            <p>Yes, the shared team inbox feature allows for better collaboration and management of customer interactions within your team.</p>
+        </div>
+    </section>
+    <section class="footer-cta">
+        <p>Discover more. WhatsApp, Facebook, and Instagram share of social media messaging is unrivaled. Harness it with one of the fastest growing WhatsApp Business Solution Providers.</p>
+        <a href="#">Free 7 Day Trial</a>
+    </section>
+    <footer class="footer">
+        <div class="footer-links">
+            <div>
+                <h4>Top Features</h4>
+                <a href="#">Click to WhatsApp Ads</a>
+                <a href="#">Chatbots</a>
+                <a href="#">Customer Data Management</a>
+                <a href="#">Multi-Agent Support</a>
+            </div>
+            <div>
+                <h4>Integrations</h4>
+                <a href="#">Pabbly Connect</a>
+                <a href="#">Zapier</a>
+                <a href="#">Integromat</a>
+                <a href="#">HubSpot</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="#">Blog</a>
+                <a href="#">WhatsApp for Business</a>
+                <a href="#">Pricing</a>
+                <a href="#">Case Studies</a>
+            </div>
+            <div>
+                <h4>Urbanchat</h4>
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="footer-logos">
+            <img src="images/award1.png" alt="Award 1">
+            <img src="images/award2.png" alt="Award 2">
+            <img src="images/award3.png" alt="Award 3">
+            <img src="images/award4.png" alt="Award 4">
+        </div>
+        <p>© 2024 Urbanchat. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

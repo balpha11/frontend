@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Urbanchat for UrbanChat</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 50;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s, border-bottom 0.3s;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav a:hover {
+            color: #4caf50;
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .nav img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .cta-buttons .book-demo,
+        .cta-buttons .free-trial {
+            margin-left: 10px;
+            padding: 8px 16px;
+            border: 1px solid #4caf50;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #4caf50;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-buttons .free-trial {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .cta-buttons .book-demo:hover {
+            background-color: #e8f0fc;
+        }
+
+        .cta-buttons .free-trial:hover {
+            background-color: #388e3c;
+        }
+
+        .demo-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #4caf50;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .demo-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #4caf50;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .demo-link:hover {
+            color: #388e3c;
+        }
+
+        .demo-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .main {
+            padding: 40px 20px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .text-content h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .whatsapp-text {
+            color: #4caf50;
+        }
+
+
+        .text-content p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+
+        .note {
+            color: #666;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .note i {
+            color: #4caf50;
+            font-size: 1.1em;
+        }
+
+
+        .trial-button {
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .trial-button:hover {
+            background-color: #388e3c;
+        }
+
+        .note {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .trusted-brands {
+            padding: 40px 20px;
+            background-color: #fce4ec;
+            text-align: center;
+        }
+
+        .trusted-brands p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .trusted-brands .brands {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .trusted-brands .brands img {
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .trusted-brands .brands img:hover {
+            transform: scale(1.1);
+        }
+
+        .real-stories {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .real-stories h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .real-stories .stories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .real-stories .story {
+            background-color: #fafafa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 280px;
+            text-align: left;
+        }
+
+        .real-stories .story img {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .real-stories .story p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .container {
+            width: 30%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .features-header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature {
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .feature img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .feature div {
+            max-width: 60%;
+        }
+
+        .feature h2 {
+            color: #00796b;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #00c853;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #009624;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta a {
+            background-color: #00e676;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .cta a:hover {
+            background-color: #00c853;
+        }
+
+        .broadcast-feature .btn {
+            background-color: #00bfa5;
+        }
+
+        .broadcast-feature .btn:hover {
+            background-color: #008e76;
+        }
+
+        .chatbots-feature .btn {
+            background-color: #6200ea;
+        }
+
+        .chatbots-feature .btn:hover {
+            background-color: #3700b3;
+        }
+
+        .inbox-feature .btn {
+            background-color: #ff6f00;
+        }
+
+        .inbox-feature .btn:hover {
+            background-color: #e65100;
+        }
+
+        .feature:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .feature:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .customers {
+            padding: 40px 20px;
+            background-color: #fff9c4;
+            text-align: center;
+        }
+
+        .customers h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .customers .customer-reviews {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .customers .review-box {
+            background-color: #fafafa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 280px;
+            text-align: left;
+        }
+
+        .customers .review-box p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .integrations {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .integrations p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .integrations .integration-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .integrations .integration-logos img {
+            height: 40px;
+        }
+
+        .advantage {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .advantage h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .advantage .advantages {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .advantage .advantage-box {
+            background-color: #fafafa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 280px;
+            text-align: left;
+        }
+
+        .advantage .advantage-box img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .advantage .advantage-box p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .advantage .advantage-box a {
+            text-decoration: none;
+            display: block;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .advantage .advantage-box a:hover {
+            background-color: #388e3c;
+        }
+
+        .footer-cta {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .footer-cta p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            padding: 40px 20px;
+            background-color: #212121;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1em;
+            color: #ffffff;
+        }
+
+        .footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-links div {
+            text-align: left;
+        }
+
+        .footer .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer .footer-logos img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+
+            .header,
+            .nav,
+            .cta-buttons,
+            .main,
+            .trusted-brands .brands,
+            .real-stories .stories,
+            .features .feature,
+            .customers .customer-reviews,
+            .integrations .integration-logos,
+            .advantage .advantages {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav,
+            .cta-buttons,
+            .trusted-brands .brands img,
+            .integrations .integration-logos img {
+                gap: 10px;
+            }
+
+            .main {
+                padding: 20px;
+            }
+
+            .features .feature-box {
+                flex-direction: column !important;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="nav">
+            <a href="index.html">
+                <img src="images/logo.png" alt="urban chat logo">
+            </a>
+            <a href="pricing.html">Pricing</a>
+            <a href="features.html">Features</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="integrations.html">Integrations</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+        <div class="cta-buttons">
+            <a href="bookdemo.html" class="book-demo">Book Demo</a>
+            <a href="freetrail.html" class="free-trial">Free Trial</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="text-content">
+            <h1>Grow your business on <span class="whatsapp-text">WhatsApp</span></h1>
+            <p>Personalize communication and sell more with the <span class="whatsapp-text">WhatsApp</span></h1>
+                Business API platform that automates marketing,
+                sales, service, and support.</p>
+            <p class="note"><i class="fas fa-credit-card"></i> No credit card required</p>
+            <a href="bookdemo.html" class="demo-link">or Book a Demo Today</a>
+        </div>
+        <div class="image-content">
+            <img src="images/hero-image.html" alt="Mockup Image">
+        </div>
+    </main>
+
+    <section class="trusted-brands">
+        <p>Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
+            developing economies</p>
+        <div class="brands">
+            <img src="images/logo/1to1hometutor.png" alt="Brand 1">
+            <img src="images/logo/aakri-logo.png" alt="Brand 2">
+            <img src="images/logo/Aashmibiz.png" alt="Brand 3">
+            <img src="images/logo/aqua-pro.png" alt="Brand 4">
+            <img src="images/logo/Family Plastic.png" alt="Brand 5">
+            <img src="images/logo/Genex.png" alt="Brand 6">
+            <img src="images/logo/God's own villa.png" alt="Brand 6">
+            <img src="images/logo/ivs.png" alt="Brand 6">
+            <img src="images/logo/Kerala Days.png" alt="Brand 6">
+            <img src="images/logo/Macare.png" alt="Brand 6">
+            <img src="images/logo/Merzecool.png" alt="Brand 6">
+            <img src="images/logo/Reuseful.png" alt="Brand 6">
+
+
+        </div>
+    </section>
+    <section class="real-stories">
+        <h2>Real Results. Real Stories!</h2>
+        <div class="stories">
+            <div class="story">
+                <img src="images/logo1 (10).png" alt="Story 1">
+                <p>From 200 to 6,000+ customers within a year.</p>
+                <p><strong>GENEX</strong> is a leading edtech platform that grew exponentially.</p>
+            </div>
+            <div class="story">
+                <img src="images/logo1 (2).png" alt="Story 2">
+                <p>Increased sales by 150% within 3 months.</p>
+                <p><strong>AAKRI</strong> used our platform to boost their market reach.</p>
+            </div>
+            <div class="story">
+                <img src="images/logo1 (8).png" alt="Story 3">
+                <p>Saved 10 hours a week on customer support.</p>
+                <p><strong>FAMILY PLASTICS</strong> optimized their operations efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container">
+        <div class="features-header">
+            <h1>Features</h1>
+        </div>
+
+        <div class="feature broadcast-feature">
+            <img src="images/Botfloow.webp" alt="Broadcast">
+            <div>
+                <h2>Broadcast</h2>
+                <p>Push out your campaigns and engage with high response WhatsApp messages.</p>
+                <p>Tag contacts, categorize and target them in groups using personalized communications.</p>
+                <p>Build and nurture the relationships that generate future sales by engaging with your audiences
+                    regularly on WhatsApp.</p>
+                <a href="#" class="btn">Broadcast Overview</a>
+            </div>
+        </div>
+
+        <div class="feature chatbots-feature">
+            <img src="images/Broadcasst.webp" alt="Chatbots">
+            <div>
+                <h2>Chatbots</h2>
+                <p>Create no-code chatbots to provide instant responses to common requests.</p>
+                <p>Simplify mass communication and personalized responses with automated tools.</p>
+                <p>Boost sales by directly converting more customer communications on WhatsApp.</p>
+                <a href="#" class="btn">Chatbots Overview</a>
+            </div>
+        </div>
+
+        <div class="feature inbox-feature">
+            <img src="images/Team-Inbox-.webp" alt="Shared Team Inbox">
+            <div>
+                <h2>Shared Team Inbox</h2>
+                <p>Share the WAfi inbox across your team and provide stellar support on WhatsApp.</p>
+                <p>Use pre-built integrations to bring in customer context in a few clicks.</p>
+                <p>Push post sales communications such as order updates, and resolve support requests quickly through
+                    WhatsApp.</p>
+                <a href="#" class="btn">Team Inbox Overview</a>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="#">Free 7 Day Trial</a> or <a href="#">Book a Demo Today</a>
+        </div>
+    </div>
+
+
+
+    <section class="customers">
+        <h2>Over 8,000 customers</h2>
+        <div class="customer-reviews">
+            <div class="review-box">
+                <p>"Highly customizable and easy to use!"</p>
+                <p><strong>Happy Customer</strong></p>
+            </div>
+            <div class="review-box">
+                <p>"Great product for scaling our customer support."</p>
+                <p><strong>Satisfied Client</strong></p>
+            </div>
+        </div>
+    </section>
+    <section class="integrations">
+        <p>Integrations. Native integration helps you connect your favorite cloud apps in your tech stack.</p>
+        <div class="integration-logos">
+            <img src="images/integration logo/" alt="Shopify">
+            <img src="images/integration logo/" alt="Google Sheets">
+            <img src="images/integration logo/" alt="HubSpot">
+            <img src="images/integration logo/" alt="Zapier">
+            <img src="images/integration logo/" alt="Pabbly">
+            <img src="images/integration logo/" alt="Make">
+        </div>
+    </section>
+    <section class="advantage">
+        <h2>Choose the Urbanchat advantage</h2>
+        <div class="advantages">
+            <div class="advantage-box">
+                <img src="images/advantage1.png" alt="Advantage 1">
+                <p>Boost engagement with personalized communication.</p>
+            </div>
+            <div class="advantage-box">
+                <img src="images/advantage2.png" alt="Advantage 2">
+                <p>Get better results with automated workflows.</p>
+            </div>
+            <div class="advantage-box">
+                <img src="images/advantage3.png" alt="Advantage 3">
+                <p>Conversational AI that understands and engages.</p>
+            </div>
+            <div class="advantage-box">
+                <img src="images/advantage4.png" alt="Advantage 4">
+                <p>Multiple channels for maximum reach.</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer-cta">
+        <p>Discover more. WhatsApp, Facebook, and Instagram share of social media messaging is unrivaled. Harness it
+            with one of the fastest growing WhatsApp Business Solution Providers.</p>
+        <a href="#" class="trial-button">Free 7 Day Trial</a>
+    </section>
+    <footer class="footer">
+        <div class="footer-links">
+            <div>
+                <h4>Top Features</h4>
+                <a href="#">Click to WhatsApp Ads</a>
+                <a href="#">Chatbots</a>
+                <a href="#">Customer Data Management</a>
+                <a href="#">Multi-Agent Support</a>
+            </div>
+            <div>
+                <h4>Integrations</h4>
+                <a href="#">Pabbly Connect</a>
+                <a href="#">Zapier</a>
+                <a href="#">Integromat</a>
+                <a href="#">HubSpot</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="#">Blog</a>
+                <a href="#">WhatsApp for Business</a>
+                <a href="#">Pricing</a>
+                <a href="#">Case Studies</a>
+            </div>
+            <div>
+                <h4>Urbanchat</h4>
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="footer-logos">
+            <img src="images/award1.png" alt="Award 1">
+            <img src="images/award2.png" alt="Award 2">
+            <img src="images/award3.png" alt="Award 3">
+            <img src="images/award4.png" alt="Award 4">
+        </div>
+        <p>© 2024 Urbanchat. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

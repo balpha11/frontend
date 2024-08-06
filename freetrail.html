@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Trial - Urbanchat</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .left {
+            width: 50%;
+        }
+        .right {
+            width: 40%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        ul li::before {
+            content: "✔";
+            margin-right: 10px;
+            color: #4caf50;
+        }
+        .trusted-logos img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        form button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #388e3c;
+        }
+        .social-signup {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .social-signup button {
+            flex: 1;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .social-signup button:hover {
+            background-color: #eee;
+        }
+        .social-signup button:last-child {
+            margin-right: 0;
+        }
+        .terms {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .signin {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        .signin a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Everything you need to grow your business on WhatsApp</h1>
+            <ul>
+                <li>Targeted Campaigns to deliver personalized offers</li>
+                <li>Pre-built templates to send updates & reminders</li>
+                <li>24x7 instant engagement with no-code chatbots</li>
+                <li>Powerful automations to resolve issues faster</li>
+                <li>Integrations to bring in context from Zoho, Shopify, etc.</li>
+            </ul>
+            <p>Trusted by 8000+ customers across 52 countries</p>
+            <div class="trusted-logos">
+                <img src="images/gojek.png" alt="Gojek">
+                <img src="images/dukaan.png" alt="Dukaan">
+                <img src="images/tiktok.png" alt="TikTok">
+                <img src="images/welend.png" alt="WeLend">
+                <img src="images/itc.png" alt="ITC">
+            </div>
+        </div>
+        <div class="right">
+            <form action="#">
+                <div class="social-signup">
+                    <button type="button">Sign Up With Google</button>
+                    <button type="button">Sign Up With Facebook</button>
+                </div>
+                <p>or Sign up with email</p>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Business Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="Your mobile number" required>
+                <button type="submit">Start my trial</button>
+                <p class="terms">By signing up you agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
+                <p class="signin">Already have an account? <a href="#">Sign in</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
