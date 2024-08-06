@@ -23,11 +23,10 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        
-
         .nav {
             display: flex;
             align-items: center;
+            position: relative;
         }
 
         .nav a {
@@ -40,15 +39,50 @@
             border-bottom: 2px solid transparent;
         }
 
+        .nav img {
+            width: 70x;
+            height: 70px;
+        }
+
         .nav a:hover {
             color: #4caf50;
             border-bottom: 2px solid #4caf50;
         }
 
-        .nav img{
-            width: 90px;
-            height: 80px;
+        .nav .dropdown {
+            position: relative;
         }
+
+        .nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .nav .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #4caf50;
+        }
+
+        .nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
 
         .cta-buttons {
             display: flex;
@@ -276,17 +310,59 @@
     </style>
 </head>
 <body>
-   <header class="header">
-        
+    <header class="header">
         <nav class="nav">
             <a href="index.html">
                 <img src="images/logo.png" alt="urban chat logo">
             </a>
-            <a href="pricing.html">Pricing</a>
-            <a href="features.html">Features</a>
-            <a href="solutions.html">Solutions</a>
-            <a href="integrations.html">Integrations</a>
-            <a href="resources.html">Resources</a>
+            <div class="dropdown">
+                <a href="pricing.html">Pricing</a>
+            </div>
+            <div class="dropdown">
+                <a href="features.html">Features</a>
+                <div class="dropdown-content">
+                    <a href="#">Click to Whattsapp ads</a>
+                    <a href="#">Catalog</a>
+                    <a href="#">Shared Team Inbox</a>
+                    <a href="#">Broadcast & Bulk Meassaging</a>
+                    <a href="#">Custom Notifications</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="solutions.html">Solutions</a>
+                <div class="dropdown-content">
+                    <a href="#">Education</a>
+                    <a href="#">Marketing Agencies</a>
+                    <a href="#">Sales Team</a>
+                    <a href="#">Marketing Teams</a>
+                    <a href="#">Ecommerce</a>
+                    <a href="#">Healthcare</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="integrations.html">Integrations</a>
+                <div class="dropdown-content">
+                    <a href="#">Zoho</a>
+                    <a href="#">Woocommerce</a>
+                    <a href="#">Zapier</a>
+                    <a href="#">Hubspot</a>
+                    <a href="#">Pabbly Connect</a>
+                    <a href="#">Whattsapp chatbot</a>
+                    <a href="#">Zoho Flow</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="resources.html">Resources</a>
+                <div class="dropdown-content">
+                    <a href="#">Blog</a>
+                    <a href="#">chatbot Library</a>
+                    <a href="#">Urabnopaedia</a>
+                    <a href="#">Urban academy</a>
+
+
+                </div>
+            </div>
         </nav>
         <div class="cta-buttons">
             <a href="bookdemo.html" class="book-demo">Book Demo</a>
