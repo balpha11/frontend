@@ -10,7 +10,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 50px;
+            padding: 0px;
             background-color: #ffffff;
             color: #333;
         }
@@ -205,6 +205,23 @@
         }
 
         .trial-button:hover {
+            background-color: #388e3c;
+        }
+
+
+        .free-trial-button {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .free-trial-button:hover {
             background-color: #388e3c;
         }
 
@@ -699,16 +716,18 @@
     <main class="main">
         <div class="text-content">
             <h1>Grow your business on <span class="whatsapp-text">WhatsApp</span></h1>
-            <p>Personalize communication and sell more with the <span class="whatsapp-text">WhatsApp</span></h1>
-                Business API platform that automates marketing,
+            <p>Personalize communication and sell more with the <span class="whatsapp-text">WhatsApp</span> Business API
+                platform that automates marketing,
                 sales, service, and support.</p>
             <p class="note"><i class="fas fa-credit-card"></i> No credit card required</p>
-            <a href="bookdemo.html" class="demo-link">or Book a Demo Today</a>
+            <a href="freetrail.html" class="free-trial-button">Free Trial</a>
+            <a href="bookdemo.html" class="demo-link"> Book a Demo Today</a>
         </div>
         <div class="image-content">
             <img src="images/hero-image.html" alt="Mockup Image">
         </div>
     </main>
+
 
     <section class="trusted-brands">
         <p>Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
