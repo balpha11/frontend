@@ -193,10 +193,15 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+
+
+
         .trusted-brands {
             padding: 40px 20px;
             background-color: #fce4ec;
             text-align: center;
+            overflow: hidden;
+            /* Ensure that overflowing content is hidden */
         }
 
         .trusted-brands p {
@@ -205,21 +210,36 @@
             margin-bottom: 20px;
         }
 
-        .trusted-brands .brands {
+        .brands {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 30px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            /* Prevent the logos from wrapping */
+            animation: scroll 30s linear infinite;
+            /* Apply the animation */
         }
 
-        .trusted-brands .brands img {
+        .brands img {
             height: 40px;
             transition: transform 0.3s;
         }
 
-        .trusted-brands .brands img:hover {
+        .brands img:hover {
             transform: scale(1.1);
         }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
 
 
 
@@ -243,7 +263,6 @@
         }
 
         .story {
-            background-color: #fafafa;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -265,7 +284,7 @@
 
         .story p {
             font-size: 0.9em;
-            color: #000000;
+            color: #666;
             font-weight: bold;
             /* Make the text bold */
         }
@@ -275,11 +294,25 @@
             /* Make the strong text even bolder */
         }
 
+        .story-1 {
+            background-color: #e0f7fa;
+            /* Light cyan */
+        }
+
+        .story-2 {
+            background-color: #e8f5e9;
+            /* Light green */
+        }
+
+        .story-3 {
+            background-color: #fff3e0;
+            /* Light orange */
+        }
+
         .story:hover {
             border: 2px solid #4caf50;
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
-
 
 
 
@@ -626,39 +659,40 @@
             <img src="images/logo/aqua-pro.png" alt="Brand 4">
             <img src="images/logo/Family Plastic.png" alt="Brand 5">
             <img src="images/logo/Genex.png" alt="Brand 6">
-            <img src="images/logo/God's own villa.png" alt="Brand 6">
-            <img src="images/logo/ivs.png" alt="Brand 6">
-            <img src="images/logo/Kerala Days.png" alt="Brand 6">
-            <img src="images/logo/Macare.png" alt="Brand 6">
-            <img src="images/logo/Merzecool.png" alt="Brand 6">
-            <img src="images/logo/Reuseful.png" alt="Brand 6">
-
-
+            <img src="images/logo/God's own villa.png" alt="Brand 7">
+            <img src="images/logo/ivs.png" alt="Brand 8">
+            <img src="images/logo/Kerala Days.png" alt="Brand 9">
+            <img src="images/logo/Macare.png" alt="Brand 10">
+            <img src="images/logo/Merzecool.png" alt="Brand 11">
+            <img src="images/logo/Reuseful.png" alt="Brand 12">
         </div>
     </section>
+
+
 
 
 
     <section class="real-stories">
         <h2>Real Results. Real Stories!</h2>
         <div class="stories">
-            <div class="story">
+            <div class="story story-1">
                 <img src="images/logo/Genex.png" alt="Story 1">
                 <p>From 200 to 6,000+ customers within a year.</p>
                 <p><strong>GENEX</strong> is a leading edtech platform that grew exponentially.</p>
             </div>
-            <div class="story">
+            <div class="story story-2">
                 <img src="images/logo/aakri-logo.png" alt="Story 2">
                 <p>Increased sales by 150% within 3 months.</p>
                 <p><strong>AAKRI</strong> used our platform to boost their market reach.</p>
             </div>
-            <div class="story">
+            <div class="story story-3">
                 <img src="images/logo/Family Plastic.png" alt="Story 3">
                 <p>Saved 10 hours a week on customer support.</p>
                 <p><strong>FAMILY PLASTICS</strong> optimized their operations efficiently.</p>
             </div>
         </div>
     </section>
+
 
 
 
@@ -799,6 +833,8 @@
         </div>
         <p>© 2024 Urbanchat. All Rights Reserved.</p>
     </footer>
+
+
 </body>
 
 </html>
