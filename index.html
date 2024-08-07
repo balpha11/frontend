@@ -249,27 +249,14 @@
             border-radius: 10px;
         }
 
-        .trusted-brands {
-            padding: 0px 30px;
-            background-color: #ffffff;
-            text-align: center;
-        }
 
-        .trusted-brands p {
-            font-size: 1.2em;
-            color: #000000;
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
 
 
         .containerb {
             width: 100%;
             max-width: 1200px;
             margin: 100px auto;
-            /* Center the container horizontally */
             overflow: hidden;
-            /* Hide the overflowing content */
         }
 
         .trusted-brands {
@@ -293,13 +280,11 @@
             position: relative;
             top: -30px;
             overflow: hidden;
-            /* Ensure the overflow content is hidden */
         }
 
         .brand-container {
             display: flex;
             gap: 20px;
-            animation: scroll 30s linear infinite;
         }
 
         .brand-container img {
@@ -313,15 +298,7 @@
             transform: scale(1.1);
         }
 
-        @keyframes scroll {
-            0% {
-                transform: translateX(0%);
-            }
 
-            100% {
-                transform: translateX(100%);
-            }
-        }
 
 
         .real-stories {
@@ -724,9 +701,9 @@
             /* Enhanced shadow for hover effect */
         }
 
-        .reason img {
-            width: 40px;
-            height: 40px;
+        .reason i {
+            font-size: 40px;
+            color: #57BB59;
             margin-bottom: 20px;
         }
 
@@ -1205,17 +1182,17 @@
         <div class="reasons-row">
             <div class="reasons-container">
                 <div class="reason">
-                    <img src="path/to/icon1.png" alt="Access to Meta's APIs">
+                    <i class="fas fa-database"></i>
                     <h3>Access to Meta's APIs</h3>
                     <p>Leverage direct Meta APIs and get access to the latest WhatsApp Business API features.</p>
                 </div>
                 <div class="reason">
-                    <img src="path/to/icon2.png" alt="Scalable Infrastructure">
+                    <i class="fas fa-arrows-alt"></i>
                     <h3>Scalable Infrastructure</h3>
                     <p>1000s of brands have partnered with us to scale up their customer support & engagement!</p>
                 </div>
                 <div class="reason">
-                    <img src="path/to/icon3.png" alt="Seamless Integrations">
+                    <i class="fas fa-plug"></i>
                     <h3>Seamless Integrations</h3>
                     <p>OOTB integrations with your favorite CRMs, payment gateways, e-stores & marketing automation
                         platforms.</p>
@@ -1223,19 +1200,19 @@
             </div>
             <div class="reasons-container">
                 <div class="reason">
-                    <img src="path/to/icon4.png" alt="Smooth onboarding & easy setup">
+                    <i class="fas fa-check-circle"></i>
                     <h3>Smooth onboarding & easy setup</h3>
                     <p>Minimize operational disruption, and deploy a powerful WhatsApp solution for your business in a
                         few simple steps!</p>
                 </div>
                 <div class="reason">
-                    <img src="path/to/icon5.png" alt="Highly competitive pricing">
+                    <i class="fas fa-dollar-sign"></i>
                     <h3>Highly competitive pricing</h3>
                     <p>No hidden costs – transparent pricing structure with no lock-ins. We optimize setup & campaign
                         costs upfront so there are no surprises later.</p>
                 </div>
                 <div class="reason">
-                    <img src="path/to/icon6.png" alt="Industry Leading Support">
+                    <i class="fas fa-headset"></i>
                     <h3>Industry Leading Support</h3>
                     <p>Access our premium customer support and get a resolution within minutes!</p>
                 </div>
@@ -1365,6 +1342,41 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const container = document.querySelector('.brand-container');
+            const brands = Array.from(container.children);
+            const containerWidth = container.offsetWidth;
+            let totalWidth = 0;
+
+            brands.forEach((brand) => {
+                totalWidth += brand.offsetWidth + 20; // include the gap
+            });
+
+            let cloneCount = Math.ceil(containerWidth / totalWidth);
+            for (let i = 0; i < cloneCount; i++) {
+                brands.forEach((brand) => {
+                    let clone = brand.cloneNode(true);
+                    container.appendChild(clone);
+                });
+            }
+
+            let currentPosition = 0;
+
+            function animateBrands() {
+                currentPosition -= 1;
+                if (currentPosition <= -totalWidth) {
+                    currentPosition = 0;
+                }
+                container.style.transform = `translateX(${currentPosition}px)`;
+                requestAnimationFrame(animateBrands);
+            }
+
+            animateBrands();
+        });
+
+    </script>
 </body>
 
 </html>
