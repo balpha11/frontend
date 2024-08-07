@@ -441,7 +441,7 @@
             /* Full height */
             top: 0;
             right: 0;
-            background: linear-gradient(to top, rgb(166, 27, 247), rgba(76, 175, 80, 0));
+            background: linear-gradient(to left, rgb(15, 204, 5), rgba(255, 255, 255, 0));
             /* Gradient for the right-side line */
         }
 
@@ -452,7 +452,7 @@
             /* Height of the bottom line */
             bottom: 0;
             right: 0;
-            background: linear-gradient(to left, rgb(167, 64, 214), rgba(76, 175, 80, 0));
+            background: linear-gradient(to left, rgb(15, 204, 5), rgba(255, 255, 255, 0));
             /* Gradient for the bottom line */
         }
 
@@ -637,6 +637,58 @@
             font-size: 0.9em;
             font-weight: 800;
 
+        }
+
+
+        .reasons-to-choose {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .reasons-to-choose h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .reasons-to-choose p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .reasons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .reason {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .reason img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        .reason h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .reason p {
+            font-size: 1em;
+            color: #666;
         }
 
         .integrations {
@@ -1095,7 +1147,47 @@
         </div>
     </div>
 
-   
+    <section class="reasons-to-choose">
+        <h2>More reasons to choose Interakt</h2>
+        <p>Get a Green Tick verified WhatsApp Business API account along with:</p>
+        <div class="reasons-container">
+            <div class="reason">
+                <img src="path/to/icon1.png" alt="Access to Meta's APIs">
+                <h3>Access to Meta's APIs</h3>
+                <p>Leverage direct Meta APIs and get access to the latest WhatsApp Business API features.</p>
+            </div>
+            <div class="reason">
+                <img src="path/to/icon2.png" alt="Scalable Infrastructure">
+                <h3>Scalable Infrastructure</h3>
+                <p>1000s of brands have partnered with us to scale up their customer support & engagement!</p>
+            </div>
+            <div class="reason">
+                <img src="path/to/icon3.png" alt="Seamless Integrations">
+                <h3>Seamless Integrations</h3>
+                <p>OOTB integrations with your favorite CRMs, payment gateways, e-stores & marketing automation
+                    platforms.</p>
+            </div>
+            <div class="reason">
+                <img src="path/to/icon4.png" alt="Smooth onboarding & easy setup">
+                <h3>Smooth onboarding & easy setup</h3>
+                <p>Minimize operational disruption, and deploy a powerful WhatsApp solution for your business in a few
+                    simple steps!</p>
+            </div>
+            <div class="reason">
+                <img src="path/to/icon5.png" alt="Highly competitive pricing">
+                <h3>Highly competitive pricing</h3>
+                <p>No hidden costs – transparent pricing structure with no lock-ins. We optimize setup & campaign costs
+                    upfront so there are no surprises later.</p>
+            </div>
+            <div class="reason">
+                <img src="path/to/icon6.png" alt="Industry Leading Support">
+                <h3>Industry Leading Support</h3>
+                <p>Access our premium customer support and get a resolution within minutes!</p>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <section class="integrations">
@@ -1114,7 +1206,6 @@
         </div>
     </section>
 
-    </section>
 
 
 
