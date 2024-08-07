@@ -18,16 +18,17 @@
         }
 
         .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure the header is above other content */
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* Ensure the header is above other content */
+        }
 
 
         .nav {
@@ -260,103 +261,120 @@
 
 
         .brands {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -30px;
-    gap: 20px;
-    flex-wrap: nowrap;
-    animation: scroll 30s linear infinite;
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -30px;
+            gap: 20px;
+            flex-wrap: nowrap;
+            animation: scroll 30s linear infinite;
+        }
 
-.brands img {
-    height: 130px;
-    transition: transform 0.3s;
-    aspect-ratio: 2/3;
-    object-fit: contain;
-}
+        .brands img {
+            height: 130px;
+            transition: transform 0.3s;
+            aspect-ratio: 2/3;
+            object-fit: contain;
+        }
 
-.brands img:hover {
-    transform: scale(1.1);
-}
+        .brands img:hover {
+            transform: scale(1.1);
+        }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
+        @keyframes scroll {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
         .real-stories {
-    padding-bottom: 40px; /* Add padding to the bottom of the Real Stories section */
-}
+            padding-bottom: 40px;
+            /* Add padding to the bottom of the Real Stories section */
+        }
 
-.real-stories h2 {
-    font-size: 3em; /* Increase the font size */
-    text-align: center; /* Center the text */
-    margin-top: 30px; /* Add some top margin */
-    margin-bottom: 30px; /* Add some bottom margin */
-    color: #333; /* Ensure the text color is appropriate */
-}
+        .real-stories h2 {
+            font-size: 3em;
+            /* Increase the font size */
+            text-align: center;
+            /* Center the text */
+            margin-top: 30px;
+            /* Add some top margin */
+            margin-bottom: 30px;
+            /* Add some bottom margin */
+            color: #333;
+            /* Ensure the text color is appropriate */
+        }
 
-.stories {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+        .stories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-.story {
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 280px;
-    text-align: center; /* Center the content */
-    transition: border 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fbeef6; /* Background color */
-    border: 2px solid #333; /* Border color */
-    position: relative; /* For the shadow effect */
-}
+        .story {
+            border-radius: 15px;
+            /* Rounded corners */
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 280px;
+            text-align: center;
+            /* Center the content */
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fbeef6;
+            /* Background color */
+            border: 2px solid #333;
+            /* Border color */
+            position: relative;
+            /* For the shadow effect */
+        }
 
-.story img {
-    width: 70px;
-    height: 70px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+        .story img {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-.story p {
-    font-size: 0.9em;
-    color: #666;
-    font-weight: bold; /* Make the text bold */
-}
+        .story p {
+            font-size: 0.9em;
+            color: #666;
+            font-weight: bold;
+            /* Make the text bold */
+        }
 
-.story p strong {
-    font-weight: bolder; /* Make the strong text even bolder */
-}
+        .story p strong {
+            font-weight: bolder;
+            /* Make the strong text even bolder */
+        }
 
-.story:hover {
-    border: 2px solid #4caf50;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
+        .story:hover {
+            border: 2px solid #4caf50;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
 
-.story-1 {
-    background-color: #bfbcf3; /* Light pink */
-}
+        .story-1 {
+            background-color: #bfbcf3;
+            /* Light pink */
+        }
 
-.story-2 {
-    background-color: #d2ffc4; /* Light pink */
-}
+        .story-2 {
+            background-color: #d2ffc4;
+            /* Light pink */
+        }
 
-.story-3 {
-    background-color: #f8c983; /* Light pink */
-}
+        .story-3 {
+            background-color: #f8c983;
+            /* Light pink */
+        }
 
 
         .story:hover {
@@ -375,40 +393,51 @@
 
         /* Feature box styles */
         .feature {
-    position: relative;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px 0;
-    max-width: 800px;
-    color: #333;
-    background-color: #fff; /* Ensure the background is white */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+            max-width: 800px;
+            color: #333;
+            background-color: #fff;
+            /* Ensure the background is white */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Optional shadow for depth */
+        }
 
-.feature::before,
-.feature::after {
-    content: '';
-    position: absolute;
-    background: rgba(76, 175, 80, 1); /* Solid green color */
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Optional glow effect */
-    pointer-events: none; /* Ensures the line doesn't interfere with interactions */
-}
+        .feature::before,
+        .feature::after {
+            content: '';
+            position: absolute;
+            background: rgba(76, 175, 80, 1);
+            /* Solid green color */
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+            /* Optional glow effect */
+            pointer-events: none;
+            /* Ensures the line doesn't interfere with interactions */
+        }
 
-.feature::before {
-    width: 4px; /* Width of the right-side line */
-    height: 100%; /* Full height */
-    top: 0;
-    right: 0;
-    background: linear-gradient(to top, rgb(166, 27, 247), rgba(76, 175, 80, 0)); /* Gradient for the right-side line */
-}
+        .feature::before {
+            width: 4px;
+            /* Width of the right-side line */
+            height: 100%;
+            /* Full height */
+            top: 0;
+            right: 0;
+            background: linear-gradient(to top, rgb(166, 27, 247), rgba(76, 175, 80, 0));
+            /* Gradient for the right-side line */
+        }
 
-.feature::after {
-    width: 100%; /* Full width */
-    height: 4px; /* Height of the bottom line */
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to left, rgb(167, 64, 214), rgba(76, 175, 80, 0)); /* Gradient for the bottom line */
-}
+        .feature::after {
+            width: 100%;
+            /* Full width */
+            height: 4px;
+            /* Height of the bottom line */
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(to left, rgb(167, 64, 214), rgba(76, 175, 80, 0));
+            /* Gradient for the bottom line */
+        }
 
 
 
@@ -562,36 +591,61 @@
 
         .customers {
             padding: 40px 20px;
-            background-color: #9efa7f;
+            background-color: #f9e36a;
             text-align: center;
         }
 
         .customers h2 {
-            font-size: 2em;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .customers h2 .highlight {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .customers p {
+            font-size: 1.2em;
             color: #333;
             margin-bottom: 30px;
         }
 
-        .customers .customer-reviews {
+        .customer-reviews {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
 
-        .customers .review-box {
+        .review-box {
             background-color: #fafafa;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             max-width: 280px;
             text-align: left;
+            border: 2px solid #333;
+            position: relative;
         }
 
-        .customers .review-box p {
+        .review-box p {
             font-size: 0.9em;
             color: #666;
+            font-weight: bold;
         }
+
+        .review-box p strong {
+            font-weight: bolder;
+        }
+
+        .review-box:hover {
+            border: 2px solid #4caf50;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+
 
         .integrations {
             padding: 40px 20px;
@@ -848,7 +902,6 @@
             text-decoration: none;
             font-weight: bold;
         }
-
     </style>
 </head>
 
@@ -935,12 +988,12 @@
     <section class="trusted-brands" style="height: 150px;">
         <br>
         <div>
-            <p >Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
+            <p>Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
                 developing economies</p>
 
         </div>
-        
-        
+
+
         <div class="brands">
             <img src="images/logo/1to1hometutor.png" alt="Brand 1">
             <img src="images/logo/aakri-logo.png" alt="Brand 2">
@@ -992,11 +1045,11 @@
             </div>
         </div>
     </section>
-    
 
 
-    
-    
+
+
+
 
     <div class="container">
         <div class="features-header">
@@ -1044,18 +1097,30 @@
     </div>
 
     <section class="customers">
-        <h2>Over 2000 customers</h2>
+        <h2><span class="highlight">Over 8,000 customers</span></h2>
+        <p>What some of our 8,000+ customers across 100+ countries think of Urbanchat.</p>
         <div class="customer-reviews">
             <div class="review-box">
-                <p>"Highly customizable and easy to use!"</p>
-                <p><strong>Happy Customer</strong></p>
+                <p>"Highly customizable and friendly"</p>
+                <p>We work in the hotel business, so keeping in touch with people travelling is very easy using
+                    Urbanchat. Wati helps us to have multiple people answering guests. It also allows us to automate
+                    basic replies such as the address.</p>
+                <p><strong>Eduardo Zeballos</strong></p>
+                <p>Marketing Manager, Hotel Rosario</p>
             </div>
             <div class="review-box">
-                <p>"Great product for scaling our customer support."</p>
-                <p><strong>Satisfied Client</strong></p>
+                <p>"Great product for early-stage startups"</p>
+                <p>Wati is flexible, unlike a lot of other Urbanchat business solutions out there. As an early startup,
+                    we work on Google Sheets and website forms. We do not have phone support. WhatsApp is our only
+                    support channel. Wati helps us manage customer interactions on WhatsApp seamlessly at a very
+                    reasonable cost.</p>
+                <p><strong>Pradeep Dodle</strong></p>
+                <p>Co-founder, Superfone</p>
             </div>
         </div>
     </section>
+
+
 
 
     <section class="integrations">
@@ -1070,7 +1135,7 @@
             <img src="images/integrations/zapier-logo_black.svg" alt="Make">
             <img src="images/integrations/zoho.svg" alt="Make">
 
-            
+
         </div>
     </section>
 
