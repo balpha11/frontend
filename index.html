@@ -375,41 +375,52 @@
 
         /* Feature box styles */
         .feature {
-    position: relative;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px 0;
-    max-width: 800px;
-    color: #333;
-    background-color: #fff; /* Ensure the background is white */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
+        position: relative;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 10px 0;
+        max-width: 800px;
+        color: #333;
+        background-color: #fff; /* Ensure the background is white */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.feature::before,
-.feature::after {
-    content: '';
-    position: absolute;
-    background: rgba(76, 175, 80, 1); /* Solid green color */
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Optional glow effect */
-    pointer-events: none; /* Ensures the line doesn't interfere with interactions */
-}
+    .feature img {
+        max-width: 150px;
+        border-radius: 8px;
+    }
 
-.feature::before {
-    width: 4px; /* Width of the right-side line */
-    height: 100%; /* Full height */
-    top: 0;
-    right: 0;
-    background: linear-gradient(to top, rgb(166, 27, 247), rgba(76, 175, 80, 0)); /* Gradient for the right-side line */
-}
+    .feature:nth-child(2) {
+        flex-direction: row-reverse;
+    }
 
-.feature::after {
-    width: 100%; /* Full width */
-    height: 4px; /* Height of the bottom line */
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to left, rgb(167, 64, 214), rgba(76, 175, 80, 0)); /* Gradient for the bottom line */
-}
+    .feature::before,
+    .feature::after {
+        content: '';
+        position: absolute;
+        background: rgba(76, 175, 80, 1); /* Solid green color */
+        box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Optional glow effect */
+        pointer-events: none; /* Ensures the line doesn't interfere with interactions */
+    }
 
+    .feature::before {
+        width: 4px; /* Width of the right-side line */
+        height: 100%; /* Full height */
+        top: 0;
+        right: 0;
+        background: linear-gradient(to top, rgb(166, 27, 247), rgba(76, 175, 80, 0)); /* Gradient for the right-side line */
+    }
+
+    .feature::after {
+        width: 100%; /* Full width */
+        height: 4px; /* Height of the bottom line */
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(to left, rgb(167, 64, 214), rgba(76, 175, 80, 0)); /* Gradient for the bottom line */
+    }
 
 
         /* Individual feature box background colors */
@@ -875,7 +886,7 @@
             <div class="dropdown">
                 <a href="#">Solutions</a>
                 <div class="dropdown-content">
-                    <a href="#">Education</a>
+                    <a href="solutions.html">Education</a>
                     <a href="#">Marketing Agencies</a>
                     <a href="#">Sales Team</a>
                     <a href="#">Marketing Teams</a>
@@ -900,7 +911,7 @@
             <div class="dropdown">
                 <a href="#">Resources</a>
                 <div class="dropdown-content">
-                    <a href="#">Blog</a>
+                    <a href="resources.html">Blog</a>
                     <a href="#">chatbot Library</a>
                     <a href="#">Urabnopaedia</a>
                     <a href="#">Urban academy</a>
@@ -973,7 +984,7 @@
 
 
     <section class="real-stories">
-        <h2>Real Results. Real Stories!</h2>
+        <h2>Real Results. Real Stories</h2>
         <div class="stories">
             <div class="story story-1">
                 <img src="images/logo/Genex.png" alt="Story 1" style="width: 150px;">
