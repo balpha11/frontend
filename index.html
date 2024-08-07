@@ -18,16 +18,17 @@
         }
 
         .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure the header is above other content */
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* Ensure the header is above other content */
+        }
 
 
         .nav {
@@ -75,7 +76,7 @@
         }
 
         .nav .dropdown-content a {
-            color: #333;
+            color: #000000;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -181,12 +182,13 @@
 
         .text-content p {
             font-size: 1.2em;
-            color: #666;
+            font-weight: 600;
+            color: #000000;
             margin-bottom: 20px;
         }
 
         .note {
-            color: #666;
+            color: #000000;
             font-size: 0.9em;
             font-weight: bold;
             display: flex;
@@ -261,105 +263,122 @@
 
 
         .brands {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -30px;
-    gap: 20px;
-    flex-wrap: nowrap;
-    animation: scroll 30s linear infinite;
-}
-
-.brands img {
-    height: 130px;
-    transition: transform 0.3s;
-    aspect-ratio: 2/3;
-    object-fit: contain;
-}
-
-.brands img:hover {
-    transform: scale(1.1);
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-        .real-stories {
-    padding-bottom: 40px; /* Add padding to the bottom of the Real Stories section */
-}
-
-.real-stories h2 {
-            font-weight: bolder;
-            font-family:'Poppins', sans-serif;
-            font-size: 3em; /* Increase the font size */
-            text-align: center; /* Center the text */
-            margin-top: 30px; /* Add some top margin */
-            margin-bottom: 30px; /* Add some bottom margin */
-            color: #000000; /* Ensure the text color is appropriate */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -30px;
+            gap: 20px;
+            flex-wrap: nowrap;
+            animation: scroll 30s linear infinite;
         }
 
-.stories {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+        .brands img {
+            height: 130px;
+            transition: transform 0.3s;
+            aspect-ratio: 2/3;
+            object-fit: contain;
+        }
 
-.story {
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 280px;
-    text-align: center; /* Center the content */
-    transition: border 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fbeef6; /* Background color */
-    border: 2px solid #333; /* Border color */
-    position: relative; /* For the shadow effect */
-}
+        .brands img:hover {
+            transform: scale(1.1);
+        }
 
-.story img {
-    width: 70px;
-    height: 70px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+        @keyframes scroll {
+            0% {
+                transform: translateX(0%);
+            }
 
-.story p {
-    font-size: 0.9em;
-    color: #666;
-    font-weight: bold; /* Make the text bold */
-}
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
-.story p strong {
-    font-weight: bolder; /* Make the strong text even bolder */
-}
+        .real-stories {
+            padding-bottom: 40px;
+            /* Add padding to the bottom of the Real Stories section */
+        }
 
-.story:hover {
-    border: 2px solid #4caf50;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
+        .real-stories h2 {
+            font-weight: bolder;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3em;
+            /* Increase the font size */
+            text-align: center;
+            /* Center the text */
+            margin-top: 30px;
+            /* Add some top margin */
+            margin-bottom: 30px;
+            /* Add some bottom margin */
+            color: #000000;
+            /* Ensure the text color is appropriate */
+        }
 
-.story-1 {
-    background-color: #bfbcf3; /* Light pink */
-}
+        .stories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-.story-2 {
-    background-color: #d2ffc4; /* Light pink */
-}
+        .story {
+            border-radius: 15px;
+            /* Rounded corners */
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 280px;
+            text-align: center;
+            /* Center the content */
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fbeef6;
+            /* Background color */
+            border: 2px solid #333;
+            /* Border color */
+            position: relative;
+            /* For the shadow effect */
+        }
 
-.story-3 {
-    background-color: #f8c983; /* Light pink */
-}
+        .story img {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .story p {
+            font-size: 0.9em;
+            color: #666;
+            font-weight: bold;
+            /* Make the text bold */
+        }
+
+        .story p strong {
+            font-weight: bolder;
+            /* Make the strong text even bolder */
+        }
+
+        .story:hover {
+            border: 2px solid #4caf50;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .story-1 {
+            background-color: #bfbcf3;
+            /* Light pink */
+        }
+
+        .story-2 {
+            background-color: #d2ffc4;
+            /* Light pink */
+        }
+
+        .story-3 {
+            background-color: #f8c983;
+            /* Light pink */
+        }
 
 
         .story:hover {
@@ -378,52 +397,63 @@
 
         /* Feature box styles */
         .feature {
-        position: relative;
-        padding: 20px;
-        border-radius: 8px;
-        margin: 10px 0;
-        max-width: 800px;
-        color: #333;
-        background-color: #fff; /* Ensure the background is white */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+            max-width: 800px;
+            color: #333;
+            background-color: #fff;
+            /* Ensure the background is white */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Optional shadow for depth */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-    .feature img {
-        max-width: 150px;
-        border-radius: 8px;
-    }
+        .feature img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
 
-    .feature:nth-child(2) {
-        flex-direction: row-reverse;
-    }
+        .feature:nth-child(2) {
+            flex-direction: row-reverse;
+        }
 
-    .feature::before,
-    .feature::after {
-        content: '';
-        position: absolute;
-        background: rgba(76, 175, 80, 1); /* Solid green color */
-        box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Optional glow effect */
-        pointer-events: none; /* Ensures the line doesn't interfere with interactions */
-    }
+        .feature::before,
+        .feature::after {
+            content: '';
+            position: absolute;
+            background: rgba(76, 175, 80, 1);
+            /* Solid green color */
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+            /* Optional glow effect */
+            pointer-events: none;
+            /* Ensures the line doesn't interfere with interactions */
+        }
 
-    .feature::before {
-        width: 4px; /* Width of the right-side line */
-        height: 100%; /* Full height */
-        top: 0;
-        right: 0;
-        background: linear-gradient(to top, rgb(166, 27, 247), rgba(76, 175, 80, 0)); /* Gradient for the right-side line */
-    }
+        .feature::before {
+            width: 4px;
+            /* Width of the right-side line */
+            height: 100%;
+            /* Full height */
+            top: 0;
+            right: 0;
+            background: linear-gradient(to top, rgb(166, 27, 247), rgba(76, 175, 80, 0));
+            /* Gradient for the right-side line */
+        }
 
-    .feature::after {
-        width: 100%; /* Full width */
-        height: 4px; /* Height of the bottom line */
-        bottom: 0;
-        right: 0;
-        background: linear-gradient(to left, rgb(167, 64, 214), rgba(76, 175, 80, 0)); /* Gradient for the bottom line */
-    }
+        .feature::after {
+            width: 100%;
+            /* Full width */
+            height: 4px;
+            /* Height of the bottom line */
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(to left, rgb(167, 64, 214), rgba(76, 175, 80, 0));
+            /* Gradient for the bottom line */
+        }
 
 
         /* Individual feature box background colors */
@@ -864,7 +894,6 @@
             text-decoration: none;
             font-weight: bold;
         }
-
     </style>
 </head>
 
@@ -951,12 +980,12 @@
     <section class="trusted-brands" style="height: 150px;">
         <br>
         <div>
-            <p >Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
+            <p>Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
                 developing economies</p>
 
         </div>
-        
-        
+
+
         <div class="brands">
             <img src="images/logo/1to1hometutor.png" alt="Brand 1">
             <img src="images/logo/aakri-logo.png" alt="Brand 2">
@@ -1008,11 +1037,11 @@
             </div>
         </div>
     </section>
-    
 
 
-    
-    
+
+
+
 
     <div class="container">
         <div class="features-header">
