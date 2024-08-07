@@ -263,25 +263,53 @@
         }
 
 
+        .containerb {
+            width: 100%;
+            max-width: 1200px;
+            margin: 100px auto;
+            /* Center the container horizontally */
+            overflow: hidden;
+            /* Hide the overflowing content */
+        }
+
+        .trusted-brands {
+            padding: 0px 30px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .trusted-brands p {
+            font-size: 1.2em;
+            color: #000000;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
         .brands {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
+            gap: 20px;
             position: relative;
             top: -30px;
+            overflow: hidden;
+            /* Ensure the overflow content is hidden */
+        }
+
+        .brand-container {
+            display: flex;
             gap: 20px;
-            flex-wrap: nowrap;
             animation: scroll 30s linear infinite;
         }
 
-        .brands img {
+        .brand-container img {
             height: 130px;
             transition: transform 0.3s;
             aspect-ratio: 2/3;
             object-fit: contain;
         }
 
-        .brands img:hover {
+        .brand-container img:hover {
             transform: scale(1.1);
         }
 
@@ -291,9 +319,10 @@
             }
 
             100% {
-                transform: translateX(-50%);
+                transform: translateX(100%);
             }
         }
+
 
         .real-stories {
             padding-bottom: 40px;
@@ -1044,44 +1073,46 @@
     </main>
 
 
-    <section class="trusted-brands" style="height: 150px;">
-        <br>
-        <div>
-            <p>Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
-                developing companies</p>
+    <div class="containerb">
+        <section class="trusted-brands">
+            <br>
+            <div>
+                <p>Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in
+                    rapidly
+                    developing companies</p>
+            </div>
 
-        </div>
+            <div class="brands">
+                <div class="brand-container">
+                    <img src="images/logo/1to1hometutor.png" alt="Brand 1">
+                    <img src="images/logo/aakri-logo.png" alt="Brand 2">
+                    <img src="images/logo/Aashmibiz.png" alt="Brand 3">
+                    <img src="images/logo/aqua-pro.png" alt="Brand 4">
+                    <img src="images/logo/Family Plastic.png" alt="Brand 5">
+                    <img src="images/logo/Genex.png" alt="Brand 6">
+                    <img src="images/logo/God's own villa.png" alt="Brand 7">
+                    <img src="images/logo/ivs.png" alt="Brand 8">
+                    <img src="images/logo/Kerala Days.png" alt="Brand 9">
+                    <img src="images/logo/Macare.png" alt="Brand 10">
+                    <img src="images/logo/Merzecool.png" alt="Brand 11">
+                    <img src="images/logo/Reuseful.png" alt="Brand 12">
+                    <img src="images/logo/1to1hometutor.png" alt="Brand 1">
+                    <img src="images/logo/aakri-logo.png" alt="Brand 2">
+                    <img src="images/logo/Aashmibiz.png" alt="Brand 3">
+                    <img src="images/logo/aqua-pro.png" alt="Brand 4">
+                    <img src="images/logo/Family Plastic.png" alt="Brand 5">
+                    <img src="images/logo/Genex.png" alt="Brand 6">
+                    <img src="images/logo/God's own villa.png" alt="Brand 7">
+                    <img src="images/logo/ivs.png" alt="Brand 8">
+                    <img src="images/logo/Kerala Days.png" alt="Brand 9">
+                    <img src="images/logo/Macare.png" alt="Brand 10">
+                    <img src="images/logo/Merzecool.png" alt="Brand 11">
+                    <img src="images/logo/Reuseful.png" alt="Brand 12">
+                </div>
+            </div>
+        </section>
+    </div>
 
-
-        <div class="brands">
-            <img src="images/logo/1to1hometutor.png" alt="Brand 1">
-            <img src="images/logo/aakri-logo.png" alt="Brand 2">
-            <img src="images/logo/Aashmibiz.png" alt="Brand 3">
-            <img src="images/logo/aqua-pro.png" alt="Brand 4">
-            <img src="images/logo/Family Plastic.png" alt="Brand 5">
-            <img src="images/logo/Genex.png" alt="Brand 6">
-            <img src="images/logo/God's own villa.png" alt="Brand 7">
-            <img src="images/logo/ivs.png" alt="Brand 8">
-            <img src="images/logo/Kerala Days.png" alt="Brand 9">
-            <img src="images/logo/Macare.png" alt="Brand 10">
-            <img src="images/logo/Merzecool.png" alt="Brand 11">
-            <img src="images/logo/Reuseful.png" alt="Brand 12">
-
-
-            <img src="images/logo/1to1hometutor.png" alt="Brand 1">
-            <img src="images/logo/aakri-logo.png" alt="Brand 2">
-            <img src="images/logo/Aashmibiz.png" alt="Brand 3">
-            <img src="images/logo/aqua-pro.png" alt="Brand 4">
-            <img src="images/logo/Family Plastic.png" alt="Brand 5">
-            <img src="images/logo/Genex.png" alt="Brand 6">
-            <img src="images/logo/God's own villa.png" alt="Brand 7">
-            <img src="images/logo/ivs.png" alt="Brand 8">
-            <img src="images/logo/Kerala Days.png" alt="Brand 9">
-            <img src="images/logo/Macare.png" alt="Brand 10">
-            <img src="images/logo/Merzecool.png" alt="Brand 11">
-            <img src="images/logo/Reuseful.png" alt="Brand 12">
-        </div>
-    </section>
 
 
     <section class="real-stories">
