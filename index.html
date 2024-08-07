@@ -18,13 +18,17 @@
         }
 
         .header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            border-bottom: 1px solid #e0e0e0;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
 
         .nav {
             display: flex;
@@ -256,99 +260,104 @@
 
 
         .brands {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: nowrap;
-            /* Prevent the logos from wrapping */
-            animation: scroll 30s linear infinite;
-            /* Apply the animation */
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    animation: scroll 30s linear infinite;
+}
 
-        .brands img {
-            height: 40px;
-            transition: transform 0.3s;
-        }
+.brands img {
+    height: 130px;
+    transition: transform 0.3s;
+    aspect-ratio: 2/3;
+    object-fit: contain;
+}
 
-        .brands img:hover {
-            transform: scale(1.1);
-        }
+.brands img:hover {
+    transform: scale(1.1);
+}
 
-        @keyframes scroll {
-            0% {
-                transform: translateX(100%);
-            }
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
-            100% {
-                transform: translateX(-100%);
-            }
-        }
+        .real-stories {
+    padding-bottom: 40px; /* Add padding to the bottom of the Real Stories section */
+}
 
-        .real-stories h2 {
-            font-size: 3em;
-            /* Increase the font size */
-            text-align: center;
-            /* Center the text */
-            margin-top: 30px;
-            /* Add some bottom margin */
-            color: #333;
-            /* Ensure the text color is appropriate */
-        }
+.real-stories h2 {
+    font-size: 3em; /* Increase the font size */
+    text-align: center; /* Center the text */
+    margin-top: 30px; /* Add some top margin */
+    margin-bottom: 30px; /* Add some bottom margin */
+    color: #333; /* Ensure the text color is appropriate */
+}
 
-        .stories {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.stories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-        .story {
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 280px;
-            text-align: center;
-            /* Center the content */
-            transition: border 0.3s ease, box-shadow 0.3s ease;
-        }
+.story {
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    text-align: center; /* Center the content */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fbeef6; /* Background color */
+    border: 2px solid #333; /* Border color */
+    position: relative; /* For the shadow effect */
+}
 
-        .story img {
-            width: 70px;
-            height: 70px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.story img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        .story p {
-            font-size: 0.9em;
-            color: #666;
-            font-weight: bold;
-            /* Make the text bold */
-        }
+.story p {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: bold; /* Make the text bold */
+}
 
-        .story p strong {
-            font-weight: bolder;
-            /* Make the strong text even bolder */
-        }
+.story p strong {
+    font-weight: bolder; /* Make the strong text even bolder */
+}
 
-        .story-1 {
-            background-color: #e0f7fa;
-            /* Light cyan */
-        }
+.story:hover {
+    border: 2px solid #4caf50;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
 
-        .story-2 {
-            background-color: #e8f5e9;
-            /* Light green */
-        }
+.story-1 {
+    background-color: #bfbcf3; /* Light pink */
+}
 
-        .story-3 {
-            background-color: #fff3e0;
-            /* Light orange */
-        }
+.story-2 {
+    background-color: #d2ffc4; /* Light pink */
+}
+
+.story-3 {
+    background-color: #f8c983; /* Light pink */
+}
+
 
         .story:hover {
             border: 2px solid #4caf50;
@@ -366,16 +375,42 @@
 
         /* Feature box styles */
         .feature {
-            display: flex;
-            align-items: center;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 10px 0;
-            max-width: 800px;
-            /* Adjust as needed */
-            color: #333;
-            /* Default text color */
-        }
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    max-width: 800px;
+    color: #333;
+    background-color: #fff; /* Ensure the background is white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.feature::before,
+.feature::after {
+    content: '';
+    position: absolute;
+    background: rgba(76, 175, 80, 1); /* Solid green color */
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Optional glow effect */
+    pointer-events: none; /* Ensures the line doesn't interfere with interactions */
+}
+
+.feature::before {
+    width: 4px; /* Width of the right-side line */
+    height: 100%; /* Full height */
+    top: 0;
+    right: 0;
+    background: linear-gradient(to top, rgb(166, 27, 247), rgba(76, 175, 80, 0)); /* Gradient for the right-side line */
+}
+
+.feature::after {
+    width: 100%; /* Full width */
+    height: 4px; /* Height of the bottom line */
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to left, rgb(167, 64, 214), rgba(76, 175, 80, 0)); /* Gradient for the bottom line */
+}
+
+
 
         /* Individual feature box background colors */
         .broadcast-feature {
@@ -828,9 +863,9 @@
                 <a href="pricing.html">Pricing</a>
             </div>
             <div class="dropdown">
-                <a href="features.html">Features</a>
+                <a href="#">Features</a>
                 <div class="dropdown-content">
-                    <a href="#">Click to Whattsapp ads</a>
+                    <a href="features.html">Click to Whattsapp ads</a>
                     <a href="#">Catalog</a>
                     <a href="#">Shared Team Inbox</a>
                     <a href="#">Broadcast & Bulk Meassaging</a>
@@ -838,7 +873,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a href="solutions.html">Solutions</a>
+                <a href="#">Solutions</a>
                 <div class="dropdown-content">
                     <a href="#">Education</a>
                     <a href="#">Marketing Agencies</a>
@@ -849,7 +884,8 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a href="integrations.html">Integrations</a>
+                <a href="
+                #">Integrations</a>
                 <div class="dropdown-content">
                     <a href="#">Zoho</a>
                     <a href="#">Woocommerce</a>
@@ -862,7 +898,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a href="resources.html">Resources</a>
+                <a href="#">Resources</a>
                 <div class="dropdown-content">
                     <a href="#">Blog</a>
                     <a href="#">chatbot Library</a>
@@ -896,10 +932,30 @@
     </main>
 
 
-    <section class="trusted-brands">
-        <p>Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
-            developing economies</p>
+    <section class="trusted-brands" style="height: 150px;">
+        <br>
+        <div>
+            <p >Trusted by the <span style="color: #4caf50; font-weight: bold;">fastest growing brands</span> in rapidly
+                developing economies</p>
+
+        </div>
+        
+        
         <div class="brands">
+            <img src="images/logo/1to1hometutor.png" alt="Brand 1">
+            <img src="images/logo/aakri-logo.png" alt="Brand 2">
+            <img src="images/logo/Aashmibiz.png" alt="Brand 3">
+            <img src="images/logo/aqua-pro.png" alt="Brand 4">
+            <img src="images/logo/Family Plastic.png" alt="Brand 5">
+            <img src="images/logo/Genex.png" alt="Brand 6">
+            <img src="images/logo/God's own villa.png" alt="Brand 7">
+            <img src="images/logo/ivs.png" alt="Brand 8">
+            <img src="images/logo/Kerala Days.png" alt="Brand 9">
+            <img src="images/logo/Macare.png" alt="Brand 10">
+            <img src="images/logo/Merzecool.png" alt="Brand 11">
+            <img src="images/logo/Reuseful.png" alt="Brand 12">
+
+
             <img src="images/logo/1to1hometutor.png" alt="Brand 1">
             <img src="images/logo/aakri-logo.png" alt="Brand 2">
             <img src="images/logo/Aashmibiz.png" alt="Brand 3">
@@ -920,27 +976,31 @@
         <h2>Real Results. Real Stories!</h2>
         <div class="stories">
             <div class="story story-1">
-                <img src="images/logo/Genex.png" alt="Story 1">
+                <img src="images/logo/Genex.png" alt="Story 1" style="width: 150px;">
                 <p>From 200 to 6,000+ customers within a year.</p>
                 <p><strong>GENEX</strong> is a leading edtech platform that grew exponentially.</p>
             </div>
             <div class="story story-2">
-                <img src="images/logo/aakri-logo.png" alt="Story 2">
+                <img src="images/logo/aakri-logo.png" alt="Story 2" style="width: 150px;">
                 <p>Increased sales by 150% within 3 months.</p>
                 <p><strong>AAKRI</strong> used our platform to boost their market reach.</p>
             </div>
             <div class="story story-3">
-                <img src="images/logo/Family Plastic.png" alt="Story 3">
+                <img src="images/logo/Family Plastic.png" alt="Story 3" style="width: 120px;">
                 <p>Saved 10 hours a week on customer support.</p>
                 <p><strong>FAMILY PLASTICS</strong> optimized their operations efficiently.</p>
             </div>
         </div>
     </section>
+    
 
+
+    
+    
 
     <div class="container">
         <div class="features-header">
-            <h1>Features</h1>
+            <h1 style="font:poppins;">Features</h1>
         </div>
 
         <div class="feature broadcast-feature">
@@ -1009,6 +1069,8 @@
             <img src="images/integrations/woocommerce-logo-color-black.svg" alt="Make">
             <img src="images/integrations/zapier-logo_black.svg" alt="Make">
             <img src="images/integrations/zoho.svg" alt="Make">
+
+            
         </div>
     </section>
 
