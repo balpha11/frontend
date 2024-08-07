@@ -1,0 +1,18 @@
+#place hamburger button for mobile view navbar 
+#make the headings all of equal size with bolder font weight 
+#add same spacing b/w each section
+#use same font for all headings 
+#use same font for all sub headings 
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
