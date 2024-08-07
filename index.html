@@ -643,7 +643,8 @@
         .reasons-to-choose {
             text-align: center;
             padding: 40px 20px;
-            background-color: #fff;
+            background-color: #f9f4eb;
+            /* Background color similar to the second image */
         }
 
         .reasons-to-choose h2 {
@@ -658,20 +659,31 @@
             margin-bottom: 40px;
         }
 
+        .reasons-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .reasons-container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+            margin-bottom: 20px;
+            /* Add margin between rows */
         }
 
         .reason {
-            background-color: #f9f9f9;
+            background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             max-width: 300px;
+            min-width: 280px;
+            /* Ensure minimum width for proper layout */
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #57BB59;
+            /* Border color related to #57BB59 */
         }
 
         .reason img {
@@ -1148,46 +1160,48 @@
     </div>
 
     <section class="reasons-to-choose">
-        <h2>More reasons to choose Interakt</h2>
+        <h2>More reasons to choose UrbanChat</h2>
         <p>Get a Green Tick verified WhatsApp Business API account along with:</p>
-        <div class="reasons-container">
-            <div class="reason">
-                <img src="path/to/icon1.png" alt="Access to Meta's APIs">
-                <h3>Access to Meta's APIs</h3>
-                <p>Leverage direct Meta APIs and get access to the latest WhatsApp Business API features.</p>
+        <div class="reasons-row">
+            <div class="reasons-container">
+                <div class="reason">
+                    <img src="path/to/icon1.png" alt="Access to Meta's APIs">
+                    <h3>Access to Meta's APIs</h3>
+                    <p>Leverage direct Meta APIs and get access to the latest WhatsApp Business API features.</p>
+                </div>
+                <div class="reason">
+                    <img src="path/to/icon2.png" alt="Scalable Infrastructure">
+                    <h3>Scalable Infrastructure</h3>
+                    <p>1000s of brands have partnered with us to scale up their customer support & engagement!</p>
+                </div>
+                <div class="reason">
+                    <img src="path/to/icon3.png" alt="Seamless Integrations">
+                    <h3>Seamless Integrations</h3>
+                    <p>OOTB integrations with your favorite CRMs, payment gateways, e-stores & marketing automation
+                        platforms.</p>
+                </div>
             </div>
-            <div class="reason">
-                <img src="path/to/icon2.png" alt="Scalable Infrastructure">
-                <h3>Scalable Infrastructure</h3>
-                <p>1000s of brands have partnered with us to scale up their customer support & engagement!</p>
-            </div>
-            <div class="reason">
-                <img src="path/to/icon3.png" alt="Seamless Integrations">
-                <h3>Seamless Integrations</h3>
-                <p>OOTB integrations with your favorite CRMs, payment gateways, e-stores & marketing automation
-                    platforms.</p>
-            </div>
-            <div class="reason">
-                <img src="path/to/icon4.png" alt="Smooth onboarding & easy setup">
-                <h3>Smooth onboarding & easy setup</h3>
-                <p>Minimize operational disruption, and deploy a powerful WhatsApp solution for your business in a few
-                    simple steps!</p>
-            </div>
-            <div class="reason">
-                <img src="path/to/icon5.png" alt="Highly competitive pricing">
-                <h3>Highly competitive pricing</h3>
-                <p>No hidden costs – transparent pricing structure with no lock-ins. We optimize setup & campaign costs
-                    upfront so there are no surprises later.</p>
-            </div>
-            <div class="reason">
-                <img src="path/to/icon6.png" alt="Industry Leading Support">
-                <h3>Industry Leading Support</h3>
-                <p>Access our premium customer support and get a resolution within minutes!</p>
+            <div class="reasons-container">
+                <div class="reason">
+                    <img src="path/to/icon4.png" alt="Smooth onboarding & easy setup">
+                    <h3>Smooth onboarding & easy setup</h3>
+                    <p>Minimize operational disruption, and deploy a powerful WhatsApp solution for your business in a
+                        few simple steps!</p>
+                </div>
+                <div class="reason">
+                    <img src="path/to/icon5.png" alt="Highly competitive pricing">
+                    <h3>Highly competitive pricing</h3>
+                    <p>No hidden costs – transparent pricing structure with no lock-ins. We optimize setup & campaign
+                        costs upfront so there are no surprises later.</p>
+                </div>
+                <div class="reason">
+                    <img src="path/to/icon6.png" alt="Industry Leading Support">
+                    <h3>Industry Leading Support</h3>
+                    <p>Access our premium customer support and get a resolution within minutes!</p>
+                </div>
             </div>
         </div>
     </section>
-
-
 
 
     <section class="integrations">
