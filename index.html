@@ -31,97 +31,7 @@
         }
 
 
-        .nav {
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
 
-        .nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #000000;
-            font-weight: bolder;
-            font-size: larger;
-            transition: color 0.3s, border-bottom 0.3s;
-            padding-bottom: 5px;
-            border-bottom: 2px solid transparent;
-        }
-
-        .nav img {
-            width: 70x;
-            height: 70px;
-        }
-
-        .nav a:hover {
-            color: #4caf50;
-            border-bottom: 2px solid #4caf50;
-        }
-
-        .nav .dropdown {
-            position: relative;
-        }
-
-        .nav .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            top: 100%;
-            left: 0;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .nav .dropdown-content a {
-            color: #000000;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .nav .dropdown-content a:hover {
-            background-color: #f1f1f1;
-            color: #4caf50;
-        }
-
-        .nav .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .cta-buttons {
-            display: flex;
-            align-items: center;
-            margin-left: 20px;
-        }
-
-        .cta-buttons .book-demo,
-        .cta-buttons .free-trial {
-            margin-left: 10px;
-            padding: 8px 16px;
-            border: 1px solid #4caf50;
-            border-radius: 4px;
-            text-decoration: none;
-            color: #4caf50;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-buttons .free-trial {
-            background-color: #4caf50;
-            color: #fff;
-        }
-
-        .cta-buttons .book-demo:hover {
-            background-color: #e8f0fc;
-        }
-
-        .cta-buttons .free-trial:hover {
-            background-color: #388e3c;
-        }
 
 
         .demo-link {
@@ -1005,109 +915,98 @@
             font-weight: bold;
         }
 
-        @media (max-width: 768px) {
 
-            .nav,
-            .cta-buttons {
-                display: none;
-            }
+        .nav-link {
+            color: black !important;
         }
 
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-                /* Ensure the hamburger menu is visible on mobile */
-            }
-
-            .hamburger.active+.nav {
-                display: flex;
-                /* Show the nav when the hamburger is active */
-                flex-direction: column;
-                align-items: flex-start;
-                background-color: #ffffff;
-                padding: 10px;
-                position: absolute;
-                top: 60px;
-                /* Adjust as necessary to align below the header */
-                width: 100%;
-            }
-
-            .nav.active {
-                display: flex;
-                /* Ensure nav is displayed when active */
-            }
-        }
+          
     </style>
 </head>
 
 <body>
 
     <header class="header">
-        <nav class="nav">
-            <a href="index.html">
-                <img src="images/logo.png" alt="urban chat logo">
-            </a>
-            <div class="dropdown">
-                <a href="pricing.html">Pricing</a>
-            </div>
-            <div class="dropdown">
-                <a href="#">Features</a>
-                <div class="dropdown-content">
-                    <a href="features.html">Click to Whattsapp ads</a>
-                    <a href="#">Catalog</a>
-                    <a href="#">Shared Team Inbox</a>
-                    <a href="#">Broadcast & Bulk Meassaging</a>
-                    <a href="#">Custom Notifications</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="urban chat logo" width="100" height="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="featuresDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Features
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="featuresDropdown">
+                                <a class="dropdown-item" href="features.html">Click to WhatsApp ads</a>
+                                <a class="dropdown-item" href="catalog.html">Catalog</a>
+                                <a class="dropdown-item" href="sharedTeaminbox.html">Shared Team Inbox</a>
+                                <a class="dropdown-item" href="Broadcast&BulkMessaging.html">Broadcast & Bulk Messaging</a>
+                                <a class="dropdown-item" href="CustomNotifications.html">Custom Notifications</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="solutionsDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Solutions
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <a class="dropdown-item" href="solutions.html">Education</a>
+                                <a class="dropdown-item" href="MarketingAgencies.html">Marketing Agencies</a>
+                                <a class="dropdown-item" href="salesteam.html">Sales Team</a>
+                                <a class="dropdown-item" href="marketingteams.html">Marketing Teams</a>
+                                <a class="dropdown-item" href="ecommerce.html">Ecommerce</a>
+                                <a class="dropdown-item" href="healthcare.html">Healthcare</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="integrationsDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Integrations
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="integrationsDropdown">
+                                <a class="dropdown-item" href="zoho.html">Zoho</a>
+                                <a class="dropdown-item" href="woocommerce.html">Woocommerce</a>
+                                <a class="dropdown-item" href="zapier.html">Zapier</a>
+                                <a class="dropdown-item" href="hubspot.html">Hubspot</a>
+                                <a class="dropdown-item" href="#">Pabbly Connect</a>
+                                <a class="dropdown-item" href="#">WhatsApp Chatbot</a>
+                                <a class="dropdown-item" href="#">Zoho Flow</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="resourcesDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Resources
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <a class="dropdown-item" href="resources.html">Blog</a>
+                                <a class="dropdown-item" href="#">Chatbot Library</a>
+                                <a class="dropdown-item" href="#">Urbanopaedia</a>
+                                <a class="dropdown-item" href="#">Urban Academy</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ml-auto">
+                        <a href="bookdemo.html"
+                            class="nav-item nav-link btn btn-outline-success font-weight-bold mx-2">Book Demo</a>
+                        <a href="freetrail.html"
+                            class="nav-item nav-link btn btn-success text-white font-weight-bold mx-2">Free Trial</a>
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Solutions</a>
-                <div class="dropdown-content">
-                    <a href="solutions.html">Education</a>
-                    <a href="#">Marketing Agencies</a>
-                    <a href="#">Sales Team</a>
-                    <a href="#">Marketing Teams</a>
-                    <a href="#">Ecommerce</a>
-                    <a href="#">Healthcare</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="
-                #">Integrations</a>
-                <div class="dropdown-content">
-                    <a href="#">Zoho</a>
-                    <a href="#">Woocommerce</a>
-                    <a href="#">Zapier</a>
-                    <a href="#">Hubspot</a>
-                    <a href="#">Pabbly Connect</a>
-                    <a href="#">Whattsapp chatbot</a>
-                    <a href="#">Zoho Flow</a>
-
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#">Resources</a>
-                <div class="dropdown-content">
-                    <a href="resources.html">Blog</a>
-                    <a href="#">chatbot Library</a>
-                    <a href="#">Urabnopaedia</a>
-                    <a href="#">Urban academy</a>
-
-
-                </div>
-            </div>
-        </nav>
-        <div class="cta-buttons">
-            <a href="bookdemo.html" class="book-demo">Book Demo</a>
-            <a href="freetrail.html" class="free-trial">Free Trial</a>
+            </nav>
         </div>
-        <div class="hamburger" id="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
     </header>
+
 
 
     <main class="main">
@@ -1463,16 +1362,12 @@
 
     </script>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.querySelector('.nav');
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-    </script>
+
+
 
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
