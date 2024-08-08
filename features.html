@@ -555,9 +555,14 @@
 
 
         #testimonial-area {
+            background-color: #ecf0f1;
+
+            /* Background color */
             .section-heading h2 {
                 font-size: 48px;
                 line-height: 58px;
+                color: #2c3e50;
+                /* Text color */
             }
         }
 
@@ -587,10 +592,6 @@
                 .client-comment,
                 .client-info {
                     display: none;
-                }
-
-                .client-comment,
-                .client-info {
                     opacity: 0;
                     visibility: hidden;
                 }
@@ -665,8 +666,9 @@
                 &:before {
                     border-radius: 100%;
                     content: '';
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(140, 254, 91)), to(rgb(6, 232, 21)));
-                    background-image: linear-gradient(180deg, rgb(91, 254, 102) 0%, rgb(255, 255, 255) 100%);
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#2ecc71), to(#3498db));
+                    /* Gradient with primary and secondary colors */
+                    background-image: linear-gradient(180deg, #2ecc71 0%, #3498db 100%);
                     padding: 5px;
                     width: 160px;
                     height: 160px;
@@ -681,6 +683,7 @@
                 width: 150px;
                 border-radius: 50%;
                 border: 8px solid #d1e9ff;
+                /* Light border color */
                 cursor: pointer;
             }
 
@@ -698,11 +701,13 @@
                 font-size: 22px;
                 line-height: 32px;
                 color: #505b6d;
+                /* Text color */
             }
 
             span i {
                 font-size: 60px;
-                color: #4caf50;
+                color: #2ecc71;
+                /* Secondary color */
                 margin: 40px 0 24px;
                 display: inline-block;
             }
@@ -710,13 +715,15 @@
 
         .client-info {
             h3 {
-                color: #000;
+                color: #2c3e50;
+                /* Dark text color */
                 font-weight: 600;
                 margin-bottom: 4px;
             }
 
             p {
-                color: #4caf50;
+                color: #e74c3c;
+                /* Accent color */
                 text-transform: uppercase;
             }
         }
