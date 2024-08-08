@@ -147,13 +147,87 @@
         }
 
         .demo-link:hover {
-            color: #388e3c;
+            color: #009c22;
         }
 
         .demo-link:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }
+
+        /* Hamburger menu styles */
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+/* Change for active state */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Show hamburger menu only on mobile */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .logo {
+        order: 1; /* Ensure logo is on the left */
+        margin-right: auto; /* Pushes the hamburger to the right */
+    }
+
+    .hamburger {
+        display: flex;
+        order: 2; /* Ensure hamburger is on the right */
+    }
+
+    .nav {
+        display: none; /* Hide the nav by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .nav.active {
+        display: flex; /* Show the nav when active */
+    }
+
+    .cta-buttons {
+        display: none; /* Hide CTA buttons on mobile */
+    }
+}
+
+
 
         .main {
             padding: 40px 20px;
@@ -409,10 +483,10 @@
             border-radius: 8px;
             margin: 10px 0;
             max-width: 800px;
-            color: #000000;
+            color: #df0909;
             background-color: #fff;
             /* Ensure the background is white */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(221, 12, 12, 0.1);
             /* Optional shadow for depth */
             display: flex;
             align-items: center;
@@ -489,19 +563,19 @@
 
         /* Heading and text styles */
         .feature h2 {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-size: 2.5em;
             color: #000000;
         }
 
         .feature p {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: #000000;
         }
 
         /* Button styles */
         .btn {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #007bff;
             /* Blue button */
             color: #fff;
@@ -514,7 +588,7 @@
 
         /* Header styles */
         .features-header h1 {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: #020203;
             /* Blue text for the header */
             font-weight: bold;
@@ -623,6 +697,7 @@
         .customers h2 {
             margin-bottom: 30px;
             font-weight: bolder;
+            font-family: 'Poppins', sans-serif;
         }
 
         .customers .customer-reviews {
@@ -644,6 +719,7 @@
         .customers .review-box p {
             font-size: 0.9em;
             font-weight: 800;
+            font-family: 'Poppins', sans-serif;
 
         }
 
@@ -659,12 +735,14 @@
             font-size: 2em;
             margin-bottom: 20px;
             color: #000;
+            font-family: 'Poppins', sans-serif;
         }
 
         .reasons-to-choose p {
             font-size: 1.2em;
             color: #000000;
             margin-bottom: 40px;
+            font-family: 'Poppins', sans-serif;
         }
 
         .reasons-row {
@@ -713,6 +791,7 @@
             font-size: 1.5em;
             color: #000000;
             margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;;
         }
 
         .reason p {
@@ -753,6 +832,7 @@
             color: #000000;
             font-weight: bolder;
             margin-bottom: 30px;
+            font-family: 'Poppins', sans-serif;
         }
 
         .advantage .advantages {
@@ -1042,6 +1122,12 @@
             <a href="bookdemo.html" class="book-demo">Book Demo</a>
             <a href="freetrail.html" class="free-trial">Free Trial</a>
         </div>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
     </header>
 
 
@@ -1379,6 +1465,17 @@
         });
 
     </script>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+</script>
+
 </body>
 
 </html>

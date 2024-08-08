@@ -28,6 +28,9 @@
             padding: 10px 20px;
             background-color: #ffffff;
             border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .nav {
@@ -120,6 +123,66 @@
         .cta-buttons .free-trial:hover {
             background-color: #388e3c;
         }
+
+
+                        /* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+/* Change for active state */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Show hamburger menu only on mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        display: none; /* Hide the nav by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .nav.active {
+        display: flex; /* Show the nav when active */
+    }
+
+    .cta-buttons {
+        display: none; /* Hide CTA buttons on mobile */
+    }
+}
+
 
         .main {
             text-align: center;
@@ -470,6 +533,11 @@
         <div class="cta-buttons">
             <a href="bookdemo.html" class="book-demo">Book Demo</a>
             <a href="freetrial.html" class="free-trial">Free Trial</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     </header>
     <main class="main">
@@ -1452,6 +1520,15 @@
         // Event to trigger display of monthly plans by default on page load
         document.addEventListener('DOMContentLoaded', function () {
             setPricingPeriod('Monthly');
+        });
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('.nav');
+    
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
         });
     </script>
 </body>
