@@ -1,9 +1,9 @@
-#place hamburger button for mobile view navbar 
-#make the headings all of equal size with bolder font weight 
-#add same spacing b/w each section
-#use same font for all headings 
-#use same font for all sub headings 
-#
+#creating pages for <a class="dropdown-item" href="woocommerce.html">Woocommerce</a>
+                                <a class="dropdown-item" href="zapier.html">Zapier</a>
+                                <a class="dropdown-item" href="hubspot.html">Hubspot</a>
+                                <a class="dropdown-item" href="PabblyConnect.html">Pabbly Connect</a>
+                                <a class="dropdown-item" href="wahttsappshop.html">WhatsApp Chatbot</a>
+                                <a class="dropdown-item" href="zohoflow.html">Zoho Flow</a>
 #
 #
 #

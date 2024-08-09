@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>WooCommerce Integration</title>
+    <title>WhatsApp Shop Integration</title>
     <style>
         /* Header Styles */
         .header {
@@ -97,14 +97,14 @@
             height: auto;
         }
 
-        /* WooCommerce Features Section */
-        .woocommerce-features {
+        /* WhatsApp Shop Features Section */
+        .whatsappshop-features {
             background-color: #fff;
             padding: 50px 20px;
             text-align: center;
         }
 
-        .woocommerce-features h2 {
+        .whatsappshop-features h2 {
             font-size: 2rem;
             color: #333;
             margin-bottom: 30px;
@@ -116,6 +116,7 @@
             border: 1px solid #ddd;
             border-radius: 10px;
             margin-bottom: 20px;
+            background-color: #f9f9f9;
         }
 
         .feature-box i {
@@ -132,6 +133,23 @@
         .feature-box p {
             color: #666;
             font-size: 1.1rem;
+        }
+
+        /* Video Section */
+        .video-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fef6de;
+        }
+
+        .video-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .video-section img {
+            max-width: 100%;
+            height: auto;
         }
 
         /* Footer Call-to-Action */
@@ -211,6 +229,33 @@
         .footer-social a:hover {
             color: #fff;
         }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #f9f9ff;
+            padding: 50px 20px;
+        }
+
+        .faq-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .faq-section .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-section .faq-item h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .faq-section .faq-item p {
+            font-size: 1.1rem;
+            color: #555;
+        }
     </style>
 </head>
 
@@ -266,9 +311,9 @@
                             <div class="dropdown-menu drop_menu_card" aria-labelledby="integrationsDropdown">
                                 <a class="dropdown-item" href="zoho.html">Zoho</a>
                                 <a class="dropdown-item" href="woocommerce.html">Woocommerce</a>
-                                <a class="dropdown-item" href="#">Zapier</a>
-                                <a class="dropdown-item" href="#">Hubspot</a>
-                                <a class="dropdown-item" href="#">Pabbly Connect</a>
+                                <a class="dropdown-item" href="zapier.html">Zapier</a>
+                                <a class="dropdown-item" href="hubspot.html">HubSpot</a>
+                                <a class="dropdown-item" href="PabblyConnect.html">Pabbly Connect</a>
                                 <a class="dropdown-item" href="#">WhatsApp Chatbot</a>
                                 <a class="dropdown-item" href="#">Zoho Flow</a>
                             </div>
@@ -299,48 +344,76 @@
 
     <main class="main">
         <div class="text-content">
-            <h1>Enhance Your WooCommerce Store with <span class="whatsapp-text">WhatsApp</span> Integration</h1>
-            <p>Streamline your operations and enhance customer engagement directly through <span class="whatsapp-text">WhatsApp</span>. From sending order confirmations to abandoned cart reminders, manage everything effortlessly.</p>
+            <h1>Online shopping made easy with WhatsApp Shop</h1>
+            <p>Share your very own customized WhatsApp Shop with your customers, providing them with a seamless shopping experience.</p>
             <p class="note"><i class="fas fa-credit-card"></i> No credit card required</p>
             <a href="freetrail.html" class="free-trial-button">Free Trial</a>
             <a href="bookdemo.html" class="demo-link"> Book a Demo Today</a>
         </div>
         <div class="image-content">
-            <img src="images/woocommerce-integration.png" alt="WooCommerce Integration Image">
+            <img src="images/whatsapp-shop.png" alt="WhatsApp Shop Integration Image">
         </div>
     </main>
 
-    <section class="woocommerce-features">
+    <section class="whatsappshop-features">
         <div class="container">
-            <h2>Key Features of WooCommerce Integration</h2>
+            <h2>Share your very own customized WhatsApp Shop</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="feature-box">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Order Notifications</h3>
-                        <p>Automatically send order confirmations, shipping updates, and delivery alerts via WhatsApp.</p>
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Showcase Products</h3>
+                        <p>Display your products and services directly on WhatsApp Shop, making it easy for customers to browse and purchase.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-box">
-                        <i class="fas fa-cart-arrow-down"></i>
-                        <h3>Abandoned Cart Reminders</h3>
-                        <p>Recover lost sales by sending timely abandoned cart reminders to customers.</p>
+                        <i class="fas fa-share-alt"></i>
+                        <h3>Seamless Sharing</h3>
+                        <p>Easily share your WhatsApp Shop with your customers through chat or social media, increasing your reach.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-box">
-                        <i class="fas fa-bullhorn"></i>
-                        <h3>Promotional Messages</h3>
-                        <p>Engage customers with promotional offers, discounts, and product announcements.</p>
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Easy Payment Options</h3>
+                        <p>Offer various payment options within WhatsApp Shop to provide a smooth transaction experience for your customers.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="video-section">
+        <h3>See WhatsApp Shop integration in action</h3>
+        <img src="images/whatsappshop-video.png" alt="Video Thumbnail">
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>Can I customize the WhatsApp Shop for my brand?</h4>
+                <p>Yes, you can customize the shop to reflect your brand's identity, including product listings, colors, and more.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is there a limit to the number of products I can showcase?</h4>
+                <p>No, you can showcase as many products as you want, giving your customers a wide range of options to choose from.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do customers pay within WhatsApp Shop?</h4>
+                <p>Customers can pay using various integrated payment methods, making the checkout process easy and secure.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is WhatsApp Shop free for customers and businesses?</h4>
+                <p>Yes, setting up and using WhatsApp Shop is free for both businesses and customers, with no hidden charges.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="footer-cta">
-        <p>Discover more ways to connect with your WooCommerce customers using WhatsApp. Start your free trial today or book a demo to see the integration in action.</p>
+        <p>Discover more. WhatsApp, Facebook, and Instagram dominate social media messaging. Leverage this with one of
+            the fastest-growing WhatsApp Business Solution Providers.</p>
         <a href="freetrail.html" class="trial-button">Free 7 Day Trial</a>
     </section>
 
