@@ -270,27 +270,30 @@ body {
     border-radius: 15px;
     /* Rounded corners */
     padding: 20px;
-    box-shadow: 0 4px 6px #0e0808f5;
+   
     max-width: 280px;
     text-align: center;
     /* Center the content */
     transition: border 0.3s ease, box-shadow 0.3s ease;
     background-color: #fbeef6;
-    /* Background color */
-    border: 2px solid #fff8f8;
-    /* Border color */
+    border: 2px solid #4caf50;
+   
+    border-top: none;
+    border-bottom: none;
     position: relative;
     /* For the shadow effect */
     overflow: hidden;
+   
+    
 }
 
 .story::after,
 .story::before {
     content: '';
     position: absolute;
-    background: rgba(76, 175, 80, 1);
+   
     /* Solid green color */
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    
     /* Optional glow effect */
     pointer-events: none;
     /* Ensures the line doesn't interfere with interactions */
@@ -303,7 +306,6 @@ body {
     /* Full height */
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, rgb(15, 204, 5), rgba(255, 255, 255, 0));
     /* Gradient for the left-side line */
 }
 
@@ -314,7 +316,6 @@ body {
     /* Height of the bottom line */
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, rgb(15, 204, 5), rgba(255, 255, 255, 0));
     /* Gradient for the bottom line */
 }
 
@@ -341,10 +342,7 @@ body {
     /* Make the strong text even bolder */
 }
 
-.story:hover {
-    border: 2px solid #4caf50;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
+
 
 .story-1 {
     background-color: #ffffff;
@@ -363,7 +361,11 @@ body {
 
 .story:hover {
     border: 2px solid #4caf50;
+   
+    border-top: none;
+    border-bottom: none;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border-width: 3px;
 }
 
 
@@ -775,6 +777,7 @@ body {
 
 .integrations .integration-logos img {
     height: 40px;
+    margin-left: 4px;
 }
 
 

@@ -1,0 +1,146 @@
+
+
+.cont_feature_moblile{
+    display: none;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .text-content, .image-content {
+        flex: 1 1 100%;
+        text-align: center;
+        order: 1; /* Ensure text content appears first */
+    }
+
+    .image-content {
+        order: 2; /* Ensure image content appears last */
+    }
+
+    .text-content h1 {
+        font-size: 2.5em;
+    }
+
+    .text-content p {
+       display: none;
+    }
+
+    .note {
+        font-size: 0.8em;
+    }
+
+
+/* trusted-brands */
+.trusted-brands{
+    font-size: x-small;
+}
+
+
+
+.real-stories h2{
+   font-size: 20px;
+}
+
+/* advantage    urbanchat */
+.advantage h2{
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* feature */
+
+.cont_feature_moblile{
+    display: block;
+}
+.container_feature{
+    display: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .text-content h1 {
+        font-size: 2em;
+    }
+
+    .text-content p {
+        font-size: 1em;
+    }
+
+    .note {
+        font-size: 0.75em;
+    }
+
+
+   /* trusted-brands */
+   .containerb{
+    margin-top: -40px;
+   }
+
+   /* real-stories */
+.real-stories{
+    margin-top: -40px;
+}
+
+
+
+
+
+
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+    .text-content h1 {
+        font-size: 1.8em;
+    }
+
+    .text-content p {
+        font-size: 0.9em;
+    }
+
+    .note {
+        font-size: 0.7em;
+    }
+
+    .image-content img {
+        max-width: 90%;
+    }
+
+
+
+
+    
+}
