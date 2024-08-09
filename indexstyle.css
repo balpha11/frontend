@@ -1,6 +1,12 @@
 /* 1)body */
-/* 1)header */
- /* 1)trusted-brands */
+/* 2)header
+3)trusted-brands
+4)real-stories */
+/* 5)feature */
+/* 6)reasons-to-choose
+7)integrations
+8)advantage
+9)footer */
 
 
 
@@ -28,7 +34,7 @@ body {
 
 /* -------------------------------------- */
 
-                 /* 1)header */
+                 /* 2)header */
 
 /* -------------------------------------- */
 .header {
@@ -118,7 +124,7 @@ body {
 
 /* -------------------------------------- */
 
-         /* 1)trusted-brands */
+         /* 3)trusted-brands */
 
 /* -------------------------------------- */
 
@@ -233,6 +239,14 @@ body {
 .brand-container img:hover {
     transform: scale(1.1);
 }
+
+
+
+/* -------------------------------------- */
+
+                 /* 4)real-stories */
+
+/* -------------------------------------- */
 
 
 
@@ -362,6 +376,16 @@ body {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+
+
+/* -------------------------------------- */
+
+                 /* 5)feature */
+
+/* -------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -640,6 +664,15 @@ body {
 }
 
 
+/* -------------------------------------- */
+
+             /* 6)reasons-to-choose */
+
+/* -------------------------------------- */
+
+
+
+
 .reasons-to-choose {
     text-align: center;
     padding: 40px 20px;
@@ -719,6 +752,18 @@ body {
     font-family: "Roboto Condensed", sans-serif;
 }
 
+
+
+
+
+
+
+/* -------------------------------------- */
+
+                 /* 7)integrations */
+
+/* -------------------------------------- */
+
 .integrations {
     padding: 40px 20px;
     text-align: center;
@@ -740,6 +785,16 @@ body {
 .integrations .integration-logos img {
     height: 40px;
 }
+
+
+
+
+/* -------------------------------------- */
+
+                 /* 8)advantage */
+
+/* -------------------------------------- */
+
 
 .advantage {
     padding: 40px 20px;
@@ -810,6 +865,17 @@ body {
     margin-bottom: 20px;
     font-weight: 600;
 }
+
+
+
+
+
+
+/* -------------------------------------- */
+
+                 /* 9)footer */
+
+/* -------------------------------------- */
 
 .footer {
     padding: 40px 20px;
