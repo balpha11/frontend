@@ -1,9 +1,4 @@
-#creating pages for <a class="dropdown-item" href="woocommerce.html">Woocommerce</a>
-                                <a class="dropdown-item" href="zapier.html">Zapier</a>
-                                <a class="dropdown-item" href="hubspot.html">Hubspot</a>
-                                <a class="dropdown-item" href="PabblyConnect.html">Pabbly Connect</a>
-                                <a class="dropdown-item" href="wahttsappshop.html">WhatsApp Chatbot</a>
-                                <a class="dropdown-item" href="zohoflow.html">Zoho Flow</a>
+
 #
 #
 #
