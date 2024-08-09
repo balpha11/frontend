@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Healthcare - Urbanchat</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main {
+            padding: 40px 20px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .text-content h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .whatsapp-text {
+            color: #4caf50;
+        }
+
+        .text-content p {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            color: #000000;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .note i {
+            color: #4caf50;
+            font-size: 1.1em;
+        }
+
+        .trial-button {
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .trial-button:hover {
+            background-color: #388e3c;
+        }
+
+        .free-trial-button {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .free-trial-button:hover {
+            background-color: #388e3c;
+        }
+
+        .note {
+            color: #000000;
+            font-size: 0.9em;
+        }
+
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .feature-section {
+            padding: 40px 20px;
+            background-color: #e0fff0;
+        }
+
+        .feature-section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .feature-section p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+
+        .feature-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .feature-item {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .feature-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5em;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 1em;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .feature-item .btn {
+            margin-top: 10px;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .feature-item .btn:hover {
+            background-color: #388e3c;
+        }
+
+        .footer {
+            padding: 40px 20px;
+            background-color: #212121;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .footer h4 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .footer .footer-links {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-links div {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .footer .footer-links div:nth-child(1) h4 {
+            color: #f8ce5a;
+        }
+
+        .footer .footer-links div:nth-child(2) h4 {
+            color: #33c1ff;
+        }
+
+        .footer .footer-links div:nth-child(3) h4 {
+            color: #4bffba;
+        }
+
+        .footer .footer-links div:nth-child(4) h4 {
+            color: #ff33a8;
+        }
+
+        .footer .footer-links div:nth-child(5) h4 {
+            color: #ffbf33;
+        }
+
+        .footer .footer-links div:nth-child(6) h4 {
+            color: #57BB59;
+        }
+
+        .footer .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer .footer-awards {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-awards img {
+            height: 40px;
+        }
+
+        .footer .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer .footer-bottom p {
+            margin: 0;
+        }
+
+        .footer .footer-bottom a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer .footer-social a {
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer .footer-social a:hover {
+            color: #4caf50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="urban chat logo" width="100" height="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="featuresDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Features
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="featuresDropdown">
+                                <a class="dropdown-item" href="features.html">Click to WhatsApp ads</a>
+                                <a class="dropdown-item" href="sharedTeaminbox.html">Shared Team Inbox</a>
+                                <a class="dropdown-item" href="Broadcast&BulkMessaging.html">Broadcast & Bulk
+                                    Messaging</a>
+                                <a class="dropdown-item" href="CustomNotifications.html">Custom Notifications</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="solutionsDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Solutions
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <a class="dropdown-item" href="solutions.html">Education</a>
+                                <a class="dropdown-item" href="MarketingAgencies.html">Marketing Agencies</a>
+                                <a class="dropdown-item" href="salesteam.html">Sales Team</a>
+                                <a class="dropdown-item" href="marketingteams.html">Marketing Teams</a>
+                                <a class="dropdown-item" href="ecommerce.html">Ecommerce</a>
+                                <a class="dropdown-item" href="healthcare.html">Healthcare</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="integrationsDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Integrations
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="integrationsDropdown">
+                                <a class="dropdown-item" href="#">Zoho</a>
+                                <a class="dropdown-item" href="#">Woocommerce</a>
+                                <a class="dropdown-item" href="#">Zapier</a>
+                                <a class="dropdown-item" href="#">Hubspot</a>
+                                <a class="dropdown-item" href="#">Pabbly Connect</a>
+                                <a class="dropdown-item" href="#">WhatsApp Chatbot</a>
+                                <a class="dropdown-item" href="#">Zoho Flow</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="resourcesDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Resources
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <a class="dropdown-item" href="resources.html">Blog</a>
+                                <a class="dropdown-item" href="#">Chatbot Library</a>
+                                <a class="dropdown-item" href="#">Urbanopaedia</a>
+                                <a class="dropdown-item" href="#">Urban Academy</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ml-auto">
+                        <a href="bookdemo.html"
+                            class="nav-item nav-link btn btn-outline-success font-weight-bold mx-2">Book Demo</a>
+                        <a href="freetrail.html"
+                            class="nav-item nav-link btn btn-success text-white font-weight-bold mx-2">Free Trial</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="text-content">
+            <h1>Healthcare</h1>
+            <p>Efficient and personalized healthcare communications using WhatsApp. Connect and engage with your
+                patients effortlessly.</p>
+            <p class="note"><i class="fas fa-credit-card"></i> No credit card required</p>
+            <a href="freetrail.html" class="free-trial-button">Free Trial</a>
+            <a href="bookdemo.html" class="demo-link"> Book a Demo Today</a>
+        </div>
+        <div class="image-content">
+            <img src="images/Capture.JPG" alt="Healthcare Image">
+        </div>
+    </main>
+
+    <section class="feature-section">
+        <h2>Why Choose Urbanchat for Healthcare?</h2>
+        <p>Efficient and personalized healthcare communications using WhatsApp.</p>
+        <div class="feature-content">
+            <div class="feature-item">
+                <img src="images/Capture.JPG" alt="Secure and Compliant">
+                <h3>Secure and Compliant</h3>
+                <p>Ensure secure and compliant communication with your patients, adhering to healthcare regulations and
+                    standards.</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/Capture.JPG" alt="Increase Efficiency">
+                <h3>Increase Efficiency</h3>
+                <p>Streamline your operations with automated appointment reminders, follow-ups, and instant
+                    communication.</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/Capture.JPG" alt="Enhanced Patient Engagement">
+                <h3>Enhanced Patient Engagement</h3>
+                <p>Engage with patients effectively through personalized messages, updates, and support.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <div>
+                <h4>Top Features</h4>
+                <a href="#">Chatbots</a>
+                <a href="#">Multi-Agent Support</a>
+                <a href="#">Custom Notifications</a>
+                <a href="#">Click to WhatsApp Ads</a>
+                <a href="#">Customer Data Management</a>
+            </div>
+            <div>
+                <h4>Solutions</h4>
+                <a href="#">Education</a>
+                <a href="#">Healthcare</a>
+                <a href="#">Sales Teams</a>
+                <a href="#">Support Teams</a>
+                <a href="#">Marketing Teams</a>
+                <a href="#">Marketing Agencies</a>
+            </div>
+            <div>
+                <h4>Integrations</h4>
+                <a href="#">Zapier</a>
+                <a href="#">HubSpot</a>
+                <a href="#">Integromat</a>
+                <a href="#">Pabbly Connect</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="#">Blog</a>
+                <a href="#">Help Center</a>
+                <a href="#">Customer Stories</a>
+                <a href="#">WhatsApp Templates</a>
+                <a href="#">WhatsApp for Business</a>
+            </div>
+            <div>
+                <h4>Free WhatsApp Tools</h4>
+                <a href="#">WhatsApp QR Code Generator</a>
+                <a href="#">WhatsApp Chat Link Generator</a>
+                <a href="#">WhatsApp Chat Button Generator</a>
+            </div>
+            <div>
+                <h4>Urbanchat</h4>
+                <a href="#">Pricing</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Book a Demo</a>
+                <a href="#">Product Overview</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Urbanchat. All Rights Reserved. | <a href="#">Terms & Conditions</a> | <a href="#">Privacy
+                    Policy</a></p>
+            <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
