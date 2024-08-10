@@ -50,6 +50,32 @@
 }
 
 
+.reason {
+    padding: 1px;
+   
+   
+    min-width: 130px;
+   
+}
+.reason h3{
+    font-size: small;
+}
+.reason p{
+    font-size: x-small;
+}
+.reason i{
+    font-size:large;
+}
+
+.reasons-to-choose .container h2{
+    font-size: large;
+}
+.reasons-to-choose .container .mess_more{
+    font-size: medium;
+}
+
+
+
 
 
 
