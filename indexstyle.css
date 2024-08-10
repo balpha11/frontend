@@ -279,10 +279,9 @@ body {
     /* Center the content */
     transition: border 0.3s ease, box-shadow 0.3s ease;
     background-color: #fbeef6;
-    border: 2px solid #4caf50;
+    border: 2px solid #000000;
    
-    border-top: none;
-    border-bottom: none;
+   
     position: relative;
     /* For the shadow effect */
     overflow: hidden;
@@ -363,10 +362,9 @@ body {
 }
 
 .story:hover {
-    border: 2px solid #4caf50;
    
-    border-top: none;
-    border-bottom: none;
+   
+   
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     border-width: 3px;
 }
