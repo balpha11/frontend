@@ -988,8 +988,8 @@ body {
 
 .whatsapp-chat-widget {
     position: fixed;
-    bottom: 750px;
-    right: 40px;
+    bottom: 20px;
+    right:20px;
     z-index: 1000;
 }
 

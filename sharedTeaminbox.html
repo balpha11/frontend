@@ -139,32 +139,72 @@
         }
 
         .feature-item {
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #39ca0c;
+           
             border-radius: 10px;
             padding: 20px;
             max-width: 300px;
+            max-height: 230px;
             text-align: center;
-            transition: box-shadow 0.3s;
+           
         }
+
+        
+/*    
+
+@media (min-width:787px) {
+    .fee_item_1{
+            border-width: 2px;
+            border-top: none;
+            border-right: none;
+        
+
+        }
+        .fee_item_2{
+            border-width: 2px;
+            
+            border-bottom: none;
+        
+
+        }
+        .fee_item_3{
+            border-width: 2px;
+            
+            border-left: none;
+            border-top: none;
+        
+
+        }
+}
+        */
+        
 
         .feature-item:hover {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .feature-item img {
-            max-width: 100%;
-            border-radius: 10px;
+            max-width: 30%;
+            border-radius: 50px;
             margin-bottom: 10px;
+            position: relative;
+            top: -60px;
+            background-color: rgba(238, 238, 238, 0.658);
+
+           
         }
 
         .feature-item h3 {
+            position: relative;
+            top: -60px;
             font-size: 1.5em;
             color: #000000;
             margin-bottom: 10px;
         }
 
         .feature-item p {
+            position: relative;
+            top: -60px;
             font-size: 1em;
             color: #000000;
             margin-bottom: 10px;
@@ -326,6 +366,112 @@
         .nav-link{
             color: black !important;
         }
+
+
+
+        /* ---------------------- */
+        /* responsive code */
+        /* ------------------------ */
+        /* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+    .text-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image-content {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .image-content {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+    .feature-section h2{
+        font-size: large;
+    }
+    .feature-section p{
+        font-size: medium;
+    }
+    .feature-item h3{
+        font-size: medium;
+    }
+    .feature-item p{
+        font-size: small;
+    }
+    /* .fee_item_1{
+        border-radius: 0px;
+            border-width: 2px;
+            border-top: none;
+            border-right: none;
+        
+
+        }
+    .fee_item_2{
+        border-radius: 0px;
+            border-width: 2px;
+            
+            border-top: none;
+            border-left: none;
+          
+        
+
+        }
+        .fee_item_3{
+            border-radius: 0px;
+            border-width: 2px;
+            
+            border-right: none;
+            border-top: none;
+        
+
+        } */
+}
+
+@media (max-width: 576px) {
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 0.8rem;
+    }
+
+    .free-trial-button, .demo-link {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
     </style>
 </head>
 
@@ -414,7 +560,7 @@
     </header>
 
     <main class="main">
-        <div class="text-content">
+        <div class="text-content ">
             <h1>Shared Team Inbox</h1>
             <p>Enhance team collaboration and streamline customer communication with our Shared Team Inbox feature.</p>
             <p class="note"><i class="fas fa-credit-card"></i> No credit card required</p>
@@ -422,7 +568,7 @@
             <a href="bookdemo.html" class="demo-link"> Book a Demo Today</a>
         </div>
         <div class="image-content">
-            <img src="images/Capture.JPG" alt="Shared Team Inbox Image">
+            <img src="images/hero-image.html" alt="Shared Team Inbox Image">
         </div>
     </main>
 
@@ -430,20 +576,23 @@
         <h2>Why Choose Shared Team Inbox?</h2>
         <p>Effortless management of customer and prospect communication.</p>
         <div class="feature-content">
-            <div class="feature-item">
-                <img src="images/Capture.JPG" alt="Organize Teams">
+            <div class="feature-item  ">
+                <img src="images/3d-isometric-vr-game-headset-for-playing-video-games.gif" alt="Feature 1">
+
                 <h3>Organize Teams</h3>
                 <p>Collaborate with your team by assigning chats to specific users, making communication seamless and
                     efficient.</p>
             </div>
-            <div class="feature-item">
-                <img src="images/Capture.JPG" alt="Manage Contacts">
+            <div class="feature-item ">
+                <img src="images/3d-isometric-vr-game-headset-for-playing-video-games.gif" alt="Feature 1">
+
                 <h3>Manage Contacts</h3>
                 <p>Easily manage and segment your contacts with features that ensure you are always communicating with
                     the right audience.</p>
             </div>
-            <div class="feature-item">
-                <img src="images/Capture.JPG" alt="Engage, Sell and Support">
+            <div class="feature-item ">
+                <img src="images/3d-isometric-vr-game-headset-for-playing-video-games.gif" alt="Feature 1">
+
                 <h3>Engage, Sell and Support</h3>
                 <p>Boost engagement, drive sales and provide top-notch support through a unified inbox.</p>
             </div>
