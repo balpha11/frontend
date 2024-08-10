@@ -188,6 +188,8 @@ body {
     max-width: 1200px;
     margin: 100px auto;
     overflow: hidden;
+    position:relative;
+    top: -85px;
 }
 
 .trusted-brands {
@@ -223,6 +225,7 @@ body {
     transition: transform 0.3s;
     aspect-ratio: 2/3;
     object-fit: contain;
+    margin-left: 50px;
 }
 
 .brand-container img:hover {
