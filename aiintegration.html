@@ -7,28 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>WhatsApp QR Code Generator</title>
+    <title>Zoho Flow Integration</title>
     <style>
-        /* General Theme Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Arial', sans-serif;
-        }
-
-        a {
-            color: #25d366;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #128c7e;
-        }
-
         /* Header Styles */
         .header {
             display: flex;
@@ -63,165 +43,139 @@
 
         /* Main Section Styles */
         .main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             padding: 50px 20px;
-            background-color: #ffffff;
-            text-align: center;
+            background-color: #f9f9f9;
         }
 
-        .main h1 {
+        .text-content h1 {
             font-size: 2.5rem;
             color: #333;
         }
 
-        .main p {
+        .text-content .whatsapp-text {
+            color: #25d366;
+        }
+
+        .text-content p {
             margin: 20px 0;
             color: #555;
             font-size: 1.1rem;
         }
 
-        .qr-generator {
-            padding: 50px 20px;
-        }
-
-        .qr-generator h2 {
-            font-size: 2rem;
+        .text-content .note {
+            font-size: 1rem;
             color: #333;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .qr-steps-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-
-        .qr-steps {
-            width: 40%;
-            text-align: left;
-        }
-
-        .qr-steps h3 {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .qr-step {
-            margin-bottom: 20px;
-        }
-
-        .qr-step h4 {
-            font-size: 1.2rem;
-            color: #333;
-            margin-bottom: 10px;
             display: flex;
             align-items: center;
         }
 
-        .qr-step h4 i {
+        .text-content .note i {
             margin-right: 10px;
             color: #25d366;
         }
 
-        .qr-step p {
-            font-size: 1rem;
-            color: #333;
-        }
-
-        .qr-generator-form {
-            width: 50%;
-            padding: 20px;
-            border: 2px solid #25d366;
-            border-radius: 10px;
-            background-color: #e6fff2;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .qr-generator-form h3 {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .qr-generator-form input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .qr-generator-form button {
-            width: 48%;
-            padding: 10px;
+        .free-trial-button,
+        .demo-link {
             background-color: #25d366;
             color: #fff;
-            border: none;
+            padding: 10px 20px;
             border-radius: 5px;
-            cursor: pointer;
-            margin-right: 4%;
+            text-decoration: none;
+            margin-right: 10px;
         }
 
-        .qr-generator-form button:last-child {
-            margin-right: 0;
-        }
-
-        .qr-generator-form button:hover {
+        .free-trial-button:hover,
+        .demo-link:hover {
             background-color: #128c7e;
         }
 
-        .faq-section {
-            background-color: #f1f1f1;
-            padding: 50px 20px;
-            margin-top: 50px;
+        .image-content img {
+            max-width: 100%;
+            height: auto;
         }
 
-        .faq-section h2 {
+        /* Zoho Flow Features Section */
+        .zohoflow-features {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .zohoflow-features h2 {
             font-size: 2rem;
             color: #333;
             margin-bottom: 30px;
-            text-align: center;
         }
 
-        .faq-section .faq-item {
+        .feature-box {
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
             margin-bottom: 20px;
+            background-color: #f9f9f9;
         }
 
-        .faq-section .faq-item h4 {
-            font-size: 1.3rem;
+        .feature-box i {
+            font-size: 2rem;
+            color: #25d366;
+            margin-bottom: 10px;
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
             color: #333;
         }
 
-        .faq-section .faq-item p {
+        .feature-box p {
+            color: #666;
             font-size: 1.1rem;
-            color: #555;
         }
 
-        .get-started-section {
-            background-color: #25d366;
-            padding: 50px 20px;
+        /* Video Section */
+        .video-section {
             text-align: center;
-            color: #fff;
+            padding: 50px 20px;
+            background-color: #fef6de;
         }
 
-        .get-started-section p {
+        .video-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .video-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer Call-to-Action */
+        .footer-cta {
+            background-color: #25d366;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .footer-cta p {
             font-size: 1.5rem;
             margin-bottom: 20px;
         }
 
-        .get-started-section a {
-            background-color: #128c7e;
-            color: #fff;
+        .trial-button {
+            background-color: #fff;
+            color: #25d366;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
         }
 
-        .get-started-section a:hover {
-            background-color: #0b644a;
+        .trial-button:hover {
+            background-color: #128c7e;
+            color: #fff;
         }
 
         /* Footer Styles */
@@ -275,6 +229,33 @@
         .footer-social a:hover {
             color: #fff;
         }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #fef6de;
+            padding: 50px 20px;
+        }
+
+        .faq-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .faq-section .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-section .faq-item h4 {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .faq-section .faq-item p {
+            font-size: 1.1rem;
+            color: #555;
+        }
     </style>
 </head>
 
@@ -304,7 +285,8 @@
                                 <a class="dropdown-item" href="features.html">Click to WhatsApp ads</a>
                                 <a class="dropdown-item" href="sharedTeaminbox.html">Shared Team Inbox</a>
                                 <a class="dropdown-item" href="catalog.html">Catalog</a>
-                                <a class="dropdown-item" href="Broadcast&BulkMessaging.html">Broadcast & Bulk Messaging</a>
+                                <a class="dropdown-item" href="Broadcast&BulkMessaging.html">Broadcast & Bulk
+                                    Messaging</a>
                                 <a class="dropdown-item" href="CustomNotifications.html">Custom Notifications</a>
                             </div>
                         </li>
@@ -315,9 +297,9 @@
                             </a>
                             <div class="dropdown-menu drop_menu_card" aria-labelledby="solutionsDropdown">
                                 <a class="dropdown-item" href="solutions.html">Education</a>
-                                <a class="dropdown-item" href="MarketingAgencies.html">Marketing Agencies</a>
-                                <a class="dropdown-item" href="salesteam.html">Sales Team</a>
-                                <a class="dropdown-item" href="marketingteams.html">Marketing Teams</a>
+                                <a class="dropdown-item" href="travelandhospital.html">Travel and hospital</a>
+                                <a class="dropdown-item" href="automobiles.html">Automobiles</a>
+                                <a class="dropdown-item" href="retailnetwork.html">Retail network</a>
                                 <a class="dropdown-item" href="ecommerce.html">Ecommerce</a>
                                 <a class="dropdown-item" href="healthcare.html">Healthcare</a>
                             </div>
@@ -331,9 +313,10 @@
                                 <a class="dropdown-item" href="zoho.html">Zoho</a>
                                 <a class="dropdown-item" href="woocommerce.html">Woocommerce</a>
                                 <a class="dropdown-item" href="zapier.html">Zapier</a>
-                                <a class="dropdown-item" href="hubspot.html">HubSpot</a>
+                                <a class="dropdown-item" href="hubspot.html">Hubspot</a>
                                 <a class="dropdown-item" href="PabblyConnect.html">Pabbly Connect</a>
-                                <a class="dropdown-item" href="zohoflow.html">Zoho Flow</a>
+                                <a class="dropdown-item" href="wahttsappshop.html">WhatsApp Shop</a>
+                                <a class="dropdown-item" href="aiintegration.html">Ai integration</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -343,9 +326,7 @@
                             </a>
                             <div class="dropdown-menu drop_menu_card" aria-labelledby="resourcesDropdown">
                                 <a class="dropdown-item" href="resources.html">Blog</a>
-                                <a class="dropdown-item" href="chatbotlibrary.html">Chatbot Library</a>
-                                <a class="dropdown-item" href="Urbanopaedia.html">Urbanopaedia</a>
-                                <a class="dropdown-item" href="#">Urban Academy</a>
+                                <a class="dropdown-item" href="chatbotlibrary.html">Chatbot Library</a>                                                       
                             </div>
                         </li>
                     </ul>
@@ -360,76 +341,76 @@
         </div>
     </header>
 
+
     <main class="main">
-        <h1>Free WhatsApp QR Code Generator</h1>
-        <p>Create your personalized WhatsApp QR code in seconds</p>
-
-        <div class="qr-generator">
-            <h2>Follow these simple steps to generate a WhatsApp QR code.</h2>
-            <div class="qr-steps-container">
-                <div class="qr-steps">
-                    <div class="qr-step">
-                        <h4><i class="bi bi-check-circle"></i> Step 1</h4>
-                        <p>Enter the mobile number complete with country code but without the "+" sign.</p>
-                    </div>
-                    <div class="qr-step">
-                        <h4><i class="bi bi-check-circle"></i> Step 2</h4>
-                        <p>Add any pre-filled message such as "Hi" or "Show me your products" or leave it blank. Click
-                            on Generate QR Code.</p>
-                    </div>
-                    <div class="qr-step">
-                        <h4><i class="bi bi-check-circle"></i> Step 3</h4>
-                        <p>You’re done! Export the QR code image and use it anywhere you want customers to scan directly
-                            to WhatsApp.</p>
-                    </div>
-                </div>
-
-                <div class="qr-generator-form">
-                    <h3>QR Code Generator</h3>
-                    <input type="text" placeholder="Enter your WhatsApp Number with country code but without '+'">
-                    <input type="text" placeholder="Enter your message">
-                    <button>Generate QR Code</button>
-                    <button>Export QR Code</button>
-                </div>
-            </div>
+        <div class="text-content">
+            <h1>Strengthen Your Client Relations Seamlessly</h1>
+            <p>Enhance customer engagement and streamline your operations by integrating WhatsApp with Zoho Flow.</p>
+            <p class="note"><i class="fas fa-credit-card"></i> No credit card required</p>
+            <a href="freetrail.html" class="free-trial-button">Free Trial</a>
+            <a href="bookdemo.html" class="demo-link"> Book a Demo Today</a>
         </div>
-
-        <div class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h4>What is a WhatsApp QR code generator?</h4>
-                <p>A WhatsApp QR code generator creates a scannable code that links directly to your WhatsApp chat, making it easier for customers to contact you.</p>
-            </div>
-            <div class="faq-item">
-                <h4>How does a WhatsApp QR code generator work?</h4>
-                <p>The generator creates a unique QR code based on your WhatsApp number, which customers can scan to start a conversation instantly.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Why should I use a WhatsApp QR code generator?</h4>
-                <p>It's a convenient way to make your business more accessible to customers, allowing them to reach you quickly via WhatsApp.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Are there any restrictions on the usage of WhatsApp QR codes generated on Urbanchat
-?</h4>
-                <p>No, you can use your generated WhatsApp QR code across all your business materials without any restrictions.</p>
-            </div>
-            <div class="faq-item">
-                <h4>How can I share my WhatsApp QR code?</h4>
-                <p>You can share your WhatsApp QR code on printed materials, packaging, digital platforms, or even on your store's front.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Is the WhatsApp QR code generator on Urbanchat
- free to use?</h4>
-                <p>Yes, it is completely free to use and doesn't require any sign-ups or hidden costs.</p>
-            </div>
-        </div>
-
-        <div class="get-started-section">
-            <p>Get Started with Urbanchat
- Today</p>
-            <a href="bookdemo.html">Book a Demo Now</a>
+        <div class="image-content">
+            <img src="images/zohoflow-integration.png" alt="Zoho Flow Integration Image">
         </div>
     </main>
+
+    <section class="zohoflow-features">
+        <div class="container">
+            <h2>Strengthen Customer Connections with Wati + Zoho Flow</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Direct Omnichannel Engagement</h3>
+                        <p>Engage with your customers across multiple channels seamlessly with Zoho Flow.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>Boost Engagement and Conversions</h3>
+                        <p>Increase customer engagement and drive conversions by automating workflows between WhatsApp and Zoho.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Expand Your Audience Reach</h3>
+                        <p>Leverage Zoho Flow's powerful tools to reach a broader audience and enhance your marketing efforts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>Does quality suffer with automated Zoho Flow and WhatsApp Integration?</h4>
+                <p>Not at all. Zoho Flow's powerful automation ensures high-quality customer interactions and precise operations.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What kind of workflows can I create with Wati and Zoho Flow?</h4>
+                <p>You can create a wide range of workflows, from automated customer support responses to complex marketing funnels, all tailored to your business needs.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What are some use cases I can bring into Wati and Zoho Flow Integration?</h4>
+                <p>You can use it for CRM updates, sales follow-ups, automated messaging, lead management, and much more.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can you tell me more about Zoho Flow?</h4>
+                <p>Zoho Flow is a powerful automation tool that connects different apps and services to automate complex business processes seamlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-cta">
+        <p>Discover more. WhatsApp, Facebook, and Instagram dominate social media messaging. Leverage this with one of
+            the fastest-growing WhatsApp Business Solution Providers.</p>
+        <a href="freetrail.html" class="trial-button">Free 7 Day Trial</a>
+    </section>
 
     <footer class="footer">
         <div class="footer-links">
