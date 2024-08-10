@@ -188,8 +188,7 @@ body {
     max-width: 1200px;
     margin: 100px auto;
     overflow: hidden;
-    position:relative;
-    top: -85px;
+    margin-top: -85px;
 }
 
 .trusted-brands {
@@ -379,15 +378,9 @@ body {
 /* 5)feature */
 
 /* -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yusei+Magic&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Container styles */
-.container_feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* Feature box styles */
 .feature {
@@ -395,11 +388,11 @@ body {
     padding: 20px;
     border-radius: 8px;
     margin: 10px 0;
-    max-width: 800px;
+   
     color: #df0909;
     background-color: #fff;
     /* Ensure the background is white */
-    box-shadow: 0 0 10px rgba(221, 12, 12, 0.1);
+    
     /* Optional shadow for depth */
     display: flex;
     align-items: center;
@@ -407,7 +400,7 @@ body {
 }
 
 .feature img {
-    max-width: 150px;
+    width: 400px;
     border-radius: 8px;
 }
 
@@ -415,145 +408,61 @@ body {
     flex-direction: row-reverse;
 }
 
-.feature::before,
-.feature::after {
-    content: '';
-    position: absolute;
-    background: rgba(76, 175, 80, 1);
-    /* Solid green color */
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
-    /* Optional glow effect */
-    pointer-events: none;
-    /* Ensures the line doesn't interfere with interactions */
-}
-
-.feature::before {
-    width: 4px;
-    /* Width of the right-side line */
-    height: 100%;
-    /* Full height */
-    top: 0;
-    right: 0;
-    background: linear-gradient(to left, rgb(15, 204, 5), rgba(255, 255, 255, 0));
-    /* Gradient for the right-side line */
-}
-
-.feature::after {
-    width: 100%;
-    /* Full width */
-    height: 4px;
-    /* Height of the bottom line */
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to left, rgb(15, 204, 5), rgba(255, 255, 255, 0));
-    /* Gradient for the bottom line */
-}
-
-
-/* Individual feature box background colors */
-.broadcast-feature {
-    background-color: #fbfbfb;
-    /* Light cyan */
-}
-
-.chatbots-feature {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.chatbots-feature img {
-    max-width: 150px;
-    border-radius: 8px;
-    margin-right: 20px;
-}
-
-.chatbots-feature div {
-    flex: 1;
-    text-align: right;
-    /* Align text and button to the right */
-}
 
 
 
 
-.inbox-feature {
-    background-color: #ffffff;
-    /* Light purple */
-}
+
+
+
+
+
+
+
 
 /* Image styles */
-.feature img {
-    max-width: 150px;
-    /* Adjust to fit your design */
-    margin-right: 20px;
-    border-radius: 8px;
-}
 
 /* Heading and text styles */
 .feature h2 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 2.5em;
-    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000;
 }
 
 .feature p {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 0.9em;
-    font-weight: bold;
+   
     color: #000000;
 }
 
-/* Button styles */
-/* .btn {
-    font-family: "Roboto Condensed", sans-serif;
-    background-color: #007bff;
-  
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 10px;
-} */
 
 /* Header styles */
 .features-header h1 {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #020203;
     /* Blue text for the header */
     font-weight: bold;
-    position: relative;
-}
-
-.features-header h1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    /* Light blue background */
-    z-index: -1;
-    border-radius: 8px;
-}
-
-/* 
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #00c853;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
     text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-} */
+}
+
+
+.broadcast-feature{
+    background-color: #e7ecef;
+}
+.chatbots-feature{
+    background-color: #155d27;
+}
+
+.inbox-feature{
+    background-color:#b7efc5;
+}
+
+
+
 
 .btn:hover {
     background-color: #009624;
