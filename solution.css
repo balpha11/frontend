@@ -339,6 +339,12 @@ display: none; /* Hide CTA buttons on mobile */
     height: 450px;
     width: 450px;
     object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.about-img:hover{
+    transform: scale(1.03);
 }
 
 
