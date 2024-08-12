@@ -335,3 +335,18 @@ display: none; /* Hide CTA buttons on mobile */
 }
 
 
+.about-img{
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+}
+
+
+@media (max-width:786px) {
+
+    .about-img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+}
