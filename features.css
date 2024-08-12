@@ -18,16 +18,16 @@ body {
 .cta-buttons .free-trial {
     margin-left: 10px;
     padding: 8px 16px;
-    border: 1px solid #4caf50;
+    border: 1px solid #55BC5A;
     border-radius: 4px;
     text-decoration: none;
-    color: #4caf50;
+    color: #55BC5A;
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
 .cta-buttons .free-trial {
-    background-color: #4caf50;
+    background-color: #55BC5A;
     color: #fff;
 }
 
@@ -146,7 +146,7 @@ body {
 }
 
 .trial-button {
-    background-color: #4CAF50;
+    background-color: #55BC5A;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -318,7 +318,7 @@ body {
 
 .feature-detail h3 {
     font-size: 1.5em;
-    color: #4caf50;
+    color: #55BC5A;
     margin-bottom: 10px;
 }
 
@@ -458,13 +458,13 @@ body {
 }
 
 .footer .footer-social a:hover {
-    color: #4caf50;
+    color: #55BC5A;
 }
 
 .footer-cta {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #4caf50, #7dda82);
+    background: linear-gradient(135deg, #55BC5A, #7dda82);
     color: white;
     font-family: 'Arial', sans-serif;
 }
@@ -477,7 +477,7 @@ body {
 .footer-cta a {
     text-decoration: none;
     background-color: white;
-    color: #4caf50;
+    color: #55BC5A;
     padding: 15px 30px;
     border-radius: 8px;
     font-weight: bold;

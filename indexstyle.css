@@ -42,7 +42,7 @@ body {
 .demo-link {
     display: inline-block;
     text-decoration: none;
-    color: #4caf50;
+    color: #55BC5A;
     font-weight: bold;
     position: relative;
     transition: color 0.3s ease;
@@ -56,7 +56,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #4caf50;
+    background-color: #55BC5A;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -72,7 +72,7 @@ body {
 
 .trial-button {
     text-decoration: none;
-    background-color: #4caf50;
+    background-color: #55BC5A;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -90,7 +90,7 @@ body {
 .free-trial-button {
     display: inline-block;
     text-decoration: none;
-    background-color: #4caf50;
+    background-color: #55BC5A;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -140,7 +140,7 @@ body {
 }
 
 .whatsapp-text {
-    color: #4caf50;
+    color: #55BC5A;
 }
 
 .text-content p {
@@ -160,7 +160,7 @@ body {
 }
 
 .note i {
-    color: #4caf50;
+    color: #55BC5A;
     font-size: 1.1em;
 }
 
@@ -465,7 +465,7 @@ body {
 
 
 .btn:hover {
-    background-color: #009624;
+    background-color: #55BC5A;
 }
 
 .cta {
@@ -492,7 +492,7 @@ body {
 }
 
 .cta a:hover {
-    background-color: #388e3c;
+    background-color: #55BC5A;
     color: white;
 }
 
@@ -765,13 +765,13 @@ body {
 }
 
 .advantage .advantage-box a:hover {
-    background-color: #388e3c;
+    background-color: #55BC5A;
 }
 
 .footer-cta {
     text-align: center;
     padding: 40px 20px;
-    background-color: #95f098;
+    background-color: #55BC5A;
     color: rgb(0, 0, 0);
 }
 
@@ -891,7 +891,7 @@ body {
 }
 
 .footer .footer-social a:hover {
-    color: #4caf50;
+    color: #55BC5A;
 }
 
 
