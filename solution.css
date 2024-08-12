@@ -18,8 +18,11 @@
     position: relative;
 }
 .about-header h1 {
-    font-size: 2.5rem;
-    color: #e0e1dd; /* Text color */
+    font-size: 3.5rem;
+    color: #ffffff; /* Text color */
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 100px;
     margin: 0;
 }
 
