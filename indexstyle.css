@@ -530,12 +530,16 @@ body {
     flex-direction: row-reverse;
 }
 
+
+
 .customers {
     padding: 40px 20px;
     background-color: #ffffff;
     border: #000000;
     text-align: center;
 }
+
+
 
 .customers h2 {
     margin-bottom: 30px;
