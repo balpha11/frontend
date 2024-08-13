@@ -173,8 +173,10 @@ body {
 }
 
 .image-section img {
-    max-width: 50%;
+    max-width: 45%;
     height: auto;
+    object-fit: cover;
+    border-radius: 13px;
 }
 
 @media (max-width: 768px) {
@@ -219,6 +221,13 @@ body {
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
     /* Modern and legible font */
+}
+
+
+.img-fluid{
+    height: 300px;
+    width:500px;
+    object-fit: cover;
 }
 
 .features-overview {
