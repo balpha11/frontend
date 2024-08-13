@@ -272,29 +272,29 @@ body {
     border-radius: 15px;
     /* Rounded corners */
     padding: 20px;
-   
+
     max-width: 280px;
     text-align: center;
     /* Center the content */
     transition: border 0.3s ease, box-shadow 0.3s ease;
     background-color: #fbeef6;
     border: 2px solid #000000;
-   
-   
+
+
     position: relative;
     /* For the shadow effect */
     overflow: hidden;
-   
-    
+
+
 }
 
 .story::after,
 .story::before {
     content: '';
     position: absolute;
-   
+
     /* Solid green color */
-    
+
     /* Optional glow effect */
     pointer-events: none;
     /* Ensures the line doesn't interfere with interactions */
@@ -361,9 +361,9 @@ body {
 }
 
 .story:hover {
-   
-   
-   
+
+
+
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     border-width: 3px;
 }
@@ -378,7 +378,6 @@ body {
 /* 5)feature */
 
 /* -------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yusei+Magic&display=swap');
 
 
 
@@ -386,17 +385,19 @@ body {
 .feature {
     position: relative;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 14px;
     margin: 10px 0;
-   
+
     color: #df0909;
     background-color: #fff;
-    /* Ensure the background is white */
-    
-    /* Optional shadow for depth */
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    box-shadow: 0 0px 8px rgba(12, 33, 0, 0.715);
+    /* horizontal offset, vertical offset, blur radius, color */
+    margin-top: 35px;
 }
 
 .feature img {
@@ -406,6 +407,10 @@ body {
 
 .feature:nth-child(2) {
     flex-direction: row-reverse;
+}
+
+.feature_div {
+    padding: 10px 10px;
 }
 
 
@@ -435,7 +440,7 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: 0.9em;
-   
+
     color: #000000;
 }
 
@@ -450,15 +455,16 @@ body {
 }
 
 
-.broadcast-feature{
+.broadcast-feature {
     background-color: #e7ecef;
 }
-.chatbots-feature{
+
+.chatbots-feature {
     background-color: #155d27;
 }
 
-.inbox-feature{
-    background-color:#b7efc5;
+.inbox-feature {
+    background-color: #b7efc5;
 }
 
 
@@ -739,7 +745,7 @@ body {
     transition: all 0.1s ease-in;
 }
 
-.advantage .advantage-box:hover{
+.advantage .advantage-box:hover {
     border-radius: 15px;
     border-width: 7px;
 }
@@ -903,7 +909,7 @@ body {
 .whatsapp-chat-widget {
     position: fixed;
     bottom: 20px;
-    right:20px;
+    right: 20px;
     z-index: 1000;
 }
 
