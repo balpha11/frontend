@@ -1,103 +1,19 @@
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-
-
- <main class="main">
-        <h1>Engage and grow student sign-ups on WhatsApp</h1>
-        <p>Assisting Educational Institutions in Emerging Markets on Their Journey</p>
-        <a href="#" class="trial-button">Book Demo</a>
-    </main>
-
-
-    <section class="solutions">
-        <h2>How We Help</h2>
-        <div class="solutions-overview">
-            <div class="solution-box" style="background-color: #fce4ec;">
-                <h3>Lead Management</h3>
-                <p>Organize and manage leads efficiently to maximize student enrollment.</p>
-            </div>
-            <div class="solution-box" style="background-color: #e0f7fa;">
-                <h3>Admissions Support</h3>
-                <p>Streamline the admissions process and provide timely assistance to applicants.</p>
-            </div>
-            <div class="solution-box" style="background-color: #fff9c4;">
-                <h3>Class Reminders</h3>
-                <p>Send timely reminders to students about upcoming classes and events.</p>
-            </div>
-            <div class="solution-box" style="background-color: #acd8f7;">
-                <h3>Student Queries</h3>
-                <p>Provide instant responses to student inquiries to improve satisfaction.</p>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <section class="solution-details">
-        <div class="solution-detail">
-            <div>
-                <h3>Smarter Lead Management</h3>
-                <p>Centralize leads in CRM, broadcast, & manage responses.</p>
-                <ul>
-                    <li>Drive acquisition with customer specific messages and promotions.</li>
-                    <li>Auto-update contact responses and interactions into your integrated CRM system.</li>
-                </ul>
-            </div>
-            <img src="images/solution1.webp" alt="Solution 1">
-        </div>
-        <div class="solution-detail">
-            <div>
-                <h3>Close More Sales</h3>
-                <p>Market effectively and respond quickly to sales inquiries.</p>
-                <ul>
-                    <li>Market classes using rich media sources, like video and social platforms.</li>
-                    <li>Rapidly respond to important enquiries that help close sales, such as class dates, promotions
-                        and payments.</li>
-                </ul>
-            </div>
-            <img src="images/solution2.webp" alt="Solution 2">
-        </div>
-        <div class="solution-detail">
-            <div>
-                <h3>Better Learning Outcomes</h3>
-                <p>Support high education standards with effective communication.</p>
-                <ul>
-                    <li>Support parents and students all the way from admission through to exam results.</li>
-                    <li>Organize your teams to provide parents with sales, support and service, 24/7.</li>
-                </ul>
-            </div>
-            <img src="images/solution3.webp" alt="Solution 3">
-        </div>
-    </section>
-
-    <section class="testimonial-section">
-        <h2>Over 8,000 customers</h2>
-        <div class="testimonial-cards">
-            <div class="testimonial-card">
-                <p>"Excellent product!"</p>
-                <h4>Satisfied Customer</h4>
-            </div>
-            <div class="testimonial-card">
-                <p>"Great user experience!"</p>
-                <h4>Happy Client</h4>
-            </div>
-        </div>
-    </section>
-    <section class="footer-cta">
-        <p>Discover more. WhatsApp, Facebook, and Instagram share of social media messaging is unrivaled. Harness it
-            with one of the fastest growing WhatsApp Business Solution Providers.</p>
-        <a href="#">Free 7 Day Trial</a>
-    </section>
+<div class="dropdown-menu drop_menu_card" aria-labelledby="featuresDropdown">
+                              
+                                <a class="dropdown-item" href="features.html">Click to WhatsApp ads</a>
+                                <a class="dropdown-item" href="sharedTeaminbox.html">Shared Team Inbox</a>
+                                <a class="dropdown-item" href="ecommerce.html">ecommerce platform</a>
+                                <a class="dropdown-item" href="Instagram_Automation.html">Instagram Automation</a>
+                                <a class="dropdown-item" href="Facebook_Automation.html">Facebook Automation</a>
+                                <a class="dropdown-item" href="AI_Chatbot.html">AI Chatbot Automation</a>
+                                <a class="dropdown-item" href="WhatsApp_Automation.html">WhatsApp Automation</a>
+                                <a class="dropdown-item" href="Team_Sharing_Lead.html"> Team Inbox Sharing <br> and Lead Assignments</a>
+                                <a class="dropdown-item" href="WhatsApp_API.html"> WhatsApp API</a>
+                                <a class="dropdown-item" href="UrbanChat_Chatbots.html"> UrbanChat Website Chatbots</a>
+                                <a class="dropdown-item" href="WhatsApp_Drip_Campaign.html">WhatsApp Drip Campaign</a>
+                                <a class="dropdown-item" href="WhatsApp_Affiliate_Program.html">WhatsApp Affiliate Program</a>
+                                <a class="dropdown-item" href="Google_Integration_UrbanChat.html">Google Sheets Integration <br> with UrbanChat</a>
+                               
+                                    
+                               
+                            </div>

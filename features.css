@@ -146,8 +146,9 @@ body {
 }
 
 .trial-button {
-    background-color: #4CAF50;
+    background-color:#28A745;
     color: #fff;
+    font-weight: 500;
     border: none;
     padding: 10px 20px;
     font-size: 1em;

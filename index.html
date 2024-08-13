@@ -27,6 +27,7 @@
 
 .drop_menu_card .dropdown-item {
    transition: 0.2s ease-in-out;
+   border-bottom: 0.2px solid rgba(0, 0, 0, 0.339);
 }
 
 
@@ -67,8 +68,36 @@
 }
 
 
+.h1_hero {
+            font-size: 3rem;
+            text-align: left;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
 
+        #app {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .whatsapp-text {
+            color: #075E54;
+        }
+
+        .facebook-text {
+            color: #1877F2;
+        }
+
+        .instagram-text {
+            background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
+
+
+
 
 </head>
 
@@ -95,24 +124,23 @@
                                 Features
                             </a>
                             <div class="dropdown-menu drop_menu_card" aria-labelledby="featuresDropdown">
-                              
-                                <a class="dropdown-item" href="features.html">Click to WhatsApp ads</a>
-                                <a class="dropdown-item" href="sharedTeaminbox.html">Shared Team Inbox</a>
-                                <a class="dropdown-item" href="ecommerce.html">ecommerce platform</a>
-                                <a class="dropdown-item" href="Instagram_Automation.html">Instagram Automation</a>
+                                <a class="dropdown-item" href="WhatsApp_API.html">WhatsApp API</a>
                                 <a class="dropdown-item" href="Facebook_Automation.html">Facebook Automation</a>
-                                <a class="dropdown-item" href="AI_Chatbot.html">AI Chatbot Automation</a>
+                                <a class="dropdown-item" href="Instagram_Automation.html">Instagram Automation</a>
+                                <a class="dropdown-item" href="features.html">Click to WhatsApp Tools</a>
+                                <a class="dropdown-item" href="AI_Chatbot.html">AI Chatbot</a>
+                                <a class="dropdown-item" href="UrbanChat_Chatbots.html">Website Chatbot</a>                             
+                                <a class="dropdown-item" href="ecommerce.html">Ecommerce in WhatsApp </a>
+                                <a class="dropdown-item" href="sharedTeaminbox.html">Shared Inbox</a>
+                                <a class="dropdown-item" href="Template_Messaging.html">Template Messaging & Broadcasting</a> 
+                                <a class="dropdown-item" href="WhatsApp_Drip_Campaign.html">Drip Campaign</a>
+                                <a class="dropdown-item" href="WhatsApp_Affiliate_Program.html"> Affiliate Program</a>
+                                <!-- <a class="dropdown-item" href="Google_Integration_UrbanChat.html">Google Sheets Integration</a>
+                                <a class="dropdown-item" href="ecommerce.html">Ecommerce Platform</a>
                                 <a class="dropdown-item" href="WhatsApp_Automation.html">WhatsApp Automation</a>
-                                <a class="dropdown-item" href="Team_Sharing_Lead.html"> Team Inbox Sharing <br> and Lead Assignments</a>
-                                <a class="dropdown-item" href="WhatsApp_API.html"> WhatsApp API</a>
-                                <a class="dropdown-item" href="UrbanChat_Chatbots.html"> UrbanChat Website Chatbots</a>
-                                <a class="dropdown-item" href="WhatsApp_Drip_Campaign.html">WhatsApp Drip Campaign</a>
-                                <a class="dropdown-item" href="WhatsApp_Affiliate_Program.html">WhatsApp Affiliate Program</a>
-                                <a class="dropdown-item" href="Google_Integration_UrbanChat.html">Google Sheets Integration <br> with UrbanChat</a>
-                               
-                                    
-                               
+                                <a class="dropdown-item" href="Team_Sharing_Lead.html">Lead Assignments</a> -->
                             </div>
+                            
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="solutionsDropdown"
@@ -173,10 +201,9 @@
 
     <main class="main">
         <div class="text-content">
-            <h1>Boost your brand on <span class="whatsapp-text">WhatsApp</span></h1>
-            <p>Enhance engagement and boost sales with the <span class="whatsapp-text">WhatsApp</span> Business API
-                platform that streamlines marketing, sales, service, and support - optimize your operations effortlessly
-                with automation.</p>
+            <h1 class="h1_hero">Boost your brand on <div id="app"></div></h1>
+            <p>Enhance engagement and boost sales with the <span class="whatsapp-text">WhatsApp</span>, <span class="facebook-text">Facebook</span>, and <span class="instagram-text">Instagram</span> Business API platforms that streamline marketing, sales, service, and support—optimize your operations effortlessly with automation.</p>
+
             <!-- <p class="note"><i class="fas fa-credit-card"></i> No credit card required</p> -->
             <a href="bookdemo.html" class="free-trial-button">Book a Demo Today</a>
 
@@ -643,6 +670,25 @@
     </script>
 
 
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script>
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75
+    });
+
+    typewriter.typeString('<span class="whatsapp-text">WhatsApp</span>')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('<span class="facebook-text">Facebook</span>')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('<span class="instagram-text">Instagram</span>')
+        .pauseFor(2500)
+        .start();
+</script>
 
 
 
