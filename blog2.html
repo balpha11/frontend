@@ -11,377 +11,7 @@
     <!-- font style -->
     <link rel="stylesheet" href="font.css">
 
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-
-        .nav .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-
-        .cta-buttons {
-            display: flex;
-            align-items: center;
-            margin-left: 20px;
-        }
-
-        .cta-buttons .book-demo,
-        .cta-buttons .free-trial {
-            margin-left: 10px;
-            padding: 8px 16px;
-            border: 1px solid #55BC5A;
-            border-radius: 4px;
-            text-decoration: none;
-            color: #55BC5A;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-buttons .free-trial {
-            background-color: #55BC5A;
-            color: #fff;
-        }
-
-        .cta-buttons .book-demo:hover {
-            background-color: #e8f0fc;
-        }
-
-        .cta-buttons .free-trial:hover {
-            background-color: #388e3c;
-        }
-
-
-        .hamburger {
-            display: none;
-            /* Hide by default */
-            flex-direction: column;
-            justify-content: space-around;
-            width: 30px;
-            height: 25px;
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        .hamburger .bar {
-            width: 100%;
-            height: 3px;
-            background-color: #000;
-            transition: all 0.3s ease;
-        }
-
-        /* Change for active state */
-        .hamburger.active .bar:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-
-        .hamburger.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active .bar:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
-
-        /* Show hamburger menu only on mobile */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-
-            .nav {
-                display: none;
-                /* Hide the nav by default on mobile */
-                flex-direction: column;
-                width: 100%;
-                background-color: #ffffff;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-                z-index: 999;
-            }
-
-            .nav.active {
-                display: flex;
-                /* Show the nav when active */
-            }
-
-            .cta-buttons {
-                display: none;
-                /* Hide CTA buttons on mobile */
-            }
-        }
-
-        .container {
-            text-align: center;
-            padding: 40px 20px;
-            background: #ffffff;
-        }
-
-        .container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .container h1 {
-            font-size: 2.0em;
-            margin-bottom: 20px;
-            color: #000000;
-        }
-
-        .container p {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .footer-cta {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #55BC5A;
-            color: white;
-        }
-
-        .footer-cta p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        .footer-cta a {
-            text-decoration: none;
-            background-color: white;
-            color: #55BC5A;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .footer-cta a:hover {
-            background-color: #388e3c;
-            color: white;
-        }
-
-        .footer {
-            padding: 40px 20px;
-            background-color: #212121;
-            color: #ffffff;
-            text-align: left;
-        }
-
-        .footer h4 {
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .footer .footer-links {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .footer .footer-links div {
-            flex: 1;
-            min-width: 150px;
-        }
-
-        /* Specific colors for each section name */
-        .footer .footer-links div:nth-child(1) h4 {
-            color: #f8ce5a;
-            /* Top Features */
-        }
-
-        .footer .footer-links div:nth-child(2) h4 {
-            color: #33c1ff;
-            /* Solutions */
-        }
-
-        .footer .footer-links div:nth-child(3) h4 {
-            color: #4bffba;
-            /* Integrations */
-        }
-
-        .footer .footer-links div:nth-child(4) h4 {
-            color: #ff33a8;
-            /* Resources */
-        }
-
-        .footer .footer-links div:nth-child(5) h4 {
-            color: #ffbf33;
-            /* Free WhatsApp Tools */
-        }
-
-        .footer .footer-links div:nth-child(6) h4 {
-            color: #57BB59;
-            /* Urbanchat */
-        }
-
-        .footer .footer-links a {
-            color: #ffffff;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .footer .footer-awards {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .footer .footer-awards img {
-            height: 40px;
-        }
-
-        .footer .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .footer .footer-bottom p {
-            margin: 0;
-        }
-
-        .footer .footer-bottom a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .footer .footer-social a {
-            color: #ffffff;
-            margin-right: 10px;
-            font-size: 20px;
-            transition: color 0.3s;
-        }
-
-        .footer .footer-social a:hover {
-            color: #55BC5A;
-        }
-
-        @media (max-width: 768px) {
-
-            .header,
-            .nav,
-            .cta-buttons,
-            .blogs,
-            .categories {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav,
-            .cta-buttons,
-            .blogs img,
-            .categories {
-                gap: 10px;
-            }
-
-            .footer .footer-links,
-            .footer .footer-bottom {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-        }
-
-        .whatsapp-chat-widget {
-            position: fixed;
-            bottom: 750px;
-            right: 40px;
-            z-index: 1000;
-        }
-
-        .whatsapp-chat-widget .chat-container {
-            align-items: center;
-            background-color: #25D366;
-            border-radius: 50px;
-        }
-
-        .whatsapp-chat-widget .chat-container img {
-            width: 50px;
-            height: 50px;
-            margin-right: 0px;
-
-        }
-
-
-        .whatsapp-chat-widget .chat-container .chat-with-us {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-
-        /* -------------------------------------- */
-
-        /* 1)newllyy addedd */
-
-        /* -------------------------------------- */
-        .drop_menu_card {
-
-            border: 2px solid transparent;
-            background-color: #ffffff;
-        }
-
-        .drop_menu_card .dropdown-item {
-            transition: 0.2s ease-in-out;
-            border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
-        }
-
-
-        .drop_menu_card .dropdown-item:hover {
-            background-color: #000000;
-            color: #ffffff;
-        }
-
-
-        .header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1px 20px;
-            background-color: #ffffff;
-            border-bottom: 1px solid #e0e0e0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border: none;
-        }
-
-        @media (max-width:786px) {
-            .free_trail {
-                position: relative;
-                top: 4px;
-            }
-
-            .book_now {
-                position: relative;
-                top: 2px;
-            }
-
-        }
-
-        .nav-link {
-            color: black !important;
-        }
-    </style>
+    <link rel="stylesheet" href="blog.css">
 </head>
 
 <body>
@@ -484,7 +114,7 @@
     </header>
 
 
-    <main class="container">
+    <main class="container container_111">
         <img src="images/chatomni.png" alt="Blog Image">
         
         <h1>Unlocking the Power of WhatsApp API for Business Communication</h1>
@@ -496,7 +126,7 @@
         <h2>Common Questions and Solutions</h2>
         
         <h3>1. What are the benefits of using WhatsApp API for business?</h3>
-        <p><strong>Solution:</strong></p>
+        <h5><strong>Solution:</strong></h5>
         <ul>
             <li><strong>Scalability:</strong> The API allows businesses to send messages to thousands of customers simultaneously, far beyond the capabilities of WhatsApp Web or the standard app.</li>
             <li><strong>Automation:</strong> Automate responses and engage with customers around the clock using a WhatsApp bot.</li>
@@ -505,42 +135,42 @@
         </ul>
     
         <h3>2. How much does WhatsApp API cost?</h3>
-        <p><strong>Solution:</strong></p>
+        <h5><strong>Solution:</strong></h5>
         <ul>
             <li><strong>Pricing Structure:</strong> WhatsApp API pricing typically varies based on the volume of messages sent and the service provider. Options range from pay-as-you-go models to subscription plans.</li>
             <li><strong>Free Trial:</strong> Some providers offer free trials or limited free plans, allowing businesses to start without upfront costs.</li>
         </ul>
     
         <h3>3. How can I integrate WhatsApp API into my business systems?</h3>
-        <p><strong>Solution:</strong></p>
+        <h5><strong>Solution:</strong></h5>
         <ul>
             <li><strong>API Integration:</strong> Most providers offer detailed documentation and support for integrating the API into existing systems, including CRM, ERP, and other software.</li>
             <li><strong>Service Providers:</strong> Collaborating with a WhatsApp service provider can simplify the integration process and ensure seamless operation.</li>
         </ul>
     
         <h3>4. Can I use WhatsApp API to send bulk messages?</h3>
-        <p><strong>Solution:</strong></p>
+        <h5><strong>Solution:</strong></h5>
         <ul>
             <li><strong>Bulk Messaging:</strong> Yes, the WhatsApp API supports sending bulk messages, which is ideal for marketing campaigns, announcements, and updates.</li>
             <li><strong>Compliance:</strong> Ensure compliance with WhatsApp’s policies to avoid penalties. Always obtain customer consent before sending bulk messages.</li>
         </ul>
     
         <h3>5. How do I send a message using WhatsApp API?</h3>
-        <p><strong>Solution:</strong></p>
+        <h5><strong>Solution:</strong></h5>
         <ul>
             <li><strong>Send Message:</strong> To send a message via the WhatsApp API, make a POST request to the API endpoint. This can include text messages, media files, and template messages.</li>
             <li><strong>Template Messages:</strong> Use template messages for predefined communication, perfect for order confirmations, shipping updates, and customer support.</li>
         </ul>
     
         <h3>6. Is there a free version of the WhatsApp API?</h3>
-        <p><strong>Solution:</strong></p>
+        <h5><strong>Solution:</strong></h5>
         <ul>
             <li><strong>Free Plans:</strong> Some WhatsApp API providers offer free plans with limited features, allowing businesses to test the service before committing to a paid plan.</li>
             <li><strong>Trial Periods:</strong> Many providers also offer free trial periods for their premium plans, enabling businesses to explore all features.</li>
         </ul>
     
         <h2>Choosing the Right WhatsApp API Provider</h2>
-        <p>When selecting a WhatsApp API provider, consider the following factors:</p>
+        <h5>When selecting a WhatsApp API provider, consider the following factors:</h5>
         <ul>
             <li><strong>Reliability:</strong> Opt for a provider with a proven track record and positive customer reviews.</li>
             <li><strong>Support:</strong> Ensure the provider offers robust customer support for integration and troubleshooting.</li>
