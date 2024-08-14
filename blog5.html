@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources - Urbanchat</title>
-      <!-- icon -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
-          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-          <!-- font style -->
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font style -->
     <link rel="stylesheet" href="font.css">
 
     <style>
@@ -18,7 +19,7 @@
             background-color: #ffffff;
             color: #000000;
         }
-       
+
 
         .nav .dropdown:hover .dropdown-content {
             display: block;
@@ -56,161 +57,106 @@
             background-color: #388e3c;
         }
 
-           
+
         .hamburger {
-    display: none; /* Hide by default */
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-    z-index: 1001;
-}
+            display: none;
+            /* Hide by default */
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            z-index: 1001;
+        }
 
-.hamburger .bar {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    transition: all 0.3s ease;
-}
+        .hamburger .bar {
+            width: 100%;
+            height: 3px;
+            background-color: #000;
+            transition: all 0.3s ease;
+        }
 
-/* Change for active state */
-.hamburger.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
+        /* Change for active state */
+        .hamburger.active .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
 
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
 
-.hamburger.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+        .hamburger.active .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
 
-/* Show hamburger menu only on mobile */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
+        /* Show hamburger menu only on mobile */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
 
-    .nav {
-        display: none; /* Hide the nav by default on mobile */
-        flex-direction: column;
-        width: 100%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 999;
-    }
+            .nav {
+                display: none;
+                /* Hide the nav by default on mobile */
+                flex-direction: column;
+                width: 100%;
+                background-color: #ffffff;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 999;
+            }
 
-    .nav.active {
-        display: flex; /* Show the nav when active */
-    }
+            .nav.active {
+                display: flex;
+                /* Show the nav when active */
+            }
 
-    .cta-buttons {
-        display: none; /* Hide CTA buttons on mobile */
-    }
-}
-        .main {
+            .cta-buttons {
+                display: none;
+                /* Hide CTA buttons on mobile */
+            }
+        }
+
+        .container {
             text-align: center;
             padding: 40px 20px;
             background: #ffffff;
         }
-        .main h1 {
-            font-size: 2.5em;
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .container h1 {
+            font-size: 2.0em;
             margin-bottom: 20px;
             color: #000000;
         }
-        .main p {
+
+        .container p {
             font-size: 1.2em;
             color: #666;
             margin-bottom: 20px;
+            line-height: 1.6;
         }
-        .blog-section {
-            padding: 40px 20px;
-            background-color: #e0f7fa;
-        }
-        .blog-section h2 {
-            font-size: 2em;
-            color: #000000;
-            margin-bottom: 30px;
-            text-align: center;  
-            
-        }
-        .blog-section .blogs {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-        .blog-card {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 280px;
-            text-align: left;
-           
-        }
-        .blog-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            
-           
-        }
-        .blog-card h3 {
-            font-size: 1.2em;
-            color: #000000;
-            margin-bottom: 10px;
-        }
-        .blog-card p {
-            font-size: 0.9em;
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .category-section {
-            padding: 40px 20px;
-            text-align: center;
-            background-color: #fff9c4;
-        }
-        .category-section h2 {
-            font-size: 2em;
-            color: #000000;
-            margin-bottom: 30px;
-        }
-        .category-section .categories {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .category-box {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 150px;
-            text-align: center;
-        }
-        .category-box h3 {
-            font-size: 1.2em;
-            color: #000000;
-            margin-bottom: 10px;
-        }
+
         .footer-cta {
             text-align: center;
             padding: 40px 20px;
             background-color: #55BC5A;
             color: white;
         }
+
         .footer-cta p {
             font-size: 1.2em;
             margin-bottom: 20px;
         }
+
         .footer-cta a {
             text-decoration: none;
             background-color: white;
@@ -220,10 +166,12 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
+
         .footer-cta a:hover {
             background-color: #388e3c;
             color: white;
         }
+
         .footer {
             padding: 40px 20px;
             background-color: #212121;
@@ -325,12 +273,22 @@
         .footer .footer-social a:hover {
             color: #55BC5A;
         }
+
         @media (max-width: 768px) {
-            .header, .nav, .cta-buttons, .blogs, .categories {
+
+            .header,
+            .nav,
+            .cta-buttons,
+            .blogs,
+            .categories {
                 flex-direction: column;
                 align-items: center;
             }
-            .nav, .cta-buttons, .blogs img, .categories {
+
+            .nav,
+            .cta-buttons,
+            .blogs img,
+            .categories {
                 gap: 10px;
             }
 
@@ -356,7 +314,7 @@
             border-radius: 50px;
         }
 
-         .whatsapp-chat-widget .chat-container img {
+        .whatsapp-chat-widget .chat-container img {
             width: 50px;
             height: 50px;
             margin-right: 0px;
@@ -371,68 +329,68 @@
         }
 
 
-/* -------------------------------------- */
+        /* -------------------------------------- */
 
-/* 1)newllyy addedd */
+        /* 1)newllyy addedd */
 
-/* -------------------------------------- */
-.drop_menu_card {
-   
-   border: 2px solid transparent;
-  background-color: #ffffff;
-}
+        /* -------------------------------------- */
+        .drop_menu_card {
 
-.drop_menu_card .dropdown-item {
-   transition: 0.2s ease-in-out;
-   border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
-}
+            border: 2px solid transparent;
+            background-color: #ffffff;
+        }
 
-
-.drop_menu_card .dropdown-item:hover {
-   background-color: #000000;
-   color: #ffffff;
-}
+        .drop_menu_card .dropdown-item {
+            transition: 0.2s ease-in-out;
+            border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
+        }
 
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border: none;
-}
+        .drop_menu_card .dropdown-item:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
 
-@media (max-width:786px) {
-    .free_trail {
-        position: relative;
-        top: 4px;
-    }
 
-    .book_now {
-        position: relative;
-        top: 2px;
-    }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border: none;
+        }
 
-}
+        @media (max-width:786px) {
+            .free_trail {
+                position: relative;
+                top: 4px;
+            }
 
-.nav-link {
-    color: black !important;
-}
-    
+            .book_now {
+                position: relative;
+                top: 2px;
+            }
 
+        }
+
+        .nav-link {
+            color: black !important;
+        }
     </style>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <a class="navbar-brand" href="index.html">
-                                        <img src="images/logourbg/logo.png" alt="urban chat logo" width="60" height="60"> <span style="font-size: larger;font-weight: 600;position: relative;top: 4px;">UrbanChat</span>
+                    <img src="images/logourbg/logo.png" alt="urban chat logo" width="60" height="60"> <span
+                        style="font-size: larger;font-weight: 600;position: relative;top: 4px;">UrbanChat</span>
 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -455,10 +413,11 @@
                                 <a class="dropdown-item" href="Instagram_Automation.html">Instagram Automation</a>
                                 <a class="dropdown-item" href="features.html">Click to WhatsApp Tools</a>
                                 <a class="dropdown-item" href="AI_Chatbot.html">AI Chatbot</a>
-                                <a class="dropdown-item" href="UrbanChat_Chatbots.html">Website Chatbot</a>                             
+                                <a class="dropdown-item" href="UrbanChat_Chatbots.html">Website Chatbot</a>
                                 <a class="dropdown-item" href="ecommerce.html">Ecommerce in WhatsApp </a>
                                 <a class="dropdown-item" href="sharedTeaminbox.html">Shared Inbox</a>
-                                <a class="dropdown-item" href="Template_Messaging.html">Template Messaging & Broadcasting</a> 
+                                <a class="dropdown-item" href="Template_Messaging.html">Template Messaging &
+                                    Broadcasting</a>
                                 <a class="dropdown-item" href="WhatsApp_Drip_Campaign.html">Drip Campaign</a>
                                 <a class="dropdown-item" href="WhatsApp_Affiliate_Program.html"> Affiliate Program</a>
                                 <!-- <a class="dropdown-item" href="Google_Integration_UrbanChat.html">Google Sheets Integration</a>
@@ -466,7 +425,7 @@
                                 <a class="dropdown-item" href="WhatsApp_Automation.html">WhatsApp Automation</a>
                                 <a class="dropdown-item" href="Team_Sharing_Lead.html">Lead Assignments</a> -->
                             </div>
-                            
+
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="solutionsDropdown"
@@ -478,7 +437,8 @@
                                 <a class="dropdown-item" href="rcsservice.html">RCS services</a>
                                 <a class="dropdown-item" href="Bulk_SMS_Services.html">Bulk SMS Services</a>
                                 <a class="dropdown-item" href="IVR_Services .html">IVR Services </a>
-                                <a class="dropdown-item" href="Technical_Support.html">Technical Support and Expertise </a>                             
+                                <a class="dropdown-item" href="Technical_Support.html">Technical Support and Expertise
+                                </a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -491,7 +451,8 @@
                                 <a class="dropdown-item" href="Integrating_Various_Applications.html">Zoho</a>
                                 <a class="dropdown-item" href="Integrating_Various_Applications.html">Woocommerce</a>
                                 <a class="dropdown-item" href="Integrating_Various_Applications.html">Zapier</a>
-                                <a class="dropdown-item" href="Integrating_Various_Applications.html">Google Calendar</a>  
+                                <a class="dropdown-item" href="Integrating_Various_Applications.html">Google
+                                    Calendar</a>
                                 <a class="dropdown-item" href="Google_Integration_UrbanChat.html">Google Sheets </a>
                             </div>
                         </li>
@@ -505,15 +466,16 @@
 
 
 
-                                <a class="dropdown-item" href="chatbotlibrary.html"> Library</a>                                                       
+                                <a class="dropdown-item" href="chatbotlibrary.html"> Library</a>
                             </div>
                         </li>
                     </ul>
                     <div class="navbar-nav ml-auto">
-                   
-                        
+
+
                         <a href="bookdemo.html"
-                            class="nav-item nav-link btn btn-success text-white font-weight-bold mx-2 free_trail" style="color: #ffffff !important;">Book
+                            class="nav-item nav-link btn btn-success text-white font-weight-bold mx-2 free_trail"
+                            style="color: #ffffff !important;">Book
                             Demo</a>
                     </div>
                 </div>
@@ -522,110 +484,133 @@
     </header>
 
 
-    <main class="main">
-        <h1>Resources</h1>
-        <p>Send Bulk Broadcast WhatsApp Messages in 2024: A Comprehensive Guide</p>
-    </main>
-    <section class="blog-section">
-        <h2>Trending Blogs</h2>
-        <div class="blogs">
-            <div class="blog-card">
-                <img src="images/manamanam.jpg" alt="Blog 1">
-                <h3>Do you want to know how companies are leveraging WhatsApp for efficient business communication?</h3>
-                <a href="blog1.html"><p>Read more</p></a>
-            </div>
-            <div class="blog-card">
-                <img src="images/chatomni.png" alt="Blog 2">
-                <h3>Unlock the Power of WhatsApp API for Your Business</h3>
-                <a href="blog2.html"><p>Read more</p></a>
-            </div>
-            <div class="blog-card">
-                <img src="images/drive.jpg" alt="Blog 3">
-                <h3>Supercharging Your Lead Generation with WhatsApp API Integration with Facebook</h3>
-                <a href="blog3.html"><p>Read more</p></a>
-            </div>
-            <div class="blog-card">
-                <img src="images/revalutionize.png" alt="Blog 4">
-                <h3>Making AI and WhatsApp API Work Like Humans for Business Growth in Enterprises</h3>
-                <a href="blog4.html"><p>Read more</p></a>
-            </div>
-            <div class="blog-card">
-                <img src="images/drive1.jpg" alt="Blog 5">
-                <h3>How AI Can Help Retail Chains Grow Business by Automating Sales, Customer Support, and Customer Engagement</h3>
-                <a href="blog5.html"><p>Read more</p></a>
-            </div>
-            
-        </div>
-        
-    </section>
-    <section class="category-section">
-        <h2>Category</h2>
-        <div class="categories">
-            <div class="category-box">
-                <h3>WhatsApp Marketing</h3>
-            </div>
-            <div class="category-box">
-                <h3>Tips & Tricks</h3>
-            </div>
-            <div class="category-box">
-                <h3>Case Studies</h3>
-            </div>
-            <div class="category-box">
-                <h3>Guides</h3>
-            </div>
-        </div>
-    </section>
-    <section class="footer-cta">
-        <p>Discover more. WhatsApp, Facebook, and Instagram share of social media messaging is unrivaled. Harness it with one of the fastest growing WhatsApp Business Solution Providers.</p>
-        <a href="#">Free 7 Day Trial</a>
-    </section>
+    <main class="container">
+        <img src="images/drive1.jpg" alt="Blog Image">
+        <h1>How AI Can Help Retail Chains Grow Business by Automating Sales, Customer Support, and Customer Engagement
+        </h1>
+        <p>In the rapidly evolving retail landscape, staying competitive means embracing technological innovations that
+            streamline operations and enhance customer experiences. Artificial Intelligence (AI) is at the forefront of
+            these innovations, offering retail chains powerful tools to automate sales, customer support, and customer
+            engagement. By leveraging AI, retail businesses can achieve higher efficiency, reduce costs, and create more
+            personalized and satisfying customer interactions. UrbanChat’s AI chatbot services stand out in this realm,
+            providing comprehensive solutions tailored to the unique needs of retail chains.</p>
 
-    <div class="whatsapp-chat-widget">
-        <div class="chat-container">
-            <a href="https://wa.me/8943041309" class="chat-with-us" target="_blank">
-                <img src="images/Default_create_a_circular_whatsapp_bot_head_icon_featuring_a_s_0_07dd10d9-eebd-4d17-b98f-47146b936a7c_0.png" alt="">
-                
-            </a>
-        </div>
-    </div>
+        <h2>1. Automating Sales</h2>
+
+        <h3>a. Personalized Shopping Experiences</h3>
+        <p>AI-driven recommendation systems analyze customer data to offer personalized product suggestions. These
+            systems consider browsing history, purchase patterns, and even social media activity to recommend items that
+            a customer is more likely to buy. By providing personalized recommendations, retail chains can increase
+            sales and enhance customer satisfaction. AI chatbots can seamlessly integrate with your e-commerce platform,
+            delivering these personalized experiences directly to your customers.</p>
+
+        <h3>b. Dynamic Pricing</h3>
+        <p>AI algorithms can analyze market demand, competitor pricing, and other factors to adjust prices dynamically.
+            This ensures that prices are competitive while maximizing profits. Retailers can implement AI-driven pricing
+            strategies to attract price-sensitive customers and boost sales during peak times or special promotions. AI
+            solutions offer advanced pricing models that adapt in real-time to market conditions, ensuring optimal
+            pricing strategies.</p>
+
+        <h3>c. Inventory Management</h3>
+        <p>Efficient inventory management is crucial for retail success. AI can predict demand trends and optimize stock
+            levels, reducing the risk of overstocking or stockouts. Automated inventory systems can reorder products
+            when levels are low, ensuring that popular items are always available and minimizing losses due to unsold
+            stock. AI chatbots can also notify customers about product availability, driving sales and enhancing the
+            shopping experience.</p>
+
+        <h2>2. Enhancing Customer Support</h2>
+
+        <h3>a. AI Chatbots</h3>
+        <p>AI-powered chatbots are revolutionizing customer support by providing instant responses to customer inquiries
+            24/7. These chatbots can handle common queries, process orders, track shipments, and resolve issues, freeing
+            up human agents to tackle more complex problems. By offering prompt and accurate support, chatbots enhance
+            customer satisfaction and loyalty. AI chatbot services are designed to integrate effortlessly with your
+            existing customer service systems, ensuring seamless and efficient support.</p>
+
+        <h3>b. Sentiment Analysis</h3>
+        <p>AI can analyze customer feedback from various sources, such as social media, reviews, and customer service
+            interactions. Sentiment analysis helps retailers understand customer opinions and emotions, allowing them to
+            address concerns proactively and improve their products and services. Advanced sentiment analysis tools
+            provide deep insights into customer sentiment, enabling you to make data-driven decisions.</p>
+
+        <h3>c. Virtual Assistants</h3>
+        <p>AI virtual assistants can guide customers through the shopping process, offering assistance similar to an
+            in-store sales associate. They can answer questions about products, provide styling advice, and even
+            complete purchases. This personalized assistance can enhance the online shopping experience and increase
+            conversion rates. Virtual assistants are highly customizable, ensuring they meet the specific needs of your
+            customers.</p>
+
+        <h2>3. Boosting Customer Engagement</h2>
+
+        <h3>a. Targeted Marketing Campaigns</h3>
+        <p>AI can segment customers based on their behavior, preferences, and purchase history. Retailers can use this
+            data to create targeted marketing campaigns that resonate with specific customer groups. Personalized email
+            marketing, social media ads, and in-app notifications can drive engagement and encourage repeat purchases.
+            AI-driven marketing solutions enable precise customer segmentation and targeting, maximizing the impact of
+            your campaigns.</p>
+
+        <h3>b. Predictive Analytics</h3>
+        <p>Predictive analytics powered by AI can forecast customer behavior and identify potential high-value
+            customers. Retailers can use these insights to create loyalty programs, special offers, and personalized
+            experiences that keep customers engaged and coming back. Predictive analytics tools provide actionable
+            insights that help you identify and engage your most valuable customers.</p>
+
+        <h3>c. In-Store Experiences</h3>
+        <p>AI can enhance in-store experiences by providing interactive displays, smart mirrors, and personalized
+            recommendations. For example, smart mirrors in clothing stores can suggest outfits based on the customer's
+            style preferences, while interactive displays can provide detailed product information and recommendations.
+            AI solutions can be integrated into various in-store technologies, creating a cohesive and engaging shopping
+            experience.</p>
+
+        <h2>Conclusion</h2>
+        <p>AI is transforming the retail industry by automating sales, enhancing customer support, and boosting customer
+            engagement. By leveraging AI technologies like those offered by UrbanChat, retail chains can streamline
+            operations, reduce costs, and deliver personalized experiences that drive customer satisfaction and loyalty.
+            As AI continues to evolve, its impact on the retail sector will only grow, offering new opportunities for
+            innovation and growth. Embracing AI is no longer an option but a necessity for retail businesses aiming to
+            stay competitive in today's fast-paced market. With AI chatbot services, retail chains can harness the full
+            potential of AI to drive business success.</p>
+    </main>
+
+
 
     <footer class="footer">
         <div class="footer-links">
             <div>
                 <h4>Top Features</h4>
-                <a  href="WhatsApp_API.html">WhatsApp API</a>
-                                <a  href="Facebook_Automation.html">Facebook Automation</a>
-                                <a  href="Instagram_Automation.html">Instagram Automation</a>
-                                <a  href="features.html">Click to WhatsApp Tools</a>
-                                <a  href="AI_Chatbot.html">AI Chatbot</a>
-                                <a  href="UrbanChat_Chatbots.html">Website Chatbot</a>                             
-                                <a  href="ecommerce.html">Ecommerce in WhatsApp </a>
-                                <!-- <a  href="sharedTeaminbox.html">Shared Inbox</a>
+                <a href="WhatsApp_API.html">WhatsApp API</a>
+                <a href="Facebook_Automation.html">Facebook Automation</a>
+                <a href="Instagram_Automation.html">Instagram Automation</a>
+                <a href="features.html">Click to WhatsApp Tools</a>
+                <a href="AI_Chatbot.html">AI Chatbot</a>
+                <a href="UrbanChat_Chatbots.html">Website Chatbot</a>
+                <a href="ecommerce.html">Ecommerce in WhatsApp </a>
+                <!-- <a  href="sharedTeaminbox.html">Shared Inbox</a>
                                 <a  href="Template_Messaging.html">Template Messaging & Broadcasting</a> 
                                 <a  href="WhatsApp_Drip_Campaign.html">Drip Campaign</a>
                                 <a  href="WhatsApp_Affiliate_Program.html"> Affiliate Program</a> -->
             </div>
             <div>
                 <h4>Solutions</h4>
-                <a  href="solutions.html">Bulk WhatsApp Messaging</a>
-                <a  href="rcsservice.html">RCS services</a>
-                <a  href="Bulk_SMS_Services.html">Bulk SMS Services</a>
-                <a  href="IVR_Services .html">IVR Services </a>
-                <a  href="Technical_Support.html">Technical Support and Expertise </a>    
+                <a href="solutions.html">Bulk WhatsApp Messaging</a>
+                <a href="rcsservice.html">RCS services</a>
+                <a href="Bulk_SMS_Services.html">Bulk SMS Services</a>
+                <a href="IVR_Services .html">IVR Services </a>
+                <a href="Technical_Support.html">Technical Support and Expertise </a>
             </div>
             <div>
                 <h4>Integrations</h4>
-                <a  href="Integrating_Various_Applications.html">Ai integration</a>
-                <a  href="Integrating_Various_Applications.html">Zoho</a>
-                <a  href="Integrating_Various_Applications.html">Woocommerce</a>
-                <a  href="Integrating_Various_Applications.html">Zapier</a>
-                <a  href="Integrating_Various_Applications.html">Google Calendar</a>  
-                <a  href="Google_Integration_UrbanChat.html">Google Sheets </a>
+                <a href="Integrating_Various_Applications.html">Ai integration</a>
+                <a href="Integrating_Various_Applications.html">Zoho</a>
+                <a href="Integrating_Various_Applications.html">Woocommerce</a>
+                <a href="Integrating_Various_Applications.html">Zapier</a>
+                <a href="Integrating_Various_Applications.html">Google Calendar</a>
+                <a href="Google_Integration_UrbanChat.html">Google Sheets </a>
             </div>
             <div>
                 <h4>Resources</h4>
                 <a href="resources.html">Blog</a>
-                <a href="chatbotlibrary.html"> Library</a>   
+                <a href="chatbotlibrary.html"> Library</a>
             </div>
             <div>
                 <h4>Free WhatsApp Tools</h4>
@@ -637,9 +622,9 @@
                 <h4>Urbanchat</h4>
                 <a href="pricing.html">Pricing</a>
                 <!-- <a href="#">About Us</a> -->
-                
+
                 <a href="bookdemo.html">Book a Demo</a>
-              
+
 
             </div>
         </div>
@@ -661,15 +646,15 @@
     <script>
         const hamburger = document.getElementById('hamburger');
         const nav = document.querySelector('.nav');
-    
+
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             nav.classList.toggle('active');
         });
     </script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 
+</html>

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources - Urbanchat</title>
-      <!-- icon -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
-          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-          <!-- font style -->
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font style -->
     <link rel="stylesheet" href="font.css">
 
     <style>
@@ -18,7 +19,7 @@
             background-color: #ffffff;
             color: #000000;
         }
-       
+
 
         .nav .dropdown:hover .dropdown-content {
             display: block;
@@ -56,161 +57,106 @@
             background-color: #388e3c;
         }
 
-           
+
         .hamburger {
-    display: none; /* Hide by default */
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-    z-index: 1001;
-}
+            display: none;
+            /* Hide by default */
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            z-index: 1001;
+        }
 
-.hamburger .bar {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    transition: all 0.3s ease;
-}
+        .hamburger .bar {
+            width: 100%;
+            height: 3px;
+            background-color: #000;
+            transition: all 0.3s ease;
+        }
 
-/* Change for active state */
-.hamburger.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
+        /* Change for active state */
+        .hamburger.active .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
 
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
 
-.hamburger.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+        .hamburger.active .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
 
-/* Show hamburger menu only on mobile */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
+        /* Show hamburger menu only on mobile */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
 
-    .nav {
-        display: none; /* Hide the nav by default on mobile */
-        flex-direction: column;
-        width: 100%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 999;
-    }
+            .nav {
+                display: none;
+                /* Hide the nav by default on mobile */
+                flex-direction: column;
+                width: 100%;
+                background-color: #ffffff;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 999;
+            }
 
-    .nav.active {
-        display: flex; /* Show the nav when active */
-    }
+            .nav.active {
+                display: flex;
+                /* Show the nav when active */
+            }
 
-    .cta-buttons {
-        display: none; /* Hide CTA buttons on mobile */
-    }
-}
-        .main {
+            .cta-buttons {
+                display: none;
+                /* Hide CTA buttons on mobile */
+            }
+        }
+
+        .container {
             text-align: center;
             padding: 40px 20px;
             background: #ffffff;
         }
-        .main h1 {
-            font-size: 2.5em;
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .container h1 {
+            font-size: 2.0em;
             margin-bottom: 20px;
             color: #000000;
         }
-        .main p {
+
+        .container p {
             font-size: 1.2em;
             color: #666;
             margin-bottom: 20px;
+            line-height: 1.6;
         }
-        .blog-section {
-            padding: 40px 20px;
-            background-color: #e0f7fa;
-        }
-        .blog-section h2 {
-            font-size: 2em;
-            color: #000000;
-            margin-bottom: 30px;
-            text-align: center;  
-            
-        }
-        .blog-section .blogs {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-        .blog-card {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 280px;
-            text-align: left;
-           
-        }
-        .blog-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            
-           
-        }
-        .blog-card h3 {
-            font-size: 1.2em;
-            color: #000000;
-            margin-bottom: 10px;
-        }
-        .blog-card p {
-            font-size: 0.9em;
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .category-section {
-            padding: 40px 20px;
-            text-align: center;
-            background-color: #fff9c4;
-        }
-        .category-section h2 {
-            font-size: 2em;
-            color: #000000;
-            margin-bottom: 30px;
-        }
-        .category-section .categories {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .category-box {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 150px;
-            text-align: center;
-        }
-        .category-box h3 {
-            font-size: 1.2em;
-            color: #000000;
-            margin-bottom: 10px;
-        }
+
         .footer-cta {
             text-align: center;
             padding: 40px 20px;
             background-color: #55BC5A;
             color: white;
         }
+
         .footer-cta p {
             font-size: 1.2em;
             margin-bottom: 20px;
         }
+
         .footer-cta a {
             text-decoration: none;
             background-color: white;
@@ -220,10 +166,12 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
+
         .footer-cta a:hover {
             background-color: #388e3c;
             color: white;
         }
+
         .footer {
             padding: 40px 20px;
             background-color: #212121;
@@ -325,12 +273,22 @@
         .footer .footer-social a:hover {
             color: #55BC5A;
         }
+
         @media (max-width: 768px) {
-            .header, .nav, .cta-buttons, .blogs, .categories {
+
+            .header,
+            .nav,
+            .cta-buttons,
+            .blogs,
+            .categories {
                 flex-direction: column;
                 align-items: center;
             }
-            .nav, .cta-buttons, .blogs img, .categories {
+
+            .nav,
+            .cta-buttons,
+            .blogs img,
+            .categories {
                 gap: 10px;
             }
 
@@ -356,7 +314,7 @@
             border-radius: 50px;
         }
 
-         .whatsapp-chat-widget .chat-container img {
+        .whatsapp-chat-widget .chat-container img {
             width: 50px;
             height: 50px;
             margin-right: 0px;
@@ -371,68 +329,68 @@
         }
 
 
-/* -------------------------------------- */
+        /* -------------------------------------- */
 
-/* 1)newllyy addedd */
+        /* 1)newllyy addedd */
 
-/* -------------------------------------- */
-.drop_menu_card {
-   
-   border: 2px solid transparent;
-  background-color: #ffffff;
-}
+        /* -------------------------------------- */
+        .drop_menu_card {
 
-.drop_menu_card .dropdown-item {
-   transition: 0.2s ease-in-out;
-   border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
-}
+            border: 2px solid transparent;
+            background-color: #ffffff;
+        }
 
-
-.drop_menu_card .dropdown-item:hover {
-   background-color: #000000;
-   color: #ffffff;
-}
+        .drop_menu_card .dropdown-item {
+            transition: 0.2s ease-in-out;
+            border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
+        }
 
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border: none;
-}
+        .drop_menu_card .dropdown-item:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
 
-@media (max-width:786px) {
-    .free_trail {
-        position: relative;
-        top: 4px;
-    }
 
-    .book_now {
-        position: relative;
-        top: 2px;
-    }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border: none;
+        }
 
-}
+        @media (max-width:786px) {
+            .free_trail {
+                position: relative;
+                top: 4px;
+            }
 
-.nav-link {
-    color: black !important;
-}
-    
+            .book_now {
+                position: relative;
+                top: 2px;
+            }
 
+        }
+
+        .nav-link {
+            color: black !important;
+        }
     </style>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <a class="navbar-brand" href="index.html">
-                                        <img src="images/logourbg/logo.png" alt="urban chat logo" width="60" height="60"> <span style="font-size: larger;font-weight: 600;position: relative;top: 4px;">UrbanChat</span>
+                    <img src="images/logourbg/logo.png" alt="urban chat logo" width="60" height="60"> <span
+                        style="font-size: larger;font-weight: 600;position: relative;top: 4px;">UrbanChat</span>
 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -455,10 +413,11 @@
                                 <a class="dropdown-item" href="Instagram_Automation.html">Instagram Automation</a>
                                 <a class="dropdown-item" href="features.html">Click to WhatsApp Tools</a>
                                 <a class="dropdown-item" href="AI_Chatbot.html">AI Chatbot</a>
-                                <a class="dropdown-item" href="UrbanChat_Chatbots.html">Website Chatbot</a>                             
+                                <a class="dropdown-item" href="UrbanChat_Chatbots.html">Website Chatbot</a>
                                 <a class="dropdown-item" href="ecommerce.html">Ecommerce in WhatsApp </a>
                                 <a class="dropdown-item" href="sharedTeaminbox.html">Shared Inbox</a>
-                                <a class="dropdown-item" href="Template_Messaging.html">Template Messaging & Broadcasting</a> 
+                                <a class="dropdown-item" href="Template_Messaging.html">Template Messaging &
+                                    Broadcasting</a>
                                 <a class="dropdown-item" href="WhatsApp_Drip_Campaign.html">Drip Campaign</a>
                                 <a class="dropdown-item" href="WhatsApp_Affiliate_Program.html"> Affiliate Program</a>
                                 <!-- <a class="dropdown-item" href="Google_Integration_UrbanChat.html">Google Sheets Integration</a>
@@ -466,7 +425,7 @@
                                 <a class="dropdown-item" href="WhatsApp_Automation.html">WhatsApp Automation</a>
                                 <a class="dropdown-item" href="Team_Sharing_Lead.html">Lead Assignments</a> -->
                             </div>
-                            
+
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="solutionsDropdown"
@@ -478,7 +437,8 @@
                                 <a class="dropdown-item" href="rcsservice.html">RCS services</a>
                                 <a class="dropdown-item" href="Bulk_SMS_Services.html">Bulk SMS Services</a>
                                 <a class="dropdown-item" href="IVR_Services .html">IVR Services </a>
-                                <a class="dropdown-item" href="Technical_Support.html">Technical Support and Expertise </a>                             
+                                <a class="dropdown-item" href="Technical_Support.html">Technical Support and Expertise
+                                </a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -491,7 +451,8 @@
                                 <a class="dropdown-item" href="Integrating_Various_Applications.html">Zoho</a>
                                 <a class="dropdown-item" href="Integrating_Various_Applications.html">Woocommerce</a>
                                 <a class="dropdown-item" href="Integrating_Various_Applications.html">Zapier</a>
-                                <a class="dropdown-item" href="Integrating_Various_Applications.html">Google Calendar</a>  
+                                <a class="dropdown-item" href="Integrating_Various_Applications.html">Google
+                                    Calendar</a>
                                 <a class="dropdown-item" href="Google_Integration_UrbanChat.html">Google Sheets </a>
                             </div>
                         </li>
@@ -505,15 +466,16 @@
 
 
 
-                                <a class="dropdown-item" href="chatbotlibrary.html"> Library</a>                                                       
+                                <a class="dropdown-item" href="chatbotlibrary.html"> Library</a>
                             </div>
                         </li>
                     </ul>
                     <div class="navbar-nav ml-auto">
-                   
-                        
+
+
                         <a href="bookdemo.html"
-                            class="nav-item nav-link btn btn-success text-white font-weight-bold mx-2 free_trail" style="color: #ffffff !important;">Book
+                            class="nav-item nav-link btn btn-success text-white font-weight-bold mx-2 free_trail"
+                            style="color: #ffffff !important;">Book
                             Demo</a>
                     </div>
                 </div>
@@ -522,110 +484,115 @@
     </header>
 
 
-    <main class="main">
-        <h1>Resources</h1>
-        <p>Send Bulk Broadcast WhatsApp Messages in 2024: A Comprehensive Guide</p>
-    </main>
-    <section class="blog-section">
-        <h2>Trending Blogs</h2>
-        <div class="blogs">
-            <div class="blog-card">
-                <img src="images/manamanam.jpg" alt="Blog 1">
-                <h3>Do you want to know how companies are leveraging WhatsApp for efficient business communication?</h3>
-                <a href="blog1.html"><p>Read more</p></a>
-            </div>
-            <div class="blog-card">
-                <img src="images/chatomni.png" alt="Blog 2">
-                <h3>Unlock the Power of WhatsApp API for Your Business</h3>
-                <a href="blog2.html"><p>Read more</p></a>
-            </div>
-            <div class="blog-card">
-                <img src="images/drive.jpg" alt="Blog 3">
-                <h3>Supercharging Your Lead Generation with WhatsApp API Integration with Facebook</h3>
-                <a href="blog3.html"><p>Read more</p></a>
-            </div>
-            <div class="blog-card">
-                <img src="images/revalutionize.png" alt="Blog 4">
-                <h3>Making AI and WhatsApp API Work Like Humans for Business Growth in Enterprises</h3>
-                <a href="blog4.html"><p>Read more</p></a>
-            </div>
-            <div class="blog-card">
-                <img src="images/drive1.jpg" alt="Blog 5">
-                <h3>How AI Can Help Retail Chains Grow Business by Automating Sales, Customer Support, and Customer Engagement</h3>
-                <a href="blog5.html"><p>Read more</p></a>
-            </div>
-            
-        </div>
+    <main class="container">
+        <img src="images/chatomni.png" alt="Blog Image">
         
-    </section>
-    <section class="category-section">
-        <h2>Category</h2>
-        <div class="categories">
-            <div class="category-box">
-                <h3>WhatsApp Marketing</h3>
-            </div>
-            <div class="category-box">
-                <h3>Tips & Tricks</h3>
-            </div>
-            <div class="category-box">
-                <h3>Case Studies</h3>
-            </div>
-            <div class="category-box">
-                <h3>Guides</h3>
-            </div>
-        </div>
-    </section>
-    <section class="footer-cta">
-        <p>Discover more. WhatsApp, Facebook, and Instagram share of social media messaging is unrivaled. Harness it with one of the fastest growing WhatsApp Business Solution Providers.</p>
-        <a href="#">Free 7 Day Trial</a>
-    </section>
+        <h1>Unlocking the Power of WhatsApp API for Business Communication</h1>
+    <p>In today's digital age, businesses need to stay ahead by using the latest tools to engage with their customers effectively. One such powerful tool is the WhatsApp API. This article will explore common customer questions and doubts about the WhatsApp API and provide comprehensive solutions, highlighting key aspects such as pricing, integration, messaging capabilities, and more.</p>
+    
+    <h2>What is WhatsApp API?</h2>
+    <p>The WhatsApp API is a powerful tool designed for businesses to communicate with their customers at scale. Unlike the standard WhatsApp Web or WhatsApp app, the API allows for automation, integration with existing systems, and the ability to send messages to large audiences efficiently.</p>
 
-    <div class="whatsapp-chat-widget">
-        <div class="chat-container">
-            <a href="https://wa.me/8943041309" class="chat-with-us" target="_blank">
-                <img src="images/Default_create_a_circular_whatsapp_bot_head_icon_featuring_a_s_0_07dd10d9-eebd-4d17-b98f-47146b936a7c_0.png" alt="">
-                
-            </a>
-        </div>
-    </div>
+    <h2>Common Questions and Solutions</h2>
+    
+    <h3>1. What are the benefits of using WhatsApp API for business?</h3>
+    <p><strong>Solution:</strong></p>
+    <ul>
+        <li><strong>Scalability:</strong> Unlike WhatsApp Web or the standard app, the API allows businesses to send messages to thousands of customers simultaneously.</li>
+        <li><strong>Automation:</strong> Automate responses and engage with customers 24/7 using a WhatsApp bot.</li>
+        <li><strong>Integration:</strong> Seamlessly integrate with CRM, ERP, and other business tools for a unified communication strategy.</li>
+        <li><strong>Templates:</strong> Send template messages for quick and consistent communication.</li>
+    </ul>
+
+    <h3>2. How much does WhatsApp API cost?</h3>
+    <p><strong>Solution:</strong></p>
+    <ul>
+        <li><strong>Pricing Structure:</strong> WhatsApp API pricing typically depends on the volume of messages sent and the service provider. Some providers offer a pay-as-you-go model, while others might have subscription plans.</li>
+        <li><strong>Free Trial:</strong> Some WhatsApp API providers offer free trials or limited free plans to help businesses get started without upfront costs.</li>
+    </ul>
+
+    <h3>3. How can I integrate WhatsApp API into my business systems?</h3>
+    <p><strong>Solution:</strong></p>
+    <ul>
+        <li><strong>API Integration:</strong> Most WhatsApp API providers offer detailed documentation and support to help businesses integrate the API into their existing systems, including CRM, ERP, and other business software.</li>
+        <li><strong>Service Providers:</strong> Working with a WhatsApp service provider can simplify the integration process and ensure everything runs smoothly.</li>
+    </ul>
+
+    <h3>4. Can I use WhatsApp API to send bulk messages?</h3>
+    <p><strong>Solution:</strong></p>
+    <ul>
+        <li><strong>Bulk Messaging:</strong> Yes, the WhatsApp API allows businesses to send bulk messages, which is particularly useful for marketing campaigns, announcements, and updates.</li>
+        <li><strong>Compliance:</strong> It's important to ensure compliance with WhatsApp’s policies to avoid penalties. Always get consent from your customers before sending bulk messages.</li>
+    </ul>
+
+    <h3>5. How do I send a message using WhatsApp API?</h3>
+    <p><strong>Solution:</strong></p>
+    <ul>
+        <li><strong>Send Message:</strong> To send a message using the WhatsApp API, you need to make a POST request to the API endpoint. This can include text messages, media files, and template messages.</li>
+        <li><strong>Template Messages:</strong> Use template messages for predefined communication, ideal for consistent responses such as order confirmations, shipping updates, and customer support.</li>
+    </ul>
+
+    <h3>6. Is there a free version of the WhatsApp API?</h3>
+    <p><strong>Solution:</strong></p>
+    <ul>
+        <li><strong>Free Plans:</strong> Some WhatsApp API providers offer free plans with limited features. This can be a great way to test the service before committing to a paid plan.</li>
+        <li><strong>Trial Periods:</strong> Many providers also offer free trial periods for their premium plans, allowing businesses to explore all features.</li>
+    </ul>
+
+    <h2>Choosing the Right WhatsApp API Provider</h2>
+    <p>When selecting a WhatsApp API provider, consider the following factors:</p>
+    <ul>
+        <li><strong>Reliability:</strong> Choose a provider with a proven track record and positive customer reviews.</li>
+        <li><strong>Support:</strong> Ensure the provider offers robust customer support to assist with integration and troubleshooting.</li>
+        <li><strong>Features:</strong> Look for a provider that offers comprehensive features such as template messages, bulk messaging, and seamless integration with your existing systems.</li>
+        <li><strong>Cost:</strong> Compare the pricing structures of different providers to find one that fits your budget while meeting your business needs.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>The WhatsApp API is a game-changer for businesses looking to enhance their customer communication. Whether you need to send bulk messages, automate responses, or integrate with existing business systems, the WhatsApp API offers a powerful and flexible solution. By addressing common questions and concerns, this article aims to help businesses understand the value of the WhatsApp API and make informed decisions about its implementation.</p>
+    <p>Unlock the potential of the WhatsApp API and take your customer engagement to the next level. For more information, contact a trusted WhatsApp API provider and start your journey today.</p>
+</main>
+    </main>
+
+
 
     <footer class="footer">
         <div class="footer-links">
             <div>
                 <h4>Top Features</h4>
-                <a  href="WhatsApp_API.html">WhatsApp API</a>
-                                <a  href="Facebook_Automation.html">Facebook Automation</a>
-                                <a  href="Instagram_Automation.html">Instagram Automation</a>
-                                <a  href="features.html">Click to WhatsApp Tools</a>
-                                <a  href="AI_Chatbot.html">AI Chatbot</a>
-                                <a  href="UrbanChat_Chatbots.html">Website Chatbot</a>                             
-                                <a  href="ecommerce.html">Ecommerce in WhatsApp </a>
-                                <!-- <a  href="sharedTeaminbox.html">Shared Inbox</a>
+                <a href="WhatsApp_API.html">WhatsApp API</a>
+                <a href="Facebook_Automation.html">Facebook Automation</a>
+                <a href="Instagram_Automation.html">Instagram Automation</a>
+                <a href="features.html">Click to WhatsApp Tools</a>
+                <a href="AI_Chatbot.html">AI Chatbot</a>
+                <a href="UrbanChat_Chatbots.html">Website Chatbot</a>
+                <a href="ecommerce.html">Ecommerce in WhatsApp </a>
+                <!-- <a  href="sharedTeaminbox.html">Shared Inbox</a>
                                 <a  href="Template_Messaging.html">Template Messaging & Broadcasting</a> 
                                 <a  href="WhatsApp_Drip_Campaign.html">Drip Campaign</a>
                                 <a  href="WhatsApp_Affiliate_Program.html"> Affiliate Program</a> -->
             </div>
             <div>
                 <h4>Solutions</h4>
-                <a  href="solutions.html">Bulk WhatsApp Messaging</a>
-                <a  href="rcsservice.html">RCS services</a>
-                <a  href="Bulk_SMS_Services.html">Bulk SMS Services</a>
-                <a  href="IVR_Services .html">IVR Services </a>
-                <a  href="Technical_Support.html">Technical Support and Expertise </a>    
+                <a href="solutions.html">Bulk WhatsApp Messaging</a>
+                <a href="rcsservice.html">RCS services</a>
+                <a href="Bulk_SMS_Services.html">Bulk SMS Services</a>
+                <a href="IVR_Services .html">IVR Services </a>
+                <a href="Technical_Support.html">Technical Support and Expertise </a>
             </div>
             <div>
                 <h4>Integrations</h4>
-                <a  href="Integrating_Various_Applications.html">Ai integration</a>
-                <a  href="Integrating_Various_Applications.html">Zoho</a>
-                <a  href="Integrating_Various_Applications.html">Woocommerce</a>
-                <a  href="Integrating_Various_Applications.html">Zapier</a>
-                <a  href="Integrating_Various_Applications.html">Google Calendar</a>  
-                <a  href="Google_Integration_UrbanChat.html">Google Sheets </a>
+                <a href="Integrating_Various_Applications.html">Ai integration</a>
+                <a href="Integrating_Various_Applications.html">Zoho</a>
+                <a href="Integrating_Various_Applications.html">Woocommerce</a>
+                <a href="Integrating_Various_Applications.html">Zapier</a>
+                <a href="Integrating_Various_Applications.html">Google Calendar</a>
+                <a href="Google_Integration_UrbanChat.html">Google Sheets </a>
             </div>
             <div>
                 <h4>Resources</h4>
                 <a href="resources.html">Blog</a>
-                <a href="chatbotlibrary.html"> Library</a>   
+                <a href="chatbotlibrary.html"> Library</a>
             </div>
             <div>
                 <h4>Free WhatsApp Tools</h4>
@@ -637,9 +604,9 @@
                 <h4>Urbanchat</h4>
                 <a href="pricing.html">Pricing</a>
                 <!-- <a href="#">About Us</a> -->
-                
+
                 <a href="bookdemo.html">Book a Demo</a>
-              
+
 
             </div>
         </div>
@@ -661,15 +628,15 @@
     <script>
         const hamburger = document.getElementById('hamburger');
         const nav = document.querySelector('.nav');
-    
+
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             nav.classList.toggle('active');
         });
     </script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 
+</html>
