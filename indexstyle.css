@@ -810,6 +810,7 @@ body {
     background-color: #212121;
     color: #ffffff;
     text-align: left;
+
 }
 
 .footer h4 {
@@ -907,6 +908,36 @@ body {
     color: #4caf50;
 }
 
+.footer-cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #4caf50, #7dda82);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-cta p {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+}
+
+.footer-cta a {
+    text-decoration: none;
+    background-color: white;
+    color: #4caf50;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+    /* Side shadow */
+}
+
+.footer-cta a:hover {
+    background-color: #ff7700;
+    color: white;
+    transform: translateY(-3px);
+}
 
 
 .whatsapp-chat-widget {
