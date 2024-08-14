@@ -911,7 +911,7 @@ body {
 
 .whatsapp-chat-widget {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 20px;
     z-index: 1000;
 }
@@ -992,6 +992,14 @@ body {
   
   .twitter {
     background-color: #23aa38;
+  }
+
+  .linkedin {
+    background-color: #0077B5;
+  }
+
+  .Facebook {
+    background-color: #0866FF;
   }
   
   .Btn_1:hover {
