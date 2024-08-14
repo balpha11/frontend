@@ -232,7 +232,13 @@ body {
 .img-fluid{
     height: 300px;
     width:500px;
+    border-radius: 15px;
     object-fit: cover;
+    transition: all 0.2s ease;
+}
+
+.img-fluid:hover{
+    transform: scale(1.06);
 }
 
 .features-overview {
@@ -798,11 +804,18 @@ color: #6c757d;
         margin-top: 14px;
 
     }
-    .mobile_feature ul{
+    .mobile_feature ul, .mobile_feature p
+    {
 text-align: left;
     }
 
-    .mobile_feature ul li{
-     font-size: small;
+    .mobile_feature ul li, .mobile_feature p{
+     font-size: medium;
+}
+.img-fluid{
+    height: 200px;
+    width:400px;
+    border-radius: 15px;
+    object-fit: cover;
 }
 }
