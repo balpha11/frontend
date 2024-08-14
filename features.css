@@ -633,6 +633,8 @@ z-index: 1000;
 
 
 
+
+
 /* card */
 .custom-arrow-button {
 font-size: 20px;
@@ -710,7 +712,7 @@ font-family: courier, sans-serif;
 .custom-card {
 display: block;
 position: relative;
-width: 300px;
+width:100%;
 height: 270px;
 background-color: #7ac0cc;
 border-radius: 10px;
@@ -806,11 +808,12 @@ color: #6c757d;
     }
     .mobile_feature ul, .mobile_feature p
     {
-text-align: left;
+text-align: justify;
     }
 
     .mobile_feature ul li, .mobile_feature p{
      font-size: medium;
+
 }
 .img-fluid{
     height: 200px;
