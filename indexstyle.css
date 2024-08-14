@@ -911,7 +911,7 @@ body {
 
 .whatsapp-chat-widget {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 20px;
     z-index: 1000;
 }
