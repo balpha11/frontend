@@ -234,6 +234,11 @@ body {
     width:500px;
     border-radius: 15px;
     object-fit: cover;
+    transition: all 0.2s ease;
+}
+
+.img-fluid:hover{
+    transform: scale(1.1);
 }
 
 .features-overview {
