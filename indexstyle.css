@@ -993,6 +993,14 @@ body {
   .twitter {
     background-color: #23aa38;
   }
+
+  .linkedin {
+    background-color: #0077B5;
+  }
+
+  .Facebook {
+    background-color: #0866FF;
+  }
   
   .Btn_1:hover {
     width: 110px;
