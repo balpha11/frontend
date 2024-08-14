@@ -355,4 +355,9 @@ display: none; /* Hide CTA buttons on mobile */
     width: 350px;
     object-fit: cover;
 }
+
+.about-header h1{
+    font-size: large;
+    line-height: 26px;
+}
 }
