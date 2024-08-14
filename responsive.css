@@ -84,6 +84,7 @@
 
 .cont_feature_moblile{
     display: block;
+    margin-top: -110px;
 }
 .container_feature{
     display: none;

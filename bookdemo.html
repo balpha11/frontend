@@ -110,14 +110,7 @@
             gap: 20px;
             margin-top: 20px;
         }
-        .info-box {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 200px;
-            text-align: center;
-        }
+       
         .footer {
             padding: 40px 20px;
             background-color: #212121;
@@ -220,14 +213,8 @@
             color: #4caf50;
         }
         @media (max-width: 768px) {
-            .header, .nav, .cta-buttons, .info-boxes {
-                flex-direction: column;
-                align-items: center;
-            }
-            .nav, .cta-buttons, .info-boxes {
-                gap: 10px;
-            }
-
+          
+           
 
             .footer .footer-links,
             .footer .footer-bottom {
@@ -393,34 +380,53 @@
 
 
     <div class="container">
-        <div class="content">
-            <h1>Book your free demo</h1>
-            <p>See why growing businesses trust Urbanchat for their WhatsApp marketing. Book a free demo to see our platform in action and learn how it can benefit your business.</p>
-            <form action="#">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Business Email Address" required>
-                <input type="text" placeholder="Your Phone Number" required>
-                <select required>
-                    <option value="" disabled selected>Select a convenient time for the demo</option>
-                    <option value="morning">Morning</option>
-                    <option value="afternoon">Afternoon</option>
-                    <option value="evening">Evening</option>
-                </select>
-                <button type="submit">Submit</button>
-            </form>
-            <div class="info-boxes">
-                <div class="info-box" style="background-color: #fce4ec;">
-                    <p>Free for all demo users</p>
-                </div>
-                <div class="info-box" style="background-color: #e0f7fa;">
-                    <p>We speak your language! Multiple language support available</p>
-                </div>
-                <div class="info-box" style="background-color: #fff9c4;">
-                    <p>Customer service: Our team is here to help you every step of the way</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <h1 class="text-center my-4">Book your free demo</h1>
+                <p class="text-center">See why growing businesses trust Urbanchat for their WhatsApp marketing. Book a free demo to see our platform in action and learn how it can benefit your business.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control mb-3" placeholder="Business Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control mb-3" required>
+                            <option value="" disabled selected>Select a convenient time for the demo</option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-4 col-sm-6 mb-2">
+                        <div class="info-box p-3 text-center" style="background-color: #fce4ec;">
+                            <p>Free for all demo users</p>
+                        </div>
+                    </div> 
+                    <div class="col-md-4 col-sm-12 mb-2">
+                        <div class="info-box p-3 text-center" style="background-color: #e0f7fa;">
+                            <p>We speak your language! Multiple language support available</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-2">
+                        <div class="info-box p-3 text-center" style="background-color: #fff9c4;">
+                            <p>Customer service: Our team is here to help you every step of the way</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
     
     <div class="whatsapp-chat-widget">
         <div class="chat-container">
