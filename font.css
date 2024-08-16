@@ -4,3 +4,18 @@
 body, h1, h2, h3, h4, h5, h6, p, div, span, a, li, ul, ol, section, article, header, footer, nav {
     font-family: 'Poppins', sans-serif !important;
 }
+
+.about-header {
+    background-color:#778da9; /* Match the background color */
+    padding: 50px 0; /* Add padding for spacing */
+    text-align: center;
+    position: relative;
+}
+.about-header h1 {
+    font-size: 3.5rem;
+    color: #ffffff; /* Text color */
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 100px;
+    margin: 0;
+}
