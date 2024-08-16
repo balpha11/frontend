@@ -384,3 +384,17 @@ color: black !important;
     text-align: left;
 }
 }
+
+
+@media (max-width:788px) {
+    .top_fe{
+        display: none;
+    }
+
+
+    .top_fee_{
+        position: relative !important;
+        left: 0px !important;
+    }
+
+}
