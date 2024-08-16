@@ -183,13 +183,7 @@ body {
 
 
 
-.containerb {
-    width: 100%;
-    max-width: 1200px;
-    margin: 100px auto;
-    overflow: hidden;
-    margin-top: -85px;
-}
+
 
 .trusted-brands {
     padding: 0px 30px;
@@ -411,6 +405,22 @@ body {
 
 .feature_div {
     padding: 10px 10px;
+}
+
+
+.container-feature {
+    margin-top: -35px;
+}
+
+.custom-background {
+    background-color: #def0ee;
+}
+
+/* Ensure flexbox alignment if needed */
+.container-feature {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 
