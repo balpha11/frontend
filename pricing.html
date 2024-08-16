@@ -181,12 +181,12 @@
             width: 300px;
             margin: 2px;
             transition: transform 0.3s;
-            border: 2px solid #e0e0e0;
+            border: 2px solid #242424;
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 470px;
+            height: 400px;
             /* Set a fixed height for all cards */
         }
 
@@ -201,10 +201,10 @@
         }
 
         .plan .price {
-            font-size: 2em;
-            color: #000000;
+            font-size: 1.8em;
+            color: #000000ea;
             margin: 10px 0;
-            font-weight: bold;
+            font-weight:600;
         }
 
         .plan .features {
@@ -218,9 +218,9 @@
 
         .plan .features li {
             margin-bottom: 10px;
-            font-size: 20px;
-            color: #666;
-            font-weight: bold;
+            font-size: 16px;
+            color: #474646;
+            font-weight: 500;
         }
 
         .plan .btn {
@@ -229,7 +229,7 @@
             color: rgb(0, 0, 0);
             padding: 10px 20px;
             border-radius: 5px;
-            font-weight: bold;
+            
             transition: background-color 0.3s;
             margin-top: auto;
             /* Push the button to the bottom */
@@ -240,11 +240,11 @@
 
         .plan .btn1 {
             text-decoration: none;
-            background-color: #2bae32;
+            
             color: rgb(255, 255, 255);
             padding: 10px 20px;
             border-radius: 5px;
-            font-weight: bold;
+            
             transition: background-color 0.3s;
             margin-top: auto;
             /* Push the button to the bottom */
@@ -255,12 +255,12 @@
         }
 
         .recommended {
-            border: 2px solid #4caf50;
+            border: 2px solid  #0096DE;
         }
 
         .badge {
             font-size: large;
-            color: #036b28;
+            color: #0096DE;
             position: absolute;
             top: -10px;
             right: -10px;
@@ -643,16 +643,16 @@
                     id="save8" style="color: #e5a122;">▼15%</span></button>
         </div>
         <div id="monthly-plans" class="pricing-plans" data--duration="1s">
-            <div class="plan">
-                <h3 class="plan-title">Growth</h3><br>
-                <p class="price">₹2,499/mo (+taxes)</p>
-                <ul class="features">
-                    <li>Rs 0.78/Marketing <br> Conversation</li><br>
-                    <li>All other category <br> Rs.0.29/Conversation</li>
+            <div class="plan" style="background-color: #004C3D;">
+                <h3 class="plan-title text-white">Growth</h3><br>
+                <p class="price text-white">₹2,499/mo (+taxes)</p>
+                <ul class="features text-white">
+                    <li class="text-white">Rs 0.78/Marketing <br> Conversation</li><br>
+                    <li class="text-white"> All other category <br> Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn" style="background-color:#05A68B ;color: #ffffff;">Get Now</a>
             </div>
-            <div class="plan recommended">
+            <div class="plan recommended" style="background-color: #DFF5FF;">
                 <h3 class="plan-title">Advanced <span class="badge"><i
                             class="bi bi-patch-check-fill"></i></span><br><span
                         style="font-size:medium">(Recommended)</span></h3>
@@ -661,9 +661,9 @@
                     <li>Rs 0.78/Marketing <br> Conversation</li><br>
                     <li>All other category <br> Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn1">Get Now</a>
+                <a href="#" class="btn1" style="background-color: #0096DE;">Get Now</a>
             </div>
-            <div class="plan">
+            <div class="plan" style="background-color: #E3FFFA;">
                 <h3 class="plan-title">Enterprise</h3>
                 <br><br><br>
                 <p class="price">On Request</p>
@@ -671,29 +671,29 @@
                     <br><br>
                     <li>Conversations all other <br> Category</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn" style="background-color:#76ffe6;">Get Now</a>
             </div>
         </div>
         <div id="quarterly-plans" class="pricing-plans" data--duration="1s" style="display: none;">
-            <div class="plan">
+            <div class="plan" style="background-color: #FFF1D6;">
                 <h3 class="plan-title">Starter</h3><br>
                 <p class="price">₹4,500/qtr (+taxes)</p>
                 <ul class="features">
                     <li>Rs 0.78/Marketing Conversation</li><br>
                     <li>All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn" style="background-color: #ffbe3d;">Get Now</a>
             </div>
-            <div class="plan">
-                <h3 class="plan-title">Growth</h3><br>
-                <p class="price">₹6,897/qtr (+taxes) Discount 8%</p>
+            <div class="plan"  style="background-color: #004C3D;">
+                <h3 class="plan-title text-white">Growth</h3><br>
+                <p class="price text-white">₹6,897/qtr (+taxes) Discount 8%</p>
                 <ul class="features">
-                    <li>Rs 0.78 Marketing Conversation</li>
-                    <li>All others category Rs.0.0.29/Conversation</li>
+                    <li class="text-white">Rs 0.78 Marketing Conversation</li>
+                    <li class="text-white">All others category Rs.0.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn" style="background-color:#05A68B ;color: #ffffff;">Get Now</a>
             </div>
-            <div class="plan recommended">
+            <div class="plan recommended" style="background-color: #DFF5FF;">
                 <h3 class="plan-title">Advanced <span class="badge"><i
                             class="bi bi-patch-check-fill"></i></span><br><span
                         style="font-size:medium">(Recommended)</span></h3>
@@ -702,9 +702,9 @@
                     <li>Rs 0.78/Marketing Conversation</li>
                     <li>All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn1">Get Now</a>
+                <a href="#" class="btn1" style="background-color: #0096DE;">Get Now</a>
             </div>
-            <div class="plan">
+            <div class="plan" style="background-color: #E3FFFA;">
                 <h3 class="plan-title">Enterprise</h3>
                 <br><br><br>
                 <p class="price">On Request</p>
@@ -712,29 +712,29 @@
                     <br><br>
                     <li>Conversations all other Category</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn" style="background-color:#76ffe6;">Get Now</a>
             </div>
         </div>
         <div id="yearly-plans" class="pricing-plans" data--duration="1s" style="display: none;">
-            <div class="plan">
+            <div class="plan"style="background-color: #FFF1D6;">
                 <h3 class="plan-title">Starter</h3><br>
                 <p class="price">₹15,299/yr (+taxes)</p>
                 <ul class="features">
                     <li>Rs 0.78/Marketing Conversation</li><br>
                     <li>All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn" style="background-color: #ffbe3d;">Get Now</a>
             </div>
-            <div class="plan">
-                <h3 class="plan-title">Growth</h3><br>
-                <p class="price">₹25,489/yr (+taxes)</p>
+            <div class="plan" style="background-color: #004C3D;" >
+                <h3 class="plan-title text-white">Growth</h3><br>
+                <p class="price text-white">₹25,489/yr (+taxes)</p>
                 <ul class="features">
-                    <li>Rs 0.78/Marketing Conversation</li><br>
-                    <li>All other category Rs.0.29/Conversation</li>
+                    <li class="text-white">Rs 0.78/Marketing Conversation</li><br>
+                    <li class="text-white">All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn" style="background-color:#05A68B ;color: #ffffff;">Get Now</a>
             </div>
-            <div class="plan recommended">
+            <div class="plan recommended" style="background-color: #DFF5FF;">
                 <h3 class="plan-title">Advanced <span class="badge"><i
                             class="bi bi-patch-check-fill"></i></span><br><span
                         style="font-size:medium">(Recommended)</span></h3>
@@ -743,9 +743,9 @@
                     <li>Rs 0.78/Marketing Conversation</li><br>
                     <li>All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn1">Get Now</a>
+                <a href="#" class="btn1" style="background-color: #0096DE;">Get Now</a>
             </div>
-            <div class="plan">
+            <div class="plan" style="background-color: #E3FFFA;">
                 <h3 class="plan-title">Enterprise</h3>
                 <br><br><br>
                 <p class="price">On Request</p>
@@ -753,7 +753,7 @@
                     <br><br>
                     <li>Conversations all other Category</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn"  style="background-color:#76ffe6;">Get Now</a>
             </div>
         </div>
 
