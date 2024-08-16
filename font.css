@@ -3,6 +3,7 @@
 /* Apply Poppins font to entire body */
 body, h1, h2, h3, h4, h5, h6, p, div, span, a, li, ul, ol, section, article, header, footer, nav {
     font-family: 'Poppins', sans-serif !important;
+   
 }
 
 .about-header {
