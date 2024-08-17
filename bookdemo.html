@@ -403,7 +403,7 @@
             <div class="col-lg-8 col-md-10">
                 <h1 class="text-center my-4">Request your call</h1>
                 <p class="text-center">See why growing businesses trust Urbanchat for their WhatsApp marketing. Request a free call to see our platform in action and learn how it can benefit your business.</p>
-                <form>
+                <form id="requestForm">
                     <div class="form-group">
                         <input type="text" class="form-control mb-3" placeholder="Your Name" required>
                     </div>
@@ -421,16 +421,26 @@
                             <option value="evening">Evening</option>
                         </select>
                     </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="optInCheckbox" required>
+                        <label class="form-check-label" for="optInCheckbox">
+                            I hereby authorize to send notifications on SMS/Messages/Promotional/Informational messages.
+                        </label>
+                    </div>
+                    <p>By clicking Submit, you agree to our <a href="images/policies/Terms_of_Service.pdf">Terms of Service</a> and that you have read our <a href="images/policies/Privacy_Policy.pdf">Privacy Policy</a>.</p>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
+                <div id="warningMessage" class="text-center text-danger mt-3" style="display:none;">
+                    Please agree to receive notifications before submitting the form.
+                </div>
                 <div class="row mt-4">
                     <div class="col-md-4 col-sm-6 mb-2">
                         <div class="info-box p-3 text-center" style="background-color: #fce4ec;">
                             <p>Free for all demo users</p>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-md-4 col-sm-12 mb-2">
                         <div class="info-box p-3 text-center" style="background-color: #e0f7fa;">
                             <p>We speak your language! Multiple language support available</p>
@@ -444,8 +454,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     
     <div class="whatsapp-chat-widget">
         <div class="chat-container">
@@ -519,7 +528,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2024 Urbanchat. All Rights Reserved. | <a href="images/policies/Privacy_Policy.pdf">Terms &
+            <p>© 2024 Urbanchat. All Rights Reserved. | <a href="images/policies/Terms_of_Service.pdf">Terms &
                     Conditions</a> | <a href="images/policies/Privacy_Policy.pdf">Privacy
                     Policy</a> | <a href="images/policies/GDPR_Compliance.pdf"> GDPR Compliance</a> | <a
                     href="images/policies/Cancellation_Refund.pdf">Cancellation & Refund Policy</a></p>
@@ -541,5 +550,18 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('requestForm').addEventListener('submit', function(event) {
+        var checkbox = document.getElementById('optInCheckbox');
+        var warningMessage = document.getElementById('warningMessage');
+
+        if (!checkbox.checked) {
+            event.preventDefault(); // Prevent form submission
+            warningMessage.style.display = 'block'; // Show warning message
+        } else {
+            warningMessage.style.display = 'none'; // Hide warning message
+        }
+    });
+</script>
 </body>
 </html>
