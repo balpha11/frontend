@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.urbanchat.in/</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
+  
+  <!-- Pricing Page -->
+  <url>
+    <loc>https://www.urbanchat.in/pricing.html</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Features Page -->
+  <url>
+    <loc>https://www.urbanchat.in/Facebook_Automation.html</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Solutions Page -->
+  <url>
+    <loc>https://www.urbanchat.in/WhatsApp_API.html</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Integrations Page -->
+  <url>
+    <loc>https://www.urbanchat.in/Integrating_Various_Applications.html</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  <!-- Blog Section -->
+  <url>
+    <loc>https://www.urbanchat.in/Resources.html</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://www.urbanchat.in/contact_us.html</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Add more URLs here as needed -->
+
+  <url>
+    <loc>https://www.urbanchat.in/Technical_Support.html</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.urbanchat.in/Technical_Support.html</loc>
+    <lastmod>2024-08-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  
+</urlset>
