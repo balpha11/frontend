@@ -1,81 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Home Page -->
-  <url>
-    <loc>https://www.urbanchat.in/</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  
-  
-  <!-- Pricing Page -->
-  <url>
-    <loc>https://www.urbanchat.in/pricing.html</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Features Page -->
-  <url>
-    <loc>https://www.urbanchat.in/Facebook_Automation.html</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Solutions Page -->
-  <url>
-    <loc>https://www.urbanchat.in/WhatsApp_API.html</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Integrations Page -->
-  <url>
-    <loc>https://www.urbanchat.in/Integrating_Various_Applications.html</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  
-  <!-- Blog Section -->
-  <url>
-    <loc>https://www.urbanchat.in/Resources.html</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Contact Us Page -->
-  <url>
-    <loc>https://www.urbanchat.in/contact_us.html</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <!-- Add more URLs here as needed -->
 
-  <url>
-    <loc>https://www.urbanchat.in/Technical_Support.html</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
+<url>
+  <loc>https://www.urbanchat.in/index.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/pricing.html</loc>
+  <lastmod>2024-08-17T09:26:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/Facebook_Automation.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/Instagram_Automation.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/features.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/AI_Chatbot.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/UrbanChat_Chatbots.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/ecommerce.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/sharedTeaminbox.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/Template_Messaging.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/WhatsApp_Drip_Campaign.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/WhatsApp_Affiliate_Program.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/WhatsApp_API.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/solutions.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/rcsservice.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/Bulk_SMS_Services.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/IVR_Services%20.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/Integrating_Various_Applications.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/Google_Integration_UrbanChat.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/Resources.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/chatbotlibrary.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/contact_us.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/Technical_Support.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/bookdemo.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/images/policies/Terms_of_Service.pdf</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/images/policies/Privacy_Policy.pdf</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/images/policies/GDPR_Compliance.pdf</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/images/policies/Cancellation_Refund.pdf</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/blog1.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/blog2.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/blog3.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/blog4.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.urbanchat.in/blog5.html</loc>
+  <lastmod>2024-08-17T08:05:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-  <url>
-    <loc>https://www.urbanchat.in/Technical_Support.html</loc>
-    <lastmod>2024-08-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
 
-  
 </urlset>
