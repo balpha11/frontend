@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+@media (max-width:1000px) {
+    .main_div{
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+}
+
+
+.pricing-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+    width: 1000px;
+
+}
+
+.pricing-plan {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+   
+}
+
+.plan-title {
+    padding: 20px 0;
+    font-size: 1.25em;
+    color: #fff;
+    width: 100%;
+}
+
+.basic {
+    background-color: #178bceab;
+}
+
+.standard {
+    background-color: #007bff;
+}
+
+
+.features {
+    list-style: none;
+    padding: 20;
+    margin: 20px 0;
+}
+
+.features li {
+    font-size: 1em;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.features li span{
+    color: #007bff;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main_div">
+    <div class="pricing-table">
+        <div class="pricing-plan">
+            <div class="plan-title basic">Basic</div>
+            <ul class="features">
+                <li>✔ Sample Text Here</li>
+                <li>✔ Other Text Title</li>
+                <li>✔ Text Space Goes Here</li>
+                <li>✔ Description Space</li>
+            </ul>
+            <div class="price"> ₹2.99</div>
+        </div>
+
+        <div class="pricing-plan">
+            <div class="plan-title standard">Standard</div>
+            <ul class="features">
+                <li> <span>✔</span> Sample Text Here</li>
+                <li><span>✔</span> Other Text Title</li>
+                <li><span>✔</span> Text Space Goes Here</li>
+                <li><span>✔</span> Description Space</li>
+            </ul>
+            <div class="price"> ₹5.99</div>
+        </div>
+
+        <div class="pricing-plan">
+            <div class="plan-title premium">Premium</div>
+            <ul class="features">
+                <li>✔ Sample Text Here</li>
+                <li>✔ Other Text Title</li>
+                <li>✔ Text Space Goes Here</li>
+                <li>✔ Description Space</li>
+            </ul>
+            <div class="price"> ₹8.99</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
