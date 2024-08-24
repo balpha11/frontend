@@ -436,15 +436,6 @@
         }
 
 
-        table td:first-child {
-            text-align: left;
-        }
-
-
-        table th:first-child {
-            text-align: left;
-        }
-
 
 
 
@@ -501,16 +492,17 @@
 }
 
 .basic {
-    background-color: #178bceab;
+    background-color: #2d8d79;
 }
 
 .standard {
-    background-color: #007bff;
+    background-color: #004C3D;
 }
 
 .premium {
     background-color: #178bceab;
 }
+
 
 
 .toggle-buttons {
@@ -519,7 +511,7 @@
 
         .toggle-btn {
             padding: 10px 20px;
-            border: 2px solid #007BFF;
+            border: 2px solid #004C3D;
             border-radius: 5px;
             font-weight: 600;
             color: #000000;
@@ -529,8 +521,13 @@
         }
 
         .toggle-btn:hover {
-            background-color: #007BFF;
+            background-color: #004C3D;
             color: white;
+        }
+        .toggle-btn.active{
+            background-color: #004C3D;
+            color: white;
+            border: 2px solid #004C3D !important;
         }
 .features {
     list-style: none;
@@ -545,7 +542,7 @@
 }
 
 .features li span{
-    color: #007bff;
+    color: #004C3D;
 }
 
 .price {
@@ -573,7 +570,7 @@
 
 
 .btn_basic{
-    background-color: #63B1DE;
+    background-color: #2d8d79;
     color: white;
     border-radius: 8px;
   
@@ -581,7 +578,7 @@
 }
 
 .btn1{
-    background-color: #007BFF !important;
+    background-color: #004C3D !important;
     color: white;
     border-radius: 8px;
 
@@ -591,7 +588,7 @@
 .box_price {
     height: 25px;
     width: 25px;
-    background-color: #63B1DE;
+    background-color: #2d8d79;
     position: relative;
     top: -45px;
     left: 46%;
@@ -603,7 +600,7 @@
 .box_price_advance{
     height: 25px;
     width: 25px;
-    background-color: #007BFF;
+    background-color: #004C3D;
     position: relative;
     top: -22px;
     left: 46%;
@@ -615,7 +612,7 @@
 .box_price_enter{
     height: 25px;
     width: 25px;
-    background-color: #63B1DE;
+    background-color: #2d8d79;
     position: relative;
     top: -22px;
     left: 46%;
@@ -634,7 +631,7 @@
 
 
 .tick_basic{
-    color: #63B1DE !important;
+    color: #2d8d79 !important;
 }
 
 .NOT_WORK{
@@ -647,6 +644,105 @@
         transform: translateX(330px);
     }
 }
+
+
+/* table */
+
+
+.feature-comparison h3{
+    text-align: left;
+    font-size: x-large !important;
+    font-weight:600 ;
+    position: relative;
+    top: 30px;
+    text-decoration: underline;
+}
+.table {
+    width: 100%;
+    border-collapse: separate;
+    margin-top: 20px;
+    background-color: white; /* Set background color to white */
+    table-layout: fixed; /* Ensure equal column width */
+    border-spacing: 20px 0px; /* Adds a gap between rows (0px horizontal, 10px vertical) */
+}
+
+
+.table th, .table td {
+    padding: 22px 0; /* Padding for spacing */
+    text-align: center; /* Center align text */
+    border: none; /* Remove all borders */
+    vertical-align: middle;
+    background-color: white; /* Set background color to white */
+    font-size: 16px; /* Set font size */
+    color: #333; /* Text color */
+    height: 50px; /* Set equal height for all cells */
+    border-bottom: 1px rgba(0, 0, 0, 0.063) solid;
+   
+    
+}
+
+
+
+.table th {
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Ensure header is center-aligned */
+    padding-bottom: 20px; /* Add padding to the bottom of the header */
+}
+
+.table th:first-child{
+    text-align: left;
+}
+
+.table td:first-child {
+    width: 20%; /* Reduce width of the first column */
+    text-align: left; /* Left align text in the first column */
+    padding-left: 10px; /* Add padding for better spacing */
+    background-color: #FFFFFF;
+  
+}
+
+.table td:not(:first-child) {
+    background-color: #FBFBFB; /* Set your desired background color */
+}
+
+
+.table td.separator {
+    width: 5%; /* Set width of the separator column */
+    background-color: black; /* Set background color of the separator */
+}
+
+.table td.separator-space {
+    width: 5%;
+}
+
+.table td img.new-badge {
+    background-color: #00c4b4; /* Background color for 'New' badge */
+    padding: 2px 8px;
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.table td img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.table th, .table td {
+    width: calc(75% / 3); /* Set equal width for all columns except the first and separator */
+}
+
+
+.table td i{
+    color: #004C3D;
+    font-size: large;
+}
+
 
 
     </style>
@@ -918,9 +1014,9 @@
             <div class="container">
                 <br>
                 <h3 style="font-size:large">WhatsApp</h3>
-                <br>
+              
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -932,9 +1028,9 @@
                         <tbody>
                             <tr>
                                 <td>WhatsApp Contacts</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>WhatsApp Team Members</td>
@@ -944,75 +1040,75 @@
                             </tr>
                             <tr>
                                 <td>WhatsApp Chatbot</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Template Messaging</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Live chat</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Campaign Scheduler</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Google Sheet Integration</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>CRM Integration</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>keyword Trigger</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Smart Audience Segregation</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td style="font-weight: 700;color: #060606;">Website Chatbot</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Carousel</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Drip Campaigns</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Integration of OpenAI/Gemini</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1021,7 +1117,7 @@
                 <h3 style="font-size:large">Facebook</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1032,23 +1128,22 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Facebook Lead Ads Automation <span style="opacity: 0;"
-                                        class="span_opac">sscheduler</span></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td>Facebook Lead Ads Automation
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Facebook Messenger Automation</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Facebook Comment Automation</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1057,7 +1152,7 @@
                 <h3 style="font-size:large">Instagram</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1068,17 +1163,16 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Instagram Comment Automation <span style="opacity: 0;"
-                                        class="span_opac">scheduler</span></td>
+                                <td>Instagram Comment Automation </td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Instagram Story Automation</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1087,7 +1181,7 @@
                 <h3 style="font-size:large">Miscellaneous</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1099,52 +1193,51 @@
                         <tbody>
                             <tr>
                                 <td>Entry Point Link</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>QR Code Generator</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Appointment Scheduling</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Questionnaires</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
-                                <td>Payment Gateway Integration <span style="opacity: 0;"
-                                        class="span_opac">sch8eduyyler</span></td>
+                                <td>Payment Gateway Integration </td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>E-commerce</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Places Near Me</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Affiliate Programs</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1157,7 +1250,7 @@
                 <h3 style="font-size:large">WhatsApp</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1170,10 +1263,10 @@
                         <tbody>
                             <tr>
                                 <td>WhatsApp Contacts</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>WhatsApp Team Members</td>
@@ -1184,87 +1277,87 @@
                             </tr>
                             <tr>
                                 <td>WhatsApp Chatbot</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Template Messaging</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Live chat</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Campaign Scheduler</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Google Sheet Integration</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Smart Audience Segregation</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>CRM Integration</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Keyword Trigger</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Carousel</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Drip Campaigns</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td style="font-weight: 700;color: #060606;">Website Chatbot</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Integration of OpenAI/Gemini</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1273,7 +1366,7 @@
                 <h3 style="font-size:large">Facebook</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1285,22 +1378,22 @@
                         <tbody>
                             <tr>
                                 <td>Facebook Comment Automation</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Facebook Lead Ads Automation <span style="opacity: 0;"
                                         class="span_opac">sscheduler</span></td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Facebook Messenger Automation</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1309,7 +1402,7 @@
                 <h3 style="font-size:large">Instagram</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1322,15 +1415,15 @@
                             <tr>
                                 <td>Instagram Story Automation</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Instagram Comment Automation <span style="opacity: 0;"
                                         class="span_opac">scheduler</span></td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1339,7 +1432,7 @@
                 <h3 style="font-size:large">Miscellaneous</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1351,52 +1444,52 @@
                         <tbody>
                             <tr>
                                 <td>Places Near Me</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Entry Point Link</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Payment Gateway Integration <span style="opacity: 0;"
                                         class="span_opac">sch8eduyyler</span></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>QR Code Generator</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Affiliate Programs</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Questionnaires</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>E-commerce</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Appointment Scheduling</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1409,7 +1502,7 @@
                 <h3 style="font-size:large">WhatsApp</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1422,10 +1515,10 @@
                         <tbody>
                             <tr>
                                 <td>WhatsApp Contacts</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>WhatsApp Team Members</td>
@@ -1436,87 +1529,87 @@
                             </tr>
                             <tr>
                                 <td>WhatsApp Chatbot</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Template Messaging</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Live chat</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Campaign Scheduler</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Google Sheet Integration</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Smart Audience Segregation</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>CRM Integration</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Keyword Trigger</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Carousel</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Drip Campaigns</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td style="font-weight: 700;color: #060606;">Website Chatbot</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Integration of OpenAI/Gemini</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1525,7 +1618,7 @@
                 <h3 style="font-size:large">Facebook</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1537,22 +1630,22 @@
                         <tbody>
                             <tr>
                                 <td>Facebook Comment Automation</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Facebook Lead Ads Automation <span style="opacity: 0;"
                                         class="span_opac">sscheduler</span></td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Facebook Messenger Automation</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1561,7 +1654,7 @@
                 <h3 style="font-size:large">Instagram</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1574,15 +1667,15 @@
                             <tr>
                                 <td>Instagram Story Automation</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Instagram Comment Automation <span style="opacity: 0;"
                                         class="span_opac">scheduler</span></td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -1591,7 +1684,7 @@
                 <h3 style="font-size:large">Miscellaneous</h3>
                 <br>
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered" data--duration="2s">
+                    <table class="table " data--duration="2s">
                         <thead>
                             <tr>
                                 <th>Feature</th>
@@ -1603,52 +1696,52 @@
                         <tbody>
                             <tr>
                                 <td>Places Near Me</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Entry Point Link</td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Payment Gateway Integration <span style="opacity: 0;"
                                         class="span_opac">sch8eduyyler</span></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>QR Code Generator</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Affiliate Programs</td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Questionnaires</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>E-commerce</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                             <tr>
                                 <td>Appointment Scheduling</td>
                                 <td></td>
                                 <td></td>
-                                <td><img src="images/greentick.png" alt="green tick" style="width:20px"></td>
+                                <td><i class="bi bi-check-circle-fill"></i></td>
                             </tr>
                         </tbody>
                     </table>
