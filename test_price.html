@@ -482,7 +482,7 @@
 }
 
 .pricing-plan {
-    background: #fff;
+    background: rgba(255, 255, 0, 0);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -497,6 +497,7 @@
     font-size: 1.25em;
     color: #fff;
     width: 100%;
+    z-index:1000;
 }
 
 .basic {
@@ -511,6 +512,26 @@
     background-color: #178bceab;
 }
 
+
+.toggle-buttons {
+            margin-bottom: 20px;
+        }
+
+        .toggle-btn {
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            font-weight: 600;
+            color: #000000;
+            background-color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .toggle-btn:hover {
+            background-color: #007BFF;
+            color: white;
+        }
 .features {
     list-style: none;
     padding: 20;
@@ -519,7 +540,7 @@
 
 .features li {
     font-size: 1em;
-    padding: 5px 0;
+    padding: 1px 0;
     text-align: left;
 }
 
@@ -528,7 +549,7 @@
 }
 
 .price {
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: bold;
     color: #333;
     margin-top: 10px;
@@ -548,6 +569,85 @@
             margin-top: 13px;
             margin-bottom: 10px;
         }
+
+
+
+.btn_basic{
+    background-color: #63B1DE;
+    color: white;
+    border-radius: 8px;
+  
+
+}
+
+.btn1{
+    background-color: #007BFF !important;
+    color: white;
+    border-radius: 8px;
+
+}
+
+
+.box_price {
+    height: 25px;
+    width: 25px;
+    background-color: #63B1DE;
+    position: relative;
+    top: -45px;
+    left: 46%;
+    transform: rotate(45deg);
+    z-index: 1; /* This will move the box backward */
+}
+
+
+.box_price_advance{
+    height: 25px;
+    width: 25px;
+    background-color: #007BFF;
+    position: relative;
+    top: -22px;
+    left: 46%;
+    transform: rotate(45deg);
+   
+}
+
+
+.box_price_enter{
+    height: 25px;
+    width: 25px;
+    background-color: #63B1DE;
+    position: relative;
+    top: -22px;
+    left: 46%;
+    transform: rotate(45deg);
+}
+
+.yearly_box{
+    position: relative;
+    top: -30px;
+}
+
+.enter_box{
+    position: relative;
+    top: -30px;
+}
+
+
+.tick_basic{
+    color: #63B1DE !important;
+}
+
+.NOT_WORK{
+    margin-top: 30PX;
+}
+
+
+@media (max-width:786px) {
+    .pricing-table{
+        transform: translateX(330px);
+    }
+}
+
 
     </style>
 </head>
@@ -687,115 +787,126 @@
         <div id="monthly-plans" class="pricing-table" data--duration="1s">
             <div class="pricing-plan">
                 <div class="plan-title basic">Growth</div><br>
-                <p class="price ">₹2,499/mo (+taxes)</p>
+                <div class="box_price"></div>
+                <p class="price ">₹2,499/mo <br> (+taxes)</p>
                 <ul class="features">
-                    <li >✔ Rs 0.78/Marketing <br> Conversation</li><br>
-                    <li >✔ All other category <br> Rs.0.29/Conversation</li>
+                    <li ><span class="tick_basic">✔</span> Rs 0.78/Marketing <br> Conversation</li><br>
+                    <li ><span class="tick_basic">✔</span> All other category <br> Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn btn_basic">Get Now</a>
             </div>
             <div class="pricing-plan recommended  " >
                 <div class="plan-title standard">Advanced <span class="badge"><i
                             class="bi bi-patch-check-fill"></i></span><br><span
                         style="font-size:medium">(Recommended)</span></div>
-                <p class="price ">₹4,999/mo (+taxes)</p>
+                        <div class="box_price_advance"></div>
+                <p class="price ">₹4,999/mo <br> (+taxes)</p>
                 <ul class="features">
-                    <li > <span>✔</span>Rs 0.78/Marketing <br> Conversation</li><br>
-                    <li > <span>✔</span>All other category <br> Rs.0.29/Conversation</li>
+                    <li > <span>✔</span> Rs 0.78/Marketing <br> Conversation</li><br>
+                    <li > <span>✔</span> All other category <br> Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn1">Get Now</a>
+                <a href="#" class="btn  btn1 ">Get Now</a>
             </div>
             <div class="pricing-plan" >
                 <div class="plan-title basic">Enterprise</div>
+                <div class="box_price_enter"></div>
                 <br><br><br>
                 <p class="price">On Request</p>
                 <ul class="features">
                     <br><br>
-                    <li>✔ Conversations all other <br> Category</li>
+                    <li><span class="tick_basic">✔</span> Conversations all other <br> Category</li>
                 </ul>
-                <a href="#" class="btn" >Get Now</a>
+                <a href="#" class="btn btn_basic" >Get Now</a>
             </div>
         </div>
         <div id="quarterly-plans" class="pricing-table" data--duration="1s" style="display: none;">
             <div class="pricing-plan" >
                 <div class="plan-title basic ">Starter</div><br>
-                <p class="price ">₹4,500/qtr (+taxes)</p>
+                <div class="box_price"></div>
+                <p class="price ">₹4,500/qtr <br> (+taxes)</p>
                 <ul class="features">
-                    <li >✔ Rs 0.78/Marketing Conversation</li><br>
-                    <li >✔ All other category Rs.0.29/Conversation</li>
+                    <li><span class="tick_basic">✔</span> Rs 0.78/Marketing Conversation</li><br>
+                    <li><span class="tick_basic">✔</span> All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn btn_basic">Get Now</a>
             </div>
             <div class="pricing-plan" >
-                <div class="plan-title basic ">Growth</div><br>
-                <p class="price ">₹6,897/qtr (+taxes) Discount 8%</p>
+                <div class="plan-title basic">Growth</div><br>
+                <div class="box_price"></div>
+                <p class="price ">₹6,897/qtr <br> (+taxes)  <span style="font-size: small;color: #000000a1;">Discount <span style="color: rgb(172, 152, 39);">8%</span> </span></p>
                 <ul class="features">
-                    <li >✔ Rs 0.78 Marketing Conversation</li>
-                    <li >✔ All others category Rs.0.0.29/Conversation</li>
+                    <li><span class="tick_basic">✔</span> Rs 0.78/Marketing Conversation</li>
+                    <li class="NOT_WORK"><span class="tick_basic">✔</span> All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn" >Get Now</a>
+                <a href="#" class="btn btn_basic" >Get Now</a>
             </div>
             <div class="pricing-plan recommended" >
                 <div class="plan-title standard">Advanced <span class="badge"><i
                             class="bi bi-patch-check-fill"></i></span><br><span style="font-size:medium"
                         class="">(Recommended)</span></div>
-                <p class="price ">₹13,797/qtr (+taxes) Discount 8%</p>
+                        <div class="box_price_advance"></div>
+                <p class="price ">₹13,797/qtr <br> (+taxes)  <span style="font-size: small;color: #000000a1;">Discount <span style="color: rgb(172, 152, 39);">8%</span> </span> </p>
                 <ul class="features">
                     <li ><span>✔</span> Rs 0.78/Marketing Conversation</li>
-                    <li ><span>✔</span> All other category Rs.0.29/Conversation</li>
+                    <li class="NOT_WORK"><span>✔</span> All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn1" >Get Now</a>
+                <a href="#" class="btn1 btn" >Get Now</a>
             </div>
             <div class="pricing-plan" >
                 <div class="plan-title basic ">Enterprise</div>
+                <div class="box_price_enter"></div>
                 <br><br><br>
                 <p class="price ">On Request</p>
                 <ul class="features">
                     <br><br>
-                    <li >✔ Conversations all other Category</li>
+                    <li ><span class="tick_basic">✔</span> Conversations all other Category</li>
                 </ul>
-                <a href="#" class="btn" >Get Now</a>
+                <a href="#" class="btn btn_basic" >Get Now</a>
             </div>
         </div>
         <div id="yearly-plans" class="pricing-table" data--duration="1s" style="display: none;">
             <div class="pricing-plan" >
                 <div class="plan-title basic">Starter</div><br>
-                <p class="price">₹15,299/yr (+taxes)</p>
+                <div class="box_price"></div>
+                <p class="price">₹15,299/yr <br> (+taxes)</p>
                 <ul class="features">
-                    <li>✔ Rs 0.78/Marketing Conversation</li><br>
-                    <li>✔ All other category Rs.0.29/Conversation</li>
+                    <li><span class="tick_basic">✔</span> Rs 0.78/Marketing Conversation</li><br>
+                    <li><span class="tick_basic">✔</span> All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn" >Get Now</a>
+                <a href="#" class="btn btn_basic" >Get Now</a>
             </div>
             <div class="pricing-plan" >
                 <div class="plan-title basic ">Growth</div><br>
-                <p class="price ">₹25,489/yr (+taxes)</p>
+                <div class="box_price"></div>
+                <p class="price ">₹25,489/yr <br> (+taxes)</p>
                 <ul class="features">
-                    <li> ✔ Rs 0.78/Marketing Conversation</li><br>
-                    <li> ✔ All other category Rs.0.29/Conversation</li>
+                    <li> <span class="tick_basic">✔</span> Rs 0.78/Marketing Conversation</li><br>
+                    <li> <span class="tick_basic">✔</span> All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn btn_basic">Get Now</a>
             </div>
             <div class="pricing-plan  recommended" >
-                <h3 class="plan-title standard ">Advanced <span class="badge"><i
-                            class="bi bi-patch-check-fill"></i></span><br><span style="font-size:medium"
+                <h3 class="plan-title standard " >Advanced <span class="badge"><i
+                            class="bi bi-patch-check-fill"></i></span><br><span style="font-size:medium;z-index: 100;"
                         >(Recommended)</span></h3>
-                <p class="price ">₹50,989/yr (+taxes)</p>
+                        <div class="box_price_advance yearly_box"></div>
+                <p class="price ">₹50,989/yr <br> (+taxes)</p>
                 <ul class="features">
                     <li ><span>✔</span> Rs 0.78/Marketing Conversation</li><br>
                     <li ><span>✔</span> All other category Rs.0.29/Conversation</li>
                 </ul>
-                <a href="#" class="btn1" >Get Now</a>
+                <a href="#" class="btn btn1" >Get Now</a>
             </div>
             <div class="pricing-plan" >
                 <h3 class="plan-title basic">Enterprise</h3>
-                <br><br><br>
+                <div class="box_price_enter enter_box"></div>
+                <br><br>
                 <p class="price">On Request</p>
                 <ul class="features">
                     <br><br>
-                    <li> ✔ Conversations all other Category</li>
+                    <li> <span class="tick_basic">✔</span> Conversations all other Category</li>
                 </ul>
-                <a href="#" class="btn">Get Now</a>
+                <a href="#" class="btn btn_basic">Get Now</a>
             </div>
         </div>
         </div>
