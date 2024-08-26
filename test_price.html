@@ -455,7 +455,8 @@
 
 .pricing-table {
    
-    width: fit-content;
+    min-width: 1000px;
+    max-width: 1200px;
 
 }
 }
@@ -657,91 +658,72 @@
     top: 30px;
     text-decoration: underline;
 }
+
+.table-responsive {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+}
+
 .table {
     width: 100%;
     border-collapse: separate;
     margin-top: 20px;
-    background-color: white; /* Set background color to white */
-    table-layout: fixed; /* Ensure equal column width */
-    border-spacing: 20px 0px; /* Adds a gap between rows (0px horizontal, 10px vertical) */
+    background-color: white;
+    table-layout: fixed; /* Prevents columns from adjusting width */
+    border-spacing: 20px 0px;
+    min-width: 800px; /* Ensures table retains minimum width */
 }
-
 
 .table th, .table td {
-    padding: 22px 0; /* Padding for spacing */
-    text-align: center; /* Center align text */
-    border: none; /* Remove all borders */
+    padding: 22px 0;
+    text-align: center;
+    border: none;
     vertical-align: middle;
-    background-color: white; /* Set background color to white */
-    font-size: 16px; /* Set font size */
-    color: #333; /* Text color */
-    height: 50px; /* Set equal height for all cells */
-    border-bottom: 1px rgba(0, 0, 0, 0.063) solid;
-   
-    
-}
-
-
-
-.table th {
-    font-weight: bold;
+    background-color: white;
+    font-size: 16px;
     color: #333;
-    text-align: center; /* Ensure header is center-aligned */
-    padding-bottom: 20px; /* Add padding to the bottom of the header */
+    height: 50px;
+    border-bottom: 1px rgba(0, 0, 0, 0.063) solid;
 }
 
-.table th:first-child{
+/* Sticky first column */
+.table th:first-child, .table td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #FFFFFF; /* Set background color for the sticky column */
+    z-index: 1; /* Ensure the sticky column stays on top */
     text-align: left;
+    padding-left: 10px;
+    width: 20%;
 }
 
-.table td:first-child {
-    width: 20%; /* Reduce width of the first column */
-    text-align: left; /* Left align text in the first column */
-    padding-left: 10px; /* Add padding for better spacing */
-    background-color: #FFFFFF;
-  
+/* Ensure the first header cell has a higher z-index */
+.table th:first-child {
+    z-index: 2; /* Higher z-index than the rest of the table cells */
 }
 
 .table td:not(:first-child) {
-    background-color: #FBFBFB; /* Set your desired background color */
+    background-color: #FBFBFB;
+    width: calc(75% / 3); /* Ensure other columns are of equal width */
 }
 
-
-.table td.separator {
-    width: 5%; /* Set width of the separator column */
-    background-color: black; /* Set background color of the separator */
-}
-
-.table td.separator-space {
-    width: 5%;
-}
-
-.table td img.new-badge {
-    background-color: #00c4b4; /* Background color for 'New' badge */
-    padding: 2px 8px;
-    color: white;
-    border-radius: 12px;
-    font-size: 12px;
-    margin-left: 8px;
-    vertical-align: middle;
-}
-
-.table td img {
-    width: 20px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-.table th, .table td {
-    width: calc(75% / 3); /* Set equal width for all columns except the first and separator */
-}
-
-
-.table td i{
+.table td i {
     color: #004C3D;
     font-size: large;
 }
+
+/* Optional: Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px; /* Slightly smaller font size for readability */
+    }
+
+    .table th, .table td {
+        padding: 15px 0; /* Adjust padding to fit smaller screens */
+    }
+}
+
+
 
 
 
