@@ -368,6 +368,13 @@ color: black !important;
 }
 
 
+.container_111 img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
 @media (max-width:786px) {
     .container_111 h1,
 .container_111 h2,
