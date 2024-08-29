@@ -730,7 +730,67 @@
     </style>
 </head>
 
+
 <body>
+
+    <div id="floating-div" class="floating-div">
+        <img src="images/Default_create_a_circular_whatsapp_bot_head_icon_featuring_a_s_0_07dd10d9-eebd-4d17-b98f-47146b936a7c_0.png" alt="Chatbot" class="floating-div-image">
+        <p class="floating-div-text">Need any help? <br>Ask me!</p>
+        <button id="close-btn" class="close-btn">&times;</button>
+    </div>
+
+    <style>
+        .floating-div {
+            position: fixed;
+            bottom: 100px;
+            /* Distance from the bottom of the viewport */
+            right: 20px;
+            /* Distance from the right of the viewport */
+            background-color: white;
+            border: 2px solid #4CC34B;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            /* Ensure it appears above other elements */
+        }
+
+        .floating-div-image {
+            width: 25px;
+            /* Adjust size as needed */
+            border-radius: 50%;
+            height: 25px;
+            margin-right: 7px;
+
+        }
+
+
+        .floating-div-text {
+            font-size: 10px;
+            color: #333;
+            margin: 0;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+            margin-left: 5px;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+
+        .close-btn:hover {
+            color: #ff0000;
+            /* Optional: change color on hover */
+
+        }
+
+        </style>
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -1822,7 +1882,7 @@
         </div>
     </footer>
 
-    <div class="whatsapp-chat-widget">
+    <div class="whatsapp-chat-widget" style="display: none;">
         <div class="chat-container">
             <a href="https://wa.me/8943041309" class="chat-with-us" target="_blank">
                 <img src="images/Default_create_a_circular_whatsapp_bot_head_icon_featuring_a_s_0_07dd10d9-eebd-4d17-b98f-47146b936a7c_0.png"
@@ -1913,6 +1973,19 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://app.botamation.in/webchat/plugin.js?v=5"></script><script>ktt10.setup({id:"h21cbY7NGRfB6r",accountId:"1969736",color:"#4CC34B"})</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const closeButton = document.getElementById('close-btn');
+        closeButton.addEventListener('click', function () {
+            const floatingDiv = document.getElementById('floating-div');
+            floatingDiv.style.display = 'none';
+        });
+    });
+</script>
+
+
+
 </body>
 
 </html>
