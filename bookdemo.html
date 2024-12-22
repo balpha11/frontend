@@ -660,6 +660,43 @@
         </div>
     </footer>
 
+
+    <script>
+        document.getElementById('requestForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent the form from actually submitting
+
+    // Capture form data
+    const name = document.querySelector('input[placeholder="Your Name"]').value;
+    const email = document.querySelector('input[placeholder="Business Email Address"]').value;
+    const phone = document.querySelector('input[placeholder="Your Phone Number"]').value;
+    const time = document.querySelector('select').value;
+    const optIn = document.getElementById('optInCheckbox').checked;
+
+    // Validate opt-in checkbox
+    if (!optIn) {
+        document.getElementById('warningMessage').style.display = 'block';
+        return;
+    } else {
+        document.getElementById('warningMessage').style.display = 'none';
+    }
+
+    // Format the WhatsApp message
+    const message = `Hello, I would like to request a call. Here are my details:\n\n` +
+                    `Name: ${name}\n` +
+                    `Email: ${email}\n` +
+                    `Phone: ${phone}\n` +
+                    `Preferred Time: ${time}\n\n` +
+                    `I agree to receive notifications.`;
+
+    // WhatsApp API URL
+    const whatsappURL = `https://wa.me/+919633353924?text=${encodeURIComponent(message)}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, '_blank');
+});
+
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>

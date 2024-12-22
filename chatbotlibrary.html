@@ -17,6 +17,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- font style -->
     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="features.css">
     <!-- favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -197,57 +198,7 @@
             color: #fff;
         }
 
-        /* Footer Styles */
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 50px 20px;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-
-        .footer-links h4 {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-
-        .footer-links a {
-            color: #aaa;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .footer-links a:hover {
-            color: #fff;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding: 20px 0;
-            border-top: 1px solid #444;
-        }
-
-        .footer-bottom p {
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-        }
-
-        .footer-social a {
-            color: #aaa;
-            margin: 0 10px;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
-
-        .footer-social a:hover {
-            color: #fff;
-        }
+       
 
 
 /* -------------------------------------- */
@@ -478,7 +429,90 @@
         </div>
     </header>
 
+<style>
+    /* Main Container */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
 
+/* Text Content */
+.text-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.text-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+}
+
+.text-content .demo-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.text-content .demo-link:hover {
+    background-color: #218838;
+}
+
+/* Image Content */
+.image-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    .text-content .demo-link {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+</style>
 
 
     <main class="main">
@@ -489,69 +523,64 @@
             <a href="bookdemo.html" class="demo-link"> Request a call Today</a>
         </div>
         <div class="image-content">
-            <img src="images/chatbot-library.png" alt="Chatbot Library Image">
+            <img src="images/urbanadvn/chatbottraining.jpg" alt="Chatbot Library Image">
         </div>
     </main>
 
     <section class="chatbotlibrary-features">
         <div class="container">
-            <h2>Launch your chatbot quickly with pre-designed templates</h2>
+            <h2>Launch your chatbot quickly with training videos</h2>
+            <!-- First Row -->
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="feature-box">
-                        <img src="images/chatbot-template-1.png" alt="Template 1">
-                        <h3>Retargeting for E-commerce</h3>
-                        <p>Use chatbots to retarget customers and boost your e-commerce sales effortlessly.</p>
-                        <a href="#" class="btn btn-outline-success">Get Template</a>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/vn9J2UA86dc?si=IJhidHTRlyoKc_zs" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>AI-powered chatbots and WhatsApp API solutions for business communication.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="feature-box">
-                        <img src="images/chatbot-template-2.png" alt="Template 2">
-                        <h3>Welcome Bot</h3>
-                        <p>Create a welcoming experience for new visitors to your site or social media.</p>
-                        <a href="#" class="btn btn-outline-success">Get Template</a>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/1l_hHvhgU9Q?si=JSot0sGNkMyQkz3z" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>How UrbanChat Transformed Our Business: A Customer Success Story</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="feature-box">
-                        <img src="images/chatbot-template-3.png" alt="Template 3">
-                        <h3>Lead Qualification</h3>
-                        <p>Automatically qualify leads and gather important customer data using this chatbot.</p>
-                        <a href="#" class="btn btn-outline-success">Get Template</a>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ae1QWY2UeF0?si=E_wGWcBqNcC7eGrw" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>Master WhatsApp Broadcasting with UrbanChat | Step-by-Step Guide to Engage Your Audience-Tutorial3</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                
+            </div>
+            <!-- Second Row -->
+            <div class="row">
+               
+                <div class="col-md-4">
                     <div class="feature-box">
-                        <img src="images/chatbot-template-4.png" alt="Template 4">
-                        <h3>Feedback Collection</h3>
-                        <p>Collect valuable customer feedback to improve your products and services.</p>
-                        <a href="#" class="btn btn-outline-success">Get Template</a>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/7BN-KUDzmS4?si=fcuXhle8ydxV2hZm" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>How to Create WhatsApp Templates and Automated Flows Using UrbanChat-Tutorial 1</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WgdxQu_FF_Y?si=6LYuOxfNNgJvqVer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>How to Import Contacts and Create Tags in UrbanChat Panel-Tutorial2</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials-section">
-        <div class="container">
-            <h2>Over 8,000 customers trust our chatbot library</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial-box">
-                        <p>"Highly customizable and friendly. We used the chatbot library to launch several bots that saved us time and improved our customer service."</p>
-                        <h3>- Helen L., E-commerce Manager</h3>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-box">
-                        <p>"Great product for our startup shop. The templates are easy to use, and we were able to get started quickly without needing technical skills."</p>
-                        <h3>- Ahmed P., Small Business Owner</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+   
 
     <section class="footer-cta">
         <p>Discover more. WhatsApp, Facebook, and Instagram dominate social media messaging. Leverage this with one of
@@ -641,6 +670,7 @@
             </div>
         </div>
     </footer>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
